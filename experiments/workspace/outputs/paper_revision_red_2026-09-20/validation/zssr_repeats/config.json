@@ -1,0 +1,37 @@
+{
+  "seeds": [
+    1,
+    2
+  ],
+  "steps": [
+    1,
+    5,
+    10
+  ],
+  "families": [
+    "bandlimited",
+    "gaussian"
+  ],
+  "scales": [
+    2,
+    3,
+    4
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "training_updates": 10000,
+  "source_sha256": {
+    "experiment.py": "d56e4a2377b4f91a9b0efba1c0099188fe1e8d51a1961e5ba1984e6fa3c757d7",
+    "kernels.py": "52e2c691c0d1dfb633a2faf19b5fddf114c9ea197ece587f8ab387eefab45993",
+    "matched_kernels.py": "260fc5e637c286247f600447b9329af8167fdeb714c39e62b307b7ad19ab0611",
+    "gaussian_kernels.py": "d390967ce5e4cf8dacddbea713a5b968e6abb3e00760f48876c4cfd6414af0ff",
+    "vendor/ResizeRight/resize_right.py": "a902a052789aad3db4dfd13a5877b9519d2b21be25860e1943614fc7edd8a694",
+    "vendor/ResizeRight/interp_methods.py": "590406de7dd3c10acb4ecd21a44340e9e2a3634c5d1a9885afa8fcd39a12164b"
+  },
+  "note": "Paired repeats, unchanged algorithm; m1 uses one shared model."
+}

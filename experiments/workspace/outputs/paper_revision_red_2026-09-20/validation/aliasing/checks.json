@@ -1,0 +1,130 @@
+[
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.1414870138494126,
+    "fine_scene_max": 0.8180684759343205,
+    "mtf_at_sensor_nyquist": 0.0,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "fine_grid_doubling_max_error": 3.3306690738754696e-16,
+    "fine_scene_min": 0.1414870138494126,
+    "fine_scene_max": 0.8180684759343205,
+    "mtf_at_sensor_nyquist": 0.13493138172593258,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.1414870138494126,
+    "fine_scene_max": 0.8180684759343205,
+    "mtf_at_sensor_nyquist": 0.195704326216437,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.1414870138494126,
+    "fine_scene_max": 0.8180684759343205,
+    "mtf_at_sensor_nyquist": 0.29570630812140347,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.11281185354377621,
+    "fine_scene_max": 0.98,
+    "mtf_at_sensor_nyquist": 0.0,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.11281185354377621,
+    "fine_scene_max": 0.98,
+    "mtf_at_sensor_nyquist": 0.13493138172593258,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.11281185354377621,
+    "fine_scene_max": 0.98,
+    "mtf_at_sensor_nyquist": 0.195704326216437,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "fine_grid_doubling_max_error": 2.220446049250313e-16,
+    "fine_scene_min": 0.11281185354377621,
+    "fine_scene_max": 0.98,
+    "mtf_at_sensor_nyquist": 0.29570630812140347,
+    "LS_training_seed": 61000,
+    "test_seeds": [
+      72000,
+      72001,
+      72002,
+      72003,
+      72004
+    ]
+  }
+]

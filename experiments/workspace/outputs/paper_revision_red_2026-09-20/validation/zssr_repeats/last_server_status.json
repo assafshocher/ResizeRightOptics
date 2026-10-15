@@ -1,0 +1,16 @@
+{
+  "pid": 3635,
+  "state": "training",
+  "total_rows": 360,
+  "started_utc": "2026-09-20T18:59:44.789571+00:00",
+  "rows": 243,
+  "updated_utc": "2026-09-20T18:59:45.178843+00:00",
+  "current": [
+    "gaussian",
+    3,
+    "baby",
+    1,
+    5,
+    "aa"
+  ]
+}

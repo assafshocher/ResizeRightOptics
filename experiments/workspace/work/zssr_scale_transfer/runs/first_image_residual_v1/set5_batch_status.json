@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-17T17:49:38.227917+00:00",
+  "images": [
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "completed": [
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "status": "complete",
+  "boot_id": "76156b9d-4242-407e-9da1-1359a1a4b920",
+  "current": null,
+  "finished_utc": "2026-09-17T17:57:34.124060+00:00"
+}

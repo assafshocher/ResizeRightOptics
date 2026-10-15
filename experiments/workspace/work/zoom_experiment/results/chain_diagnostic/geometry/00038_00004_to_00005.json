@@ -1,0 +1,24 @@
+{
+  "scene": "00038",
+  "source_index": "00004",
+  "target_index": "00005",
+  "affine_target_to_source": [
+    [
+      1.3773975372314453,
+      0.0008340494823642075,
+      -812.2398071289062
+    ],
+    [
+      0.0005899047246202826,
+      1.3737661838531494,
+      -543.3765258789062
+    ]
+  ],
+  "low_band_ecc_correlation": 0.9979705510751696,
+  "feature_geometry": {
+    "ratio_test_matches": 3767,
+    "inliers": 1552,
+    "median_reprojection_px": 0.9850473999977112
+  },
+  "target_to_source_linear_scale": 1.3755804834183416
+}

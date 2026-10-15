@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "figures/matched_bandlimited_x2_summary.json": "a4405d8ddfe0feb3ee4d109eb55816b5de2b6044aa13c95c2fa324e1a36151e5",
+    "runs/gaussian_sigma2_suite_v1/summary_x2.json": "aa1a2cf2dfeee138e3666d29ffad3d74103bef44366048fb97d9df456c2fa512",
+    "figures/matched_bandlimited_x3_summary.json": "d0bcf9eff25dea05bd8da97ae3c240f342bb1c4ff7ead0cc251fde975d9ded8b",
+    "runs/gaussian_sigma2_suite_v1/summary_x3.json": "8f03ed293f115bcce77b2b256753f8162675bc5dd44a4056a48951d320daabff",
+    "figures/matched_bandlimited_x4_summary.json": "17bdbc145e63daa085be81a30875b68cd64008b7dd228dd6c28cffce6f214de7",
+    "runs/gaussian_sigma2_suite_v1/summary_x4.json": "e6ea28df3d84347f68edb8042a44ac531619e470dae408d48162df755ffb5fa9"
+  },
+  "figure_inches": [
+    7.0,
+    2.6
+  ],
+  "rows": [
+    "bandlimited",
+    "gaussian"
+  ],
+  "columns": [
+    2,
+    3,
+    4
+  ],
+  "independent_y_axes": true,
+  "panel_ylim": {
+    "bandlimited_x2": [
+      16.222315767388267,
+      36.861648296475245
+    ],
+    "bandlimited_x3": [
+      16.57779393788028,
+      32.475814414124805
+    ],
+    "bandlimited_x4": [
+      16.93214728540368,
+      29.52043254137828
+    ],
+    "gaussian_x2": [
+      6.335226307325477,
+      35.71920413383629
+    ],
+    "gaussian_x3": [
+      8.393902044879251,
+      34.10528690212745
+    ],
+    "gaussian_x4": [
+      11.675312676249066,
+      31.2375488625951
+    ]
+  },
+  "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "total_panels": 6,
+  "method_curves": 18,
+  "baseline_lines": 6,
+  "data_modified": false,
+  "all_labels_within_canvas": true,
+  "qualification": "Five-image means, one seed; final RGB clipping; grid arm changes only downsampling coordinates."
+}

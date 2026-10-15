@@ -1,0 +1,10 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+Pillow>=10
+pandas>=2
+torch>=2.2
+torchvision>=0.17
+opencv-python>=4.8
+scikit-image>=0.22
+pymupdf>=1.24

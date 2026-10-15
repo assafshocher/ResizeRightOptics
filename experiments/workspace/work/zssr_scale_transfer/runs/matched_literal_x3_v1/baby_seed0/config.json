@@ -1,0 +1,50 @@
+{
+  "image": "baby",
+  "steps": 10000,
+  "batch": 1,
+  "crop": 64,
+  "crop_margin": 16,
+  "width": 64,
+  "depth": 8,
+  "lr": 0.0001,
+  "radius": 96,
+  "seed": 0,
+  "scale": 3,
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "methods": [
+    "consistent_literal",
+    "aa",
+    "aa_grid_literal"
+  ],
+  "input_kind": "literal",
+  "device": "cuda",
+  "run_name": "matched_literal_x3_v1",
+  "residual": true,
+  "torch": "2.8.0+cu129",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "RR_commit": "510d4d5b67dccf4efdee9f311ed42609a71f17c5",
+  "ZSSR_commit": "d2948526fde799a0c111469b78cd9e1b8659cb0f",
+  "evaluation": "Clipped float RGB; BT.601 Y with peak 1; 3 HR pixel border; no registration; also unclipped scores",
+  "shared_anchor": "consistent_literal and aa: literal RR cubic-AA; grid arm shares continuous kernel, not all sample positions",
+  "rr_weight_device": "cuda",
+  "literal_extension": {
+    "ridge_eta": 0.001,
+    "ridge_reference": "literal AA",
+    "fft_length": 1048576,
+    "omega_max": 100.53096491487338,
+    "density": 512,
+    "exact_sampled_composition_claimed": false,
+    "protocol": "MATCHED_PROTOCOL.md"
+  }
+}

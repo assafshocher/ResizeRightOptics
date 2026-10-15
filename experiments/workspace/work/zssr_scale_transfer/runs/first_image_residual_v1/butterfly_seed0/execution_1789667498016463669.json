@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-17T17:51:38.016475+00:00",
+  "pid": 5715,
+  "kernel": "7.0.0-30-generic",
+  "boot_id": "76156b9d-4242-407e-9da1-1359a1a4b920",
+  "resumed": false,
+  "source_sha256": {
+    "experiment.py": "3aa1855340ca5b05ed1254fae9249c28751c99061bf10e062a95edc54a4d56a8",
+    "kernels.py": "a07a52dd12bc9003e22cf6bc826b181a7d4e71ab7506cec5bb2ba5d7e86c7fde"
+  }
+}

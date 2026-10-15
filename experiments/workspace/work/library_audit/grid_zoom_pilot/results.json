@@ -1,0 +1,69 @@
+{
+  "protocol": {
+    "dataset": "<capture-dataset>",
+    "scenes": [
+      "00007",
+      "00022",
+      "00024",
+      "00038",
+      "00039",
+      "00041",
+      "00053",
+      "00062"
+    ],
+    "source_size": 2047,
+    "target_size": 255,
+    "physical_scale": 0.12481191988275525,
+    "size_inferred_scale": 0.12457254518808011,
+    "N0_times_s": 255.49,
+    "max_grid_drift_source_pixels": 1.9552556832352472,
+    "camera": "clear pupil",
+    "camera_reference": "periodic Shannon scene, computed pupil camera, direct optical capture",
+    "grid_only_control": "same optics, N/N0 grid",
+    "paths": {
+      "1": [
+        2047,
+        255
+      ],
+      "2": [
+        2047,
+        723,
+        255
+      ],
+      "3": [
+        2047,
+        1023,
+        511,
+        255
+      ],
+      "4": [
+        2047,
+        1217,
+        723,
+        429,
+        255
+      ],
+      "5": [
+        2047,
+        1349,
+        889,
+        587,
+        387,
+        255
+      ]
+    },
+    "evaluation_size": 224,
+    "models": [
+      "ResNet-18",
+      "MobileNetV3-Small"
+    ],
+    "methods": [
+      "Pillow bicubic",
+      "OpenCV bicubic",
+      "Pillow Lanczos"
+    ],
+    "model_device": "mps",
+    "float_pipeline": true,
+    "warning": "simulated camera, not a measured natural-image PSF or a recognition-accuracy benchmark"
+  }
+}

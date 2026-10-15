@@ -1,0 +1,32 @@
+{
+  "baby": {
+    "clean_canonical_max_error": 3.902433931557425e-14,
+    "minimum_psf_sample": 1.3962060269404132e-09,
+    "canonical_white_noise_gain": 162.78401511089774,
+    "threshold_white_noise_gain": 18.720505608786496
+  },
+  "bird": {
+    "clean_canonical_max_error": 2.0095036745715333e-14,
+    "minimum_psf_sample": 1.3962060269404132e-09,
+    "canonical_white_noise_gain": 162.78401511089774,
+    "threshold_white_noise_gain": 18.720505608786496
+  },
+  "butterfly": {
+    "clean_canonical_max_error": 2.6478819137309983e-14,
+    "minimum_psf_sample": 1.3962060269404132e-09,
+    "canonical_white_noise_gain": 162.78401511089774,
+    "threshold_white_noise_gain": 18.720505608786496
+  },
+  "head": {
+    "clean_canonical_max_error": 3.186340080674199e-14,
+    "minimum_psf_sample": 1.3962060269404132e-09,
+    "canonical_white_noise_gain": 162.78401511089774,
+    "threshold_white_noise_gain": 18.720505608786496
+  },
+  "woman": {
+    "clean_canonical_max_error": 3.8191672047105385e-14,
+    "minimum_psf_sample": 1.3962060269404132e-09,
+    "canonical_white_noise_gain": 162.78401511089774,
+    "threshold_white_noise_gain": 18.720505608786496
+  }
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this software."
+title: "ResizeRight Optics: A Unified Theory of Image Scaling"
+type: software
+authors:
+  - family-names: Shocher
+    given-names: Assaf
+repository-code: "https://github.com/assafshocher/ResizeRightOptics"
+url: "https://assafshocher.github.io/image-scaling/"
+license: MIT
+version: 0.1.0
+preferred-citation:
+  type: generic
+  title: "A Unified Theory of Image Scaling: Point Spread Functions, Discrete Kernels, and Scale-Spaces"
+  authors:
+    - family-names: Shocher
+      given-names: Assaf
+  year: 2026
+  url: "https://assafshocher.github.io/image-scaling/"

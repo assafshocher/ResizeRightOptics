@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scales": [
+    2
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "records": 200,
+  "unique_model_prediction_pairs": 195,
+  "max_recomputed_psnr_difference_db": 7.105427357601002e-15,
+  "source_results_sha256": {
+    "runs/first_image_residual_v1/baby_seed0": "4f4b9526eae853aef5ea1400e2b16e0af1a38ecbfc652908477b2fc651f0ee09",
+    "runs/set5_x2_torch_m1_10/baby_seed0": "1fe6bef862999430a57cddf306f75675177d5cd3dfc553bb9e832236bbb152da",
+    "runs/set5_x2_m6_10/baby_seed0": "6d59a2eb73abef8dc78df790fdd55df8480a606f5e255ff2191d18b26bbf416e",
+    "runs/first_image_residual_v1/bird_seed0": "aca9000171e49e9e5a5a51cf0de2f9a80872f6d3750ff9f1050802672660175b",
+    "runs/set5_x2_torch_m1_10/bird_seed0": "f8be253ad5df9fda24f76d68f4399c38e08d8f1e2707fdc283d1c9b73c9864aa",
+    "runs/set5_x2_m6_10/bird_seed0": "f6fc4163f553cbaeed94dd1a1b83de130b759772ec1c82ffce747d648010a4d5",
+    "runs/first_image_residual_v1/butterfly_seed0": "f275d1691b077bcc67ea93a8fd2140e9795e05afae43aa0f2c67f51b544d67ac",
+    "runs/set5_x2_torch_m1_10/butterfly_seed0": "0a78ec67f7e902cbd02567fe02c8f9843b8f853282ec23d03679471c829f54bf",
+    "runs/set5_x2_m6_10/butterfly_seed0": "01c61e4d0700657effeca6dce5426ae8ced8bab974f372cf4454bbe88c479945",
+    "runs/first_image_residual_v1/head_seed0": "2598056b579d955c2c35ead015c86097dbf208f20303d5b18cc3bd72dd6ddb63",
+    "runs/set5_x2_torch_m1_10/head_seed0": "5ea02a948b06f5f1a511f92f3edbf7e5a38b748d970e68fbdc8790840eea823a",
+    "runs/set5_x2_m6_10/head_seed0": "ff285e5abd2ca62e39a6cb6e61e177e02fde1232bd2968b603291be8277bf712",
+    "runs/first_image_residual_v1/woman_seed0": "2e73c9d15fc64ba144d25103388d2e0fdb4ebf9cb029529de31dfc0257cda7c8",
+    "runs/set5_x2_torch_m1_10/woman_seed0": "ab2f81f0457df5e4534bd8be2af4720fef8b18ab36118ec128e0816e9e1d382e",
+    "runs/set5_x2_m6_10/woman_seed0": "914bcd62817f64b33cfbf89e4f0024f7291e048486cd308938c12276ebb1cc3e"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "source": "<capture-dataset>/00038/00001.ARW",
+  "target": "<capture-dataset>/00038/00002.ARW",
+  "source_shape": [
+    2848,
+    4256
+  ],
+  "target_shape": [
+    2848,
+    4256
+  ],
+  "homography_target_to_source": [
+    [
+      1.5232964713090602,
+      0.0011127798405675218,
+      -1120.508462746419
+    ],
+    [
+      -0.0034177628645008706,
+      1.5267018992712604,
+      -739.452731127078
+    ],
+    [
+      -2.2677753097065354e-06,
+      5.639527275623838e-07,
+      1.0
+    ]
+  ],
+  "similarity_target_to_source": [
+    [
+      1.5297198647796513,
+      1.3308563119898492e-05,
+      -1123.814627346275
+    ],
+    [
+      -1.3308563119898492e-05,
+      1.5297198647796513,
+      -744.9408463249858
+    ]
+  ],
+  "ratio_test_matches": 4402,
+  "homography_inliers": 1594,
+  "homography_median_reprojection_px": 1.2996619939804077,
+  "similarity_inliers": 1874,
+  "similarity_median_reprojection_px": 0.9455329179763794,
+  "homography_origin_singular_values": [
+    1.5270569493440689,
+    1.522944786124259
+  ]
+}

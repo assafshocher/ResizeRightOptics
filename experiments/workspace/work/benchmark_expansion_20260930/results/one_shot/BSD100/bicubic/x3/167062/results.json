@@ -1,0 +1,122 @@
+{
+  "complete": true,
+  "results": [
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "float",
+      "method": "bilinear",
+      "eta": null,
+      "psnr_y": 29.359941629277948,
+      "psnr_y_raw": 29.352236830622918,
+      "outside_fraction": 0.06238707880813144,
+      "seconds": 0.006909669999004109
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "float",
+      "method": "bicubic",
+      "eta": null,
+      "psnr_y": 29.890638992996518,
+      "psnr_y_raw": 29.853485995465007,
+      "outside_fraction": 0.08033416875522138,
+      "seconds": 0.009107158999540843
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "float",
+      "method": "lanczos3",
+      "eta": null,
+      "psnr_y": 30.16136460052326,
+      "psnr_y_raw": 30.087691121842077,
+      "outside_fraction": 0.09968476747424115,
+      "seconds": 0.012822638000216102
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "float",
+      "method": "fourier",
+      "eta": null,
+      "psnr_y": 30.258952299944756,
+      "psnr_y_raw": 30.167312624042705,
+      "outside_fraction": 0.11596324143692564,
+      "seconds": 0.0913927120018343
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "float",
+      "method": "canonical",
+      "eta": null,
+      "psnr_y": 30.492083350925157,
+      "psnr_y_raw": 30.221674004598732,
+      "outside_fraction": 0.13215928710665553,
+      "seconds": 0.2707168439992529
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "uint8",
+      "method": "bicubic",
+      "eta": null,
+      "psnr_y": 29.82566526331018,
+      "psnr_y_raw": 29.810589937988595,
+      "outside_fraction": 0.05631857421331105,
+      "seconds": 0.009009990997583373
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "uint8",
+      "method": "lanczos3",
+      "eta": null,
+      "psnr_y": 30.088037377777113,
+      "psnr_y_raw": 30.0442890822376,
+      "outside_fraction": 0.07764522417153996,
+      "seconds": 0.011870027999975719
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "uint8",
+      "method": "canonical",
+      "eta": null,
+      "psnr_y": 30.36838137578098,
+      "psnr_y_raw": 30.136492568984856,
+      "outside_fraction": 0.13747479810637706,
+      "seconds": 0.08291508699767292
+    },
+    {
+      "dataset": "BSD100",
+      "image": "167062",
+      "family": "bicubic",
+      "scale": 3,
+      "mode": "uint8",
+      "method": "regularized",
+      "eta": 0.0025545470082158905,
+      "psnr_y": 30.368342697462474,
+      "psnr_y_raw": 30.136510972152397,
+      "outside_fraction": 0.13738123085491508,
+      "seconds": 0.08253748399874894
+    }
+  ]
+}

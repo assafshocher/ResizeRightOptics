@@ -1,0 +1,114 @@
+{
+  "source": "/Users/assafshocher/Downloads/PSF_Kernel_ScaleSpace__revise_fix_ (4).pdf",
+  "source_sha256": "d8d5e5f9b241ce57591d949817336d5eab26c7de78f4baf339697be465011fde",
+  "figures": [
+    {
+      "file": "fig_scaling.pdf",
+      "source_page": 2,
+      "source_form": "Im1",
+      "sha256": "69a556ede7bac01aa791234f36f2f28fbd9dcdceb5cc083d13a81dadfe31d174"
+    },
+    {
+      "file": "fig_sets1d.pdf",
+      "source_page": 5,
+      "source_form": "Im4",
+      "sha256": "68ba888c3b65330d8970e4f3500003399dac6b9935d0a7ce54672675dda0d213"
+    },
+    {
+      "file": "fig_consistency_combined.pdf",
+      "source_page": 6,
+      "source_form": "Im5",
+      "sha256": "7826d540eb20ec14ac23658f06312ea6057560d61a36634dc360469dbe487175"
+    },
+    {
+      "file": "fig_rigid.pdf",
+      "source_page": 6,
+      "source_form": "Im6",
+      "sha256": "e8108b5be19a2badc64d7d0edefca44fdfed42349788917f21799975973bc1a5"
+    },
+    {
+      "file": "library_path_audit.pdf",
+      "source_page": 7,
+      "source_form": "Im7",
+      "sha256": "6ba709ad12776d93d564e1cdb1a552ad1e7e2d0219e380d31893080bb4bdd743"
+    },
+    {
+      "file": "fig_physsim_col.pdf",
+      "source_page": 8,
+      "source_form": "Im10",
+      "sha256": "46e06db640472963e60ee28ec1d696a433321bec2762a6a4ff1272df742357e1"
+    },
+    {
+      "file": "fig_zssr.pdf",
+      "source_page": 8,
+      "source_form": "Im8",
+      "sha256": "7e4b579b7fb4580efeebebd35b2fe3d9a7e41101577834accd0c024b9863f16d"
+    },
+    {
+      "file": "fig_hpatches_unit_down_up.pdf",
+      "source_page": 8,
+      "source_form": "Im9",
+      "sha256": "21ceb75c120508e8e3b6ddd77601e0f96d1cdd32a81bd939675ffb9948f080a9"
+    },
+    {
+      "file": "projected_grid_tutorial.pdf",
+      "source_page": 12,
+      "source_form": "Im11",
+      "sha256": "97c853f1a448d57d5a606d185e9dec4a1cf93386ba4a40d56ea9ae51cbd25f7b"
+    },
+    {
+      "file": "fig_chain.pdf",
+      "source_page": 22,
+      "source_form": "Im12",
+      "sha256": "76da50aaea19118796eca8ad343c526ff59d930e7d1df203922b50eb70879156"
+    },
+    {
+      "file": "fig_cycle_airy.pdf",
+      "source_page": 22,
+      "source_form": "Im13",
+      "sha256": "933ee451b46c12c4f02f38fb293496e43972c6aa175599a565b8c8be62e801a3"
+    },
+    {
+      "file": "fig_cycle_bilinear.pdf",
+      "source_page": 22,
+      "source_form": "Im14",
+      "sha256": "97ede9eebab2aefad69043855e518eeada9357e611e2bb14d261ad18e5eab67c"
+    },
+    {
+      "file": "fig_cycle_lanczos3.pdf",
+      "source_page": 22,
+      "source_form": "Im15",
+      "sha256": "56faffb8edd9b3284dea5aeb0e883cc53b0773d9d09ce85f0449848238ade506"
+    },
+    {
+      "file": "fig_prelim.pdf",
+      "source_page": 25,
+      "source_form": "Im18",
+      "sha256": "c6fdf4bab6ba755cf86ec8d09d71cfaf756c0dc0663f3928a308da7b35f0cbeb"
+    },
+    {
+      "file": "fig_set.pdf",
+      "source_page": 25,
+      "source_form": "Im19",
+      "sha256": "c047841f189869dab0d86dde6e1a1711b3fd29f61bfdbe8d198e409397411a42"
+    },
+    {
+      "file": "fig_endpoints.pdf",
+      "source_page": 26,
+      "source_form": "Im20",
+      "sha256": "07504e4ebddab5e83130ccb7801d69ed0d947cb4557621a3f35eb2cbf6b1beb2"
+    },
+    {
+      "file": "fig_cascade.pdf",
+      "source_page": 26,
+      "source_form": "Im21",
+      "sha256": "21f27b307e95214b368155301ff061271d9b3e5b15d0b8e2551bc34bba260d67"
+    },
+    {
+      "file": "fig_zssr_regular_bicubic_appendix.pdf",
+      "source_page": 26,
+      "source_form": "Im22",
+      "sha256": "0d89ed71ccc9be8d4cc5ae2adca1ecbd91390f63bab5e3f2cd218213a3eb9d03"
+    }
+  ]
+}

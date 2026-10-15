@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scales": [
+    3
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "records": 200,
+  "unique_model_prediction_pairs": 195,
+  "max_recomputed_psnr_difference_db": 7.105427357601002e-15,
+  "source_results_sha256": {
+    "runs/set5_x3_m1_10/baby_seed0": "0e57ba5394b50c99bb5fd32c3db85cca570b73efe6d19f519fbafcfadab0f79b",
+    "runs/set5_x3_m1_10/bird_seed0": "1320e9ff00ca7784f4026e9f9f3f99c6b4933a386e581398a3100ea11349b065",
+    "runs/set5_x3_m1_10/butterfly_seed0": "ebdcc541de4e46b58f0abf3b2e961db535a29a17a9900a1c6f13dfb05827379e",
+    "runs/set5_x3_m1_10/head_seed0": "a073912791bd23cca127c501a9184c7edaa82e9e08ca015fda2e9a9e6606fa60",
+    "runs/set5_x3_m1_10/woman_seed0": "71f039c1c55b4477efff680ca7d166cccfbb31c402c4f15304e5532b4a10577c"
+  }
+}

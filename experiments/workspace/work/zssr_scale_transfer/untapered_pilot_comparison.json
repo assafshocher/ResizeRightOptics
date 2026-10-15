@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "image": "baby",
+  "scale": 2,
+  "models": 10,
+  "rows": [
+    {
+      "m": 1,
+      "untapered": 38.26043542576911,
+      "aa": 38.50510817767555,
+      "tapered": 38.11294936291558,
+      "failed_extension": 38.50510817767555,
+      "untapered_minus_aa": -0.24467275190644244,
+      "untapered_minus_tapered": 0.14748606285353105
+    },
+    {
+      "m": 2,
+      "untapered": 38.28312188035059,
+      "aa": 38.482515759733225,
+      "tapered": 37.9590161136322,
+      "failed_extension": 36.54434539671962,
+      "untapered_minus_aa": -0.1993938793826331,
+      "untapered_minus_tapered": 0.32410576671838953
+    },
+    {
+      "m": 3,
+      "untapered": 38.02407214382927,
+      "aa": 37.88340776601387,
+      "tapered": 37.929289342328055,
+      "failed_extension": 34.37993476274543,
+      "untapered_minus_aa": 0.14066437781540486,
+      "untapered_minus_tapered": 0.09478280150121776
+    },
+    {
+      "m": 4,
+      "untapered": 37.674816805627735,
+      "aa": 36.984327949387946,
+      "tapered": 37.68777592406148,
+      "failed_extension": 34.71369727084128,
+      "untapered_minus_aa": 0.6904888562397886,
+      "untapered_minus_tapered": -0.012959118433741423
+    },
+    {
+      "m": 5,
+      "untapered": 37.46981053853848,
+      "aa": 36.133999319067904,
+      "tapered": 37.438930123587824,
+      "failed_extension": 33.7103504970954,
+      "untapered_minus_aa": 1.3358112194705782,
+      "untapered_minus_tapered": 0.03088041495065852
+    },
+    {
+      "m": 6,
+      "untapered": 36.43419426418903,
+      "aa": 34.57500381263438,
+      "tapered": 37.22190445898142,
+      "failed_extension": 32.76131670795288,
+      "untapered_minus_aa": 1.8591904515546531,
+      "untapered_minus_tapered": -0.787710194792389
+    },
+    {
+      "m": 7,
+      "untapered": 35.87746232015338,
+      "aa": 32.88548596858786,
+      "tapered": 37.0674904566134,
+      "failed_extension": 31.917311443224822,
+      "untapered_minus_aa": 2.991976351565519,
+      "untapered_minus_tapered": -1.1900281364600218
+    },
+    {
+      "m": 8,
+      "untapered": 35.48707683291046,
+      "aa": 31.61203624013781,
+      "tapered": 36.5062894543222,
+      "failed_extension": 31.1852159704922,
+      "untapered_minus_aa": 3.875040592772649,
+      "untapered_minus_tapered": -1.0192126214117394
+    },
+    {
+      "m": 9,
+      "untapered": 35.14866713405026,
+      "aa": 31.16230770523549,
+      "tapered": 36.837701654989424,
+      "failed_extension": 30.556412977490268,
+      "untapered_minus_aa": 3.9863594288147652,
+      "untapered_minus_tapered": -1.6890345209391668
+    },
+    {
+      "m": 10,
+      "untapered": 34.420880747794335,
+      "aa": 30.36532137038113,
+      "tapered": 36.10908399434601,
+      "failed_extension": 28.98980811034701,
+      "untapered_minus_aa": 4.0555593774132035,
+      "untapered_minus_tapered": -1.688203246551673
+    }
+  ],
+  "baseline": 37.110885909942155,
+  "max_recomputed_psnr_difference_db": 7.105427357601002e-15,
+  "qualification": "One-image fixed pilot, not Set5 mean. No taper or ridge; hard output-Nyquist integration and finite spatial support remain."
+}

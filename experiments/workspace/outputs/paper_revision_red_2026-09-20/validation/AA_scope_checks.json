@@ -1,0 +1,58 @@
+[
+  {
+    "input": "random",
+    "kernel": "box",
+    "max_absolute_difference": 1.1102230246251565e-16,
+    "relative_chain_RMSE": 8.84168201965372e-17,
+    "continuous_diagnostic": 0.09968368413908624
+  },
+  {
+    "input": "random",
+    "kernel": "linear",
+    "max_absolute_difference": 0.1421205905958755,
+    "relative_chain_RMSE": 0.12628298274414168,
+    "continuous_diagnostic": 0.18943053059463122
+  },
+  {
+    "input": "random",
+    "kernel": "cubic",
+    "max_absolute_difference": 0.04483328757165045,
+    "relative_chain_RMSE": 0.03874297241933434,
+    "continuous_diagnostic": 0.06098050896299134
+  },
+  {
+    "input": "random",
+    "kernel": "lanczos3",
+    "max_absolute_difference": 0.008446100373758925,
+    "relative_chain_RMSE": 0.007036172994565783,
+    "continuous_diagnostic": -0.008432401732448414
+  },
+  {
+    "input": "impulse",
+    "kernel": "box",
+    "max_absolute_difference": 0.0,
+    "relative_chain_RMSE": 0.0,
+    "continuous_diagnostic": 0.09968368413908624
+  },
+  {
+    "input": "impulse",
+    "kernel": "linear",
+    "max_absolute_difference": 0.0,
+    "relative_chain_RMSE": 0.0,
+    "continuous_diagnostic": 0.18943053059463122
+  },
+  {
+    "input": "impulse",
+    "kernel": "cubic",
+    "max_absolute_difference": 0.004119873046875,
+    "relative_chain_RMSE": 0.027132412560796463,
+    "continuous_diagnostic": 0.06098050896299134
+  },
+  {
+    "input": "impulse",
+    "kernel": "lanczos3",
+    "max_absolute_difference": 0.0016766157889933145,
+    "relative_chain_RMSE": 0.00946251135180191,
+    "continuous_diagnostic": -0.008432401732448414
+  }
+]

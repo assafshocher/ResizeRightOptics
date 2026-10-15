@@ -1,0 +1,9 @@
+{
+  "ordinary_reflect_max_error": 0.0,
+  "large_reflect_max_error": 0.0,
+  "x3_nondivisible_grid_composition_error": 9.947598300641403e-14,
+  "CPU_weights_vs_GPU_RR_max_error": 3.415346145629883e-05,
+  "x3_fractional_GPU_RR_max_error": 9.5367431640625e-07,
+  "initial_residual_m1_vs_bicubic_chain_error": 0.0,
+  "initial_residual_m5_vs_bicubic_chain_error": 0.0
+}

@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "untapered_set5_x2_comparison.json": "4b5512c0ba61cbaec94b42f9ee2e809ec6fd7846f1f363e0faccef9765fb4f97",
+    "untapered_set5_x3_comparison.json": "90b448887bc135c340cc02b39b54a16d19fa2cf22c2428461e1a6a3d05533614",
+    "untapered_set5_x4_comparison.json": "c5686ed5903285377ec2a372196bba98c8b6009f0bc640eedac0a26c8201514a"
+  },
+  "figure_inches": [
+    7.0,
+    1.7
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seed": 0,
+  "panel_ylim": {
+    "x2": [
+      16.212951559835233,
+      37.588342093956584
+    ],
+    "x3": [
+      16.537777760546383,
+      33.05820461609852
+    ],
+    "x4": [
+      16.95631440885829,
+      30.108157177378015
+    ]
+  },
+  "independent_y_axes": true,
+  "data_modified": false,
+  "qualification": "Latest untapered realization; hard retained-band integration; approximate ordinary-bicubic anchor. Grid arm modifies downsampling only."
+}

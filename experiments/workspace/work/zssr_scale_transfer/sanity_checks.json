@@ -1,0 +1,45 @@
+{
+  "online_crop_indexing_max_error": 0.0,
+  "crop_target_matches_original": 0.0,
+  "down_up_coordinate_max_error": 8.526512829121202e-14,
+  "gpu_cached_vs_unmodified_RR": [
+    {
+      "factor": 2,
+      "method": "bicubic_aa",
+      "max_error": 2.384185791015625e-07
+    },
+    {
+      "factor": 2,
+      "method": "bicubic_noaa",
+      "max_error": 2.980232238769531e-07
+    },
+    {
+      "factor": 2,
+      "method": "consistent",
+      "max_error": 9.5367431640625e-07
+    },
+    {
+      "factor": 1.148698354997035,
+      "method": "bicubic_aa",
+      "max_error": 8.940696716308594e-06
+    },
+    {
+      "factor": 1.148698354997035,
+      "method": "bicubic_noaa",
+      "max_error": 7.748603820800781e-06
+    },
+    {
+      "factor": 1.148698354997035,
+      "method": "consistent",
+      "max_error": 1.1324882507324219e-05
+    }
+  ],
+  "training_vs_inference_same_patch_max_error": 0.0,
+  "zero_weights_output_max_proves_no_skip": 0.0,
+  "identity_psnr": {
+    "psnr_rgb": 300.0,
+    "psnr_y": 300.0,
+    "psnr_rgb_unclipped": 300.0,
+    "psnr_y_unclipped": 300.0
+  }
+}

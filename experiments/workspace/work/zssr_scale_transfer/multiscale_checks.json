@@ -1,0 +1,533 @@
+{
+  "uses_hr_pixels": false,
+  "checks": [
+    {
+      "scale": 2,
+      "image": "baby",
+      "lr_shape": [
+        256,
+        256
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 2,
+      "image": "bird",
+      "lr_shape": [
+        144,
+        144
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 2,
+      "image": "butterfly",
+      "lr_shape": [
+        128,
+        128
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 2,
+      "image": "head",
+      "lr_shape": [
+        140,
+        140
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 2,
+      "image": "woman",
+      "lr_shape": [
+        172,
+        114
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 2,
+      "m": 1,
+      "father_shape": [
+        220,
+        220
+      ],
+      "torch_son_shape": [
+        110,
+        110
+      ],
+      "native_grid_shift_in_father_pixels": 0.0
+    },
+    {
+      "scale": 2,
+      "m": 2,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        154,
+        154
+      ],
+      "native_grid_shift_in_father_pixels": -0.10555569727166869
+    },
+    {
+      "scale": 2,
+      "m": 3,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        173,
+        173
+      ],
+      "native_grid_shift_in_father_pixels": -0.01682918409346712
+    },
+    {
+      "scale": 2,
+      "m": 4,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        183,
+        183
+      ],
+      "native_grid_shift_in_father_pixels": -0.18754897725102637
+    },
+    {
+      "scale": 2,
+      "m": 5,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        189,
+        189
+      ],
+      "native_grid_shift_in_father_pixels": -0.4480054527801798
+    },
+    {
+      "scale": 2,
+      "m": 6,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        194,
+        194
+      ],
+      "native_grid_shift_in_father_pixels": -0.12118131399081733
+    },
+    {
+      "scale": 2,
+      "m": 7,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        197,
+        197
+      ],
+      "native_grid_shift_in_father_pixels": -0.24718290312949875
+    },
+    {
+      "scale": 2,
+      "m": 8,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        199,
+        199
+      ],
+      "native_grid_shift_in_father_pixels": -0.4944805998068631
+    },
+    {
+      "scale": 2,
+      "m": 9,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        201,
+        201
+      ],
+      "native_grid_shift_in_father_pixels": -0.4539962413232388
+    },
+    {
+      "scale": 2,
+      "m": 10,
+      "father_shape": [
+        218,
+        218
+      ],
+      "torch_son_shape": [
+        203,
+        203
+      ],
+      "native_grid_shift_in_father_pixels": -0.21499355256624142
+    },
+    {
+      "scale": 3,
+      "image": "baby",
+      "lr_shape": [
+        171,
+        171
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 3,
+      "image": "bird",
+      "lr_shape": [
+        96,
+        96
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 3,
+      "image": "butterfly",
+      "lr_shape": [
+        86,
+        86
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 3,
+      "image": "head",
+      "lr_shape": [
+        94,
+        94
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 3,
+      "image": "woman",
+      "lr_shape": [
+        115,
+        76
+      ],
+      "loss_crop": 60
+    },
+    {
+      "scale": 3,
+      "m": 1,
+      "father_shape": [
+        288,
+        288
+      ],
+      "torch_son_shape": [
+        96,
+        96
+      ],
+      "native_grid_shift_in_father_pixels": 0.0
+    },
+    {
+      "scale": 3,
+      "m": 2,
+      "father_shape": [
+        284,
+        284
+      ],
+      "torch_son_shape": [
+        163,
+        163
+      ],
+      "native_grid_shift_in_father_pixels": -0.8378591831365156
+    },
+    {
+      "scale": 3,
+      "m": 3,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        195,
+        195
+      ],
+      "native_grid_shift_in_father_pixels": -0.38066689502770146
+    },
+    {
+      "scale": 3,
+      "m": 4,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        214,
+        214
+      ],
+      "native_grid_shift_in_father_pixels": -0.1800806140833231
+    },
+    {
+      "scale": 3,
+      "m": 5,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        226,
+        226
+      ],
+      "native_grid_shift_in_father_pixels": -0.232403823446532
+    },
+    {
+      "scale": 3,
+      "m": 6,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        234,
+        234
+      ],
+      "native_grid_shift_in_father_pixels": -0.4903762444076847
+    },
+    {
+      "scale": 3,
+      "m": 7,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        241,
+        241
+      ],
+      "native_grid_shift_in_father_pixels": -0.023337062578235646
+    },
+    {
+      "scale": 3,
+      "m": 8,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        245,
+        245
+      ],
+      "native_grid_shift_in_father_pixels": -0.4676704211150593
+    },
+    {
+      "scale": 3,
+      "m": 9,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        249,
+        249
+      ],
+      "native_grid_shift_in_father_pixels": -0.33604499323575965
+    },
+    {
+      "scale": 3,
+      "m": 10,
+      "father_shape": [
+        282,
+        282
+      ],
+      "torch_son_shape": [
+        252,
+        252
+      ],
+      "native_grid_shift_in_father_pixels": -0.36848007172804387
+    },
+    {
+      "scale": 4,
+      "image": "baby",
+      "lr_shape": [
+        128,
+        128
+      ],
+      "loss_crop": 64
+    },
+    {
+      "scale": 4,
+      "image": "bird",
+      "lr_shape": [
+        72,
+        72
+      ],
+      "loss_crop": 56
+    },
+    {
+      "scale": 4,
+      "image": "butterfly",
+      "lr_shape": [
+        64,
+        64
+      ],
+      "loss_crop": 48
+    },
+    {
+      "scale": 4,
+      "image": "head",
+      "lr_shape": [
+        70,
+        70
+      ],
+      "loss_crop": 54
+    },
+    {
+      "scale": 4,
+      "image": "woman",
+      "lr_shape": [
+        86,
+        57
+      ],
+      "loss_crop": 41
+    },
+    {
+      "scale": 4,
+      "m": 1,
+      "father_shape": [
+        356,
+        356
+      ],
+      "torch_son_shape": [
+        89,
+        89
+      ],
+      "native_grid_shift_in_father_pixels": 0.0
+    },
+    {
+      "scale": 4,
+      "m": 2,
+      "father_shape": [
+        348,
+        348
+      ],
+      "torch_son_shape": [
+        174,
+        174
+      ],
+      "native_grid_shift_in_father_pixels": 0.0
+    },
+    {
+      "scale": 4,
+      "m": 3,
+      "father_shape": [
+        348,
+        348
+      ],
+      "torch_son_shape": [
+        219,
+        219
+      ],
+      "native_grid_shift_in_father_pixels": -0.17958480948217925
+    },
+    {
+      "scale": 4,
+      "m": 4,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        244,
+        244
+      ],
+      "native_grid_shift_in_father_pixels": -0.46594539048240335
+    },
+    {
+      "scale": 4,
+      "m": 5,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        262,
+        262
+      ],
+      "native_grid_shift_in_father_pixels": -0.14446368875084659
+    },
+    {
+      "scale": 4,
+      "m": 6,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        274,
+        274
+      ],
+      "native_grid_shift_in_father_pixels": -0.39081616440236644
+    },
+    {
+      "scale": 4,
+      "m": 7,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        283,
+        283
+      ],
+      "native_grid_shift_in_father_pixels": -0.5095679300667371
+    },
+    {
+      "scale": 4,
+      "m": 8,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        290,
+        290
+      ],
+      "native_grid_shift_in_father_pixels": -0.5649683246054451
+    },
+    {
+      "scale": 4,
+      "m": 9,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        296,
+        296
+      ],
+      "native_grid_shift_in_father_pixels": -0.3537021427347611
+    },
+    {
+      "scale": 4,
+      "m": 10,
+      "father_shape": [
+        346,
+        346
+      ],
+      "torch_son_shape": [
+        301,
+        301
+      ],
+      "native_grid_shift_in_father_pixels": -0.1208975729462054
+    }
+  ],
+  "max_grid_composition_error": 2.8421709430404007e-13,
+  "all_methods_crop_coordinate_sha256": "3879e7ef724a6123f858ff85667cca6c628e565b99314568670da6d63a080add",
+  "passed": true
+}

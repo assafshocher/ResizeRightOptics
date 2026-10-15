@@ -1,0 +1,698 @@
+{
+  "protocol": {
+    "dataset": "<capture-dataset>",
+    "scenes": [
+      "00007",
+      "00022",
+      "00024",
+      "00038",
+      "00039",
+      "00041",
+      "00053",
+      "00062",
+      "00070",
+      "00077",
+      "00085",
+      "00090",
+      "00091",
+      "00098",
+      "00101",
+      "00127",
+      "00131",
+      "00134",
+      "00135",
+      "00143",
+      "00153",
+      "00158",
+      "00163",
+      "00167",
+      "00169",
+      "00174",
+      "00179",
+      "00182",
+      "00186",
+      "00189",
+      "00192",
+      "00226",
+      "00232",
+      "00245",
+      "00247",
+      "00253",
+      "00261",
+      "00286",
+      "00288",
+      "00293",
+      "00323",
+      "00332",
+      "00341",
+      "00345",
+      "00349",
+      "00352",
+      "00360",
+      "00366",
+      "00370",
+      "00434"
+    ],
+    "source_file": "00001.JPG",
+    "source_size": 2047,
+    "target_size": 255,
+    "evaluation_size": 224,
+    "paths": {
+      "1": [
+        2047,
+        255
+      ],
+      "2": [
+        2047,
+        723,
+        255
+      ],
+      "3": [
+        2047,
+        1023,
+        511,
+        255
+      ],
+      "4": [
+        2047,
+        1217,
+        723,
+        429,
+        255
+      ],
+      "5": [
+        2047,
+        1349,
+        889,
+        587,
+        387,
+        255
+      ]
+    },
+    "float_pipeline": true,
+    "boundary_handling": "evaluate center 224x224 of 255x255",
+    "models": [
+      "ResNet-18",
+      "MobileNetV3-Small"
+    ],
+    "device": "mps"
+  },
+  "versions": {
+    "python": "3.9.6 (default, Feb  3 2024, 15:58:27) \n[Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.0.2",
+    "Pillow": "11.3.0",
+    "OpenCV": "5.0.0",
+    "JAX": "0.4.30",
+    "PyTorch": "2.8.0",
+    "torchvision": "0.23.0",
+    "scikit-image": "0.24.0"
+  },
+  "method_configurations": {
+    "Pillow bilinear": "Image.resize, Resampling.BILINEAR, float32 per channel",
+    "Pillow bicubic": "Image.resize, Resampling.BICUBIC, float32 per channel",
+    "Pillow Lanczos": "Image.resize, Resampling.LANCZOS, float32 per channel",
+    "OpenCV area": "cv2.resize, INTER_AREA, float32",
+    "OpenCV bicubic": "cv2.resize, INTER_CUBIC, float32",
+    "OpenCV Lanczos-4": "cv2.resize, INTER_LANCZOS4, float32",
+    "PyTorch bilinear AA": "torch.nn.functional.interpolate, bilinear, antialias=True, align_corners=False",
+    "PyTorch bicubic AA": "torch.nn.functional.interpolate, bicubic, antialias=True, align_corners=False",
+    "scikit-image linear AA": "skimage.transform.resize, order=1, anti_aliasing=True, reflect",
+    "scikit-image cubic AA": "skimage.transform.resize, order=3, anti_aliasing=True, reflect",
+    "JAX linear AA": "jax.image.resize, linear, antialias=True",
+    "JAX Lanczos-3 AA": "jax.image.resize, lanczos3, antialias=True",
+    "camera-consistent Gaussian": "centered Fourier realization, Gaussian camera sigma=0.75 input pixels",
+    "consistent clear pupil": "normalized clear circular pupil OTF, 401 pupil samples, cutoff 0.900pi, square pixel box, centered Fourier realization",
+    "consistent astigmatic pupil": "normalized astigmatic circular pupil OTF, phase 0.250 waves (ux^2-uy^2), 401 pupil samples, cutoff 0.900pi, square pixel box, centered Fourier realization"
+  },
+  "grid_audit": [
+    {
+      "method": "consistent clear pupil",
+      "rms_source_pixels": 5.3268242481863126e-05,
+      "max_source_pixels": 0.00012195110321044922
+    },
+    {
+      "method": "consistent astigmatic pupil",
+      "rms_source_pixels": 5.358560156309977e-05,
+      "max_source_pixels": 0.00012195110321044922
+    }
+  ],
+  "aggregate": {
+    "image": {
+      "consistent clear pupil|2": {
+        "nrmse": {
+          "mean": 2.6347344382450088e-08,
+          "ci95": [
+            2.4398763234994517e-08,
+            2.832310281597792e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 154.4510472964442,
+          "ci95": [
+            153.7014482812426,
+            155.21998267848153
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999952316284,
+          "ci95": [
+            0.9999999773502349,
+            1.000000011920929
+          ]
+        }
+      },
+      "consistent clear pupil|3": {
+        "nrmse": {
+          "mean": 3.266320886724262e-08,
+          "ci95": [
+            2.986149288836097e-08,
+            3.5637228974298877e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 152.67984373083672,
+          "ci95": [
+            151.89906044206143,
+            153.5557992998204
+          ]
+        },
+        "ssim": {
+          "mean": 1.0000000202655792,
+          "ci95": [
+            1.0000000059604646,
+            1.0000000345706939
+          ]
+        }
+      },
+      "consistent clear pupil|4": {
+        "nrmse": {
+          "mean": 3.6913022674573454e-08,
+          "ci95": [
+            3.387966444569966e-08,
+            4.0043433359255206e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 151.58616599744403,
+          "ci95": [
+            150.83558557315462,
+            152.341611867357
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999916553497,
+          "ci95": [
+            0.9999999725818634,
+            1.0000000095367432
+          ]
+        }
+      },
+      "consistent clear pupil|5": {
+        "nrmse": {
+          "mean": 4.040325337433032e-08,
+          "ci95": [
+            3.720546420011689e-08,
+            4.372513916247613e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 150.8024056543806,
+          "ci95": [
+            150.07945534006333,
+            151.5828169588184
+          ]
+        },
+        "ssim": {
+          "mean": 1.000000021457672,
+          "ci95": [
+            1.0,
+            1.0000000452995301
+          ]
+        }
+      },
+      "consistent astigmatic pupil|2": {
+        "nrmse": {
+          "mean": 2.6565149730500137e-08,
+          "ci95": [
+            2.4541209610247254e-08,
+            2.867216488885719e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 154.54816278948275,
+          "ci95": [
+            153.7963104474161,
+            155.33845645798024
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999940395355,
+          "ci95": [
+            0.9999999809265137,
+            1.0000000059604646
+          ]
+        }
+      },
+      "consistent astigmatic pupil|3": {
+        "nrmse": {
+          "mean": 3.309315033741028e-08,
+          "ci95": [
+            3.001752057589443e-08,
+            3.643406365253856e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 152.740863928679,
+          "ci95": [
+            151.9304412897668,
+            153.5790446690576
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999952316284,
+          "ci95": [
+            0.9999999809265137,
+            1.0000000083446503
+          ]
+        }
+      },
+      "consistent astigmatic pupil|4": {
+        "nrmse": {
+          "mean": 3.744177454362923e-08,
+          "ci95": [
+            3.396460132939648e-08,
+            4.0965653909876455e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 151.6855939893502,
+          "ci95": [
+            150.88067829321773,
+            152.52716252658968
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999964237213,
+          "ci95": [
+            0.9999999821186065,
+            1.000000010728836
+          ]
+        }
+      },
+      "consistent astigmatic pupil|5": {
+        "nrmse": {
+          "mean": 4.010911210998806e-08,
+          "ci95": [
+            3.6817451076972894e-08,
+            4.3559929607777495e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 151.0041277678767,
+          "ci95": [
+            150.31088594516902,
+            151.7363762261303
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999999868869781,
+          "ci95": [
+            0.9999999713897705,
+            1.0000000011920929
+          ]
+        }
+      }
+    },
+    "models": {
+      "consistent clear pupil|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 3.7589389823011745e-10,
+          "ci95": [
+            -3.5026116441683186e-09,
+            4.385011635243962e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -1.0728836059570312e-08,
+          "ci95": [
+            -3.218650817871094e-08,
+            1.1920928955078126e-08
+          ]
+        }
+      },
+      "consistent clear pupil|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 3.3239234742410416e-09,
+          "ci95": [
+            2.8070715374362013e-10,
+            6.613028799007381e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -5.960464477539063e-09,
+          "ci95": [
+            -2.86102294921875e-08,
+            1.6689300537109377e-08
+          ]
+        }
+      },
+      "consistent clear pupil|3|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.161739455746158e-09,
+          "ci95": [
+            -4.666792654650642e-09,
+            2.4352171614783198e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -1.0728836059570312e-08,
+          "ci95": [
+            -3.218650817871094e-08,
+            9.5367431640625e-09
+          ]
+        }
+      },
+      "consistent clear pupil|3|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 1.7888038339464175e-09,
+          "ci95": [
+            -1.5183700958765198e-09,
+            5.273124389137961e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -3.218650817871094e-08,
+          "ci95": [
+            -5.7220458984375e-08,
+            -5.960464477539063e-09
+          ]
+        }
+      },
+      "consistent clear pupil|4|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 6.973318589231781e-10,
+          "ci95": [
+            -3.1533942169148506e-09,
+            4.356245477232789e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -1.0728836059570312e-08,
+          "ci95": [
+            -3.218650817871094e-08,
+            1.1920928955078126e-08
+          ]
+        }
+      },
+      "consistent clear pupil|4|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.5270384912113856e-09,
+          "ci95": [
+            -5.400727006610318e-09,
+            2.3365941561603873e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -9.5367431640625e-09,
+          "ci95": [
+            -2.7447938919067374e-08,
+            8.344650268554688e-09
+          ]
+        }
+      },
+      "consistent clear pupil|5|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.3992328284917477e-09,
+          "ci95": [
+            -5.2726186074714124e-09,
+            2.5450292296391713e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -1.1920928955078125e-09,
+          "ci95": [
+            -2.384185791015625e-08,
+            2.0265579223632814e-08
+          ]
+        }
+      },
+      "consistent clear pupil|5|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 2.4856496683156592e-09,
+          "ci95": [
+            -1.1300363442767746e-09,
+            6.181266323013186e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0,
+          "ci95": [
+            -1.9073486328125e-08,
+            1.7881393432617187e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -3.049751768902098e-09,
+          "ci95": [
+            -6.2357125827361415e-09,
+            1.3937362125515523e-10
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 1.1920928955078125e-09,
+          "ci95": [
+            -2.2649765014648438e-08,
+            2.503395080566406e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.3927740560859547e-09,
+          "ci95": [
+            -4.740930551694333e-09,
+            2.060128231562428e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 4.76837158203125e-09,
+          "ci95": [
+            -1.5497207641601563e-08,
+            2.503395080566406e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|3|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.1430283786140193e-09,
+          "ci95": [
+            -3.841132128257207e-09,
+            1.6847805802688847e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -5.960464477539063e-09,
+          "ci95": [
+            -2.6226043701171875e-08,
+            1.430511474609375e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|3|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -2.8364018689330807e-10,
+          "ci95": [
+            -3.960131531144384e-09,
+            3.472931744408214e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 1.1920928955078125e-09,
+          "ci95": [
+            -2.2649765014648438e-08,
+            2.384185791015625e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|4|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -7.91584753301322e-10,
+          "ci95": [
+            -4.2792174386185875e-09,
+            2.492257474617787e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -9.5367431640625e-09,
+          "ci95": [
+            -3.0994415283203126e-08,
+            1.1920928955078126e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|4|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 2.8538572333092206e-09,
+          "ci95": [
+            -8.90279438836572e-10,
+            6.5235089246468075e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 9.5367431640625e-09,
+          "ci95": [
+            -9.5367431640625e-09,
+            2.741813659667969e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|5|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.435057406240503e-11,
+          "ci95": [
+            -4.177819715733833e-09,
+            4.1763318172627345e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -5.960464477539063e-09,
+          "ci95": [
+            -2.86102294921875e-08,
+            1.5527009963988825e-08
+          ]
+        }
+      },
+      "consistent astigmatic pupil|5|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -1.0603248234986041e-09,
+          "ci95": [
+            -4.282229414176442e-09,
+            2.117786524369333e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": -9.5367431640625e-09,
+          "ci95": [
+            -3.0994415283203126e-08,
+            1.1920928955078126e-08
+          ]
+        }
+      }
+    }
+  }
+}

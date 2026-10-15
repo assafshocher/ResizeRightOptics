@@ -1,0 +1,194 @@
+[
+  {
+    "scale": 2,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      34,
+      30
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 1.1657341758564144e-15
+  },
+  {
+    "scale": 2,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      33,
+      28
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 8.881784197001252e-16
+  },
+  {
+    "scale": 2,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      34,
+      30
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 4.6629367034256575e-15
+  },
+  {
+    "scale": 2,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      33,
+      28
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 2.9976021664879227e-15
+  },
+  {
+    "scale": 3,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      51,
+      45
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 3.469446951953614e-15
+  },
+  {
+    "scale": 3,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      50,
+      43
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 3.219646771412954e-15
+  },
+  {
+    "scale": 3,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      51,
+      45
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 1.0547118733938987e-14
+  },
+  {
+    "scale": 3,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      50,
+      43
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 1.2926417916621619e-14
+  },
+  {
+    "scale": 4,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      68,
+      60
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 1.27675647831893e-15
+  },
+  {
+    "scale": 4,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      67,
+      58
+    ],
+    "frequencies": [
+      3,
+      4
+    ],
+    "max_error": 1.3322676295501878e-15
+  },
+  {
+    "scale": 4,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      68,
+      60
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 4.829470157119431e-15
+  },
+  {
+    "scale": 4,
+    "source": [
+      17,
+      15
+    ],
+    "target": [
+      67,
+      58
+    ],
+    "frequencies": [
+      16,
+      14
+    ],
+    "max_error": 4.496403249731884e-15
+  }
+]

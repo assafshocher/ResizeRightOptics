@@ -1,0 +1,58 @@
+{
+  "started_utc": "2026-09-17T18:19:38.851918+00:00",
+  "status": "training",
+  "completed": [
+    "prepare_x4",
+    "audit_x2",
+    "audit_x3",
+    "audit_x4",
+    "synthetic_checks",
+    "set5_x2_m6_10/baby",
+    "set5_x2_torch_m1_10/baby",
+    "set5_x2_m6_10/bird",
+    "set5_x2_torch_m1_10/bird",
+    "set5_x2_m6_10/butterfly",
+    "set5_x2_torch_m1_10/butterfly",
+    "set5_x2_m6_10/head",
+    "set5_x2_torch_m1_10/head",
+    "set5_x2_m6_10/woman",
+    "set5_x2_torch_m1_10/woman",
+    "plots_x2",
+    "set5_x3_m1_10/baby"
+  ],
+  "scales": [
+    2,
+    3,
+    4
+  ],
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "methods": [
+    "consistent",
+    "aa_bandlimited",
+    "aa",
+    "torch_aa"
+  ],
+  "kernel": "7.0.0-30-generic",
+  "boot_id": "76156b9d-4242-407e-9da1-1359a1a4b920",
+  "reused": "first_image_residual_v1: x2 m1..5, consistent/aa_bandlimited/aa",
+  "protocol": "MULTISCALE_PROTOCOL.md",
+  "current": "set5_x3_m1_10/bird"
+}

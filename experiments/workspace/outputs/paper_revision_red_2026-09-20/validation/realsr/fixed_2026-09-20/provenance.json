@@ -1,0 +1,31 @@
+{
+  "source": "User-supplied corrected files, 2026-09-20",
+  "input_sha256": {
+    "sweep_canon.jsonl": "fdcd65f8edd9d906ee36acf79e9a69c72c9edac2c847becd06ad47806add09c2",
+    "sweep_nikon.jsonl": "92e3db55fe10109e4e6e5ed5c453ac2a67df569314fda36868489a4a1ab2fc81",
+    "sweep_fixed.py": "c70e262c748bc08a7e63ab32e813f09c44f5b5280a3decbd276884e7f0bd0176"
+  },
+  "statistics_script_sha256": "1b773591e769d6015e1bb40cea1e751737fd64fbef717606354dbf445860bb4c",
+  "seed": 200920,
+  "bootstrap_draws": 100000,
+  "bootstrap_unit": "paired scene within camera",
+  "interval": "unadjusted 95% percentile interval",
+  "scene_audit": {
+    "canon": {
+      "raw_rows": 50,
+      "unique_scenes": 50,
+      "duplicates": [],
+      "missing_scenes": [],
+      "excluded_scenes": []
+    },
+    "nikon": {
+      "raw_rows": 50,
+      "unique_scenes": 50,
+      "duplicates": [],
+      "missing_scenes": [],
+      "excluded_scenes": []
+    }
+  },
+  "protocol_change": "Size-limited, disjoint, left-aligned top/bottom blocks replace opposite-corner blocks.",
+  "caveat": "The scoring block still selects ridge weight; target-pair phase and gain are used by both predictions."
+}

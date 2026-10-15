@@ -1,0 +1,38 @@
+[
+  {
+    "file": "work/zssr_scale_transfer/figures/matched_bandlimited_x2_summary.json",
+    "sha256": "a4405d8ddfe0feb3ee4d109eb55816b5de2b6044aa13c95c2fa324e1a36151e5"
+  },
+  {
+    "file": "work/zssr_scale_transfer/figures/matched_bandlimited_x3_summary.json",
+    "sha256": "d0bcf9eff25dea05bd8da97ae3c240f342bb1c4ff7ead0cc251fde975d9ded8b"
+  },
+  {
+    "file": "work/zssr_scale_transfer/figures/matched_bandlimited_x4_summary.json",
+    "sha256": "17bdbc145e63daa085be81a30875b68cd64008b7dd228dd6c28cffce6f214de7"
+  },
+  {
+    "file": "work/zssr_scale_transfer/runs/gaussian_sigma2_suite_v1/summary_x2.json",
+    "sha256": "aa1a2cf2dfeee138e3666d29ffad3d74103bef44366048fb97d9df456c2fa512"
+  },
+  {
+    "file": "work/zssr_scale_transfer/runs/gaussian_sigma2_suite_v1/summary_x3.json",
+    "sha256": "8f03ed293f115bcce77b2b256753f8162675bc5dd44a4056a48951d320daabff"
+  },
+  {
+    "file": "work/zssr_scale_transfer/runs/gaussian_sigma2_suite_v1/summary_x4.json",
+    "sha256": "e6ea28df3d84347f68edb8042a44ac531619e470dae408d48162df755ffb5fa9"
+  },
+  {
+    "file": "work/zssr_scale_transfer/untapered_set5_x2_comparison.json",
+    "sha256": "4b5512c0ba61cbaec94b42f9ee2e809ec6fd7846f1f363e0faccef9765fb4f97"
+  },
+  {
+    "file": "work/zssr_scale_transfer/untapered_set5_x3_comparison.json",
+    "sha256": "90b448887bc135c340cc02b39b54a16d19fa2cf22c2428461e1a6a3d05533614"
+  },
+  {
+    "file": "work/zssr_scale_transfer/untapered_set5_x4_comparison.json",
+    "sha256": "c5686ed5903285377ec2a372196bba98c8b6009f0bc640eedac0a26c8201514a"
+  }
+]

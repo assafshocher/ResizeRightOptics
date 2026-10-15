@@ -1,0 +1,342 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "torch": "2.14.0",
+    "torch_threads": 12,
+    "mps": true,
+    "cuda_tested": false
+  },
+  "exact_periodic_chains": [
+    {
+      "scales": [
+        0.5,
+        0.5
+      ],
+      "max_abs_error": 3.885780586188048e-16
+    },
+    {
+      "scales": [
+        0.6666666666666666,
+        0.75
+      ],
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "scales": [
+        1.5,
+        2
+      ],
+      "max_abs_error": 1.3322676295501878e-15
+    },
+    {
+      "scales": [
+        2,
+        1.5
+      ],
+      "max_abs_error": 1.1102230246251565e-15
+    },
+    {
+      "scales": [
+        1.5,
+        0.6666666666666666
+      ],
+      "max_abs_error": 7.771561172376096e-16
+    },
+    {
+      "scales": [
+        0.75,
+        1.3333333333333333
+      ],
+      "max_abs_error": 1.1102230246251565e-15
+    }
+  ],
+  "execution_paths": [
+    {
+      "scale": 0.25,
+      "numpy_polyphase_error": 1.6653345369377348e-15,
+      "torch_numpy_error": 1.582067810090848e-15
+    },
+    {
+      "scale": 0.4,
+      "numpy_polyphase_error": 2.3037127760972e-15,
+      "torch_numpy_error": 2.248201624865942e-15
+    },
+    {
+      "scale": 0.5,
+      "numpy_polyphase_error": 3.219646771412954e-15,
+      "torch_numpy_error": 3.219646771412954e-15
+    },
+    {
+      "scale": 0.6,
+      "numpy_polyphase_error": 3.3584246494910985e-15,
+      "torch_numpy_error": 3.4139358007223564e-15
+    },
+    {
+      "scale": 0.6666666666666666,
+      "numpy_polyphase_error": 2.609024107869118e-15,
+      "torch_numpy_error": 2.6645352591003757e-15
+    },
+    {
+      "scale": 0.75,
+      "numpy_polyphase_error": 7.049916206369744e-15,
+      "torch_numpy_error": 6.938893903907228e-15
+    },
+    {
+      "scale": 1,
+      "numpy_polyphase_error": 6.8833827526759706e-15,
+      "torch_numpy_error": 6.439293542825908e-15
+    },
+    {
+      "scale": 1.25,
+      "numpy_polyphase_error": 8.548717289613705e-15,
+      "torch_numpy_error": 8.43769498715119e-15
+    },
+    {
+      "scale": 1.5,
+      "numpy_polyphase_error": 2.531308496145357e-14,
+      "torch_numpy_error": 2.531308496145357e-14
+    },
+    {
+      "scale": 2,
+      "numpy_polyphase_error": 7.549516567451064e-15,
+      "torch_numpy_error": 7.105427357601002e-15
+    },
+    {
+      "scale": 3,
+      "numpy_polyphase_error": 4.196643033083092e-14,
+      "torch_numpy_error": 4.196643033083092e-14
+    }
+  ],
+  "finite_spatial_smooth_mode": [
+    {
+      "camera": "cubic anchor",
+      "support": 16,
+      "downscale_error": 0.0015791028183910205,
+      "cycle_error": 0.0018369678010043966
+    },
+    {
+      "camera": "cubic anchor",
+      "support": 32,
+      "downscale_error": 0.00047449575986491244,
+      "cycle_error": 0.0004791648296562645
+    },
+    {
+      "camera": "cubic anchor",
+      "support": 64,
+      "downscale_error": 0.00010659360108078442,
+      "cycle_error": 9.17081850096979e-05
+    },
+    {
+      "camera": "Gaussian sigma=.5",
+      "support": 16,
+      "downscale_error": 2.278042460002183e-06,
+      "cycle_error": 0.0006569511232130676
+    },
+    {
+      "camera": "Gaussian sigma=.5",
+      "support": 32,
+      "downscale_error": 3.4560149641538196e-05,
+      "cycle_error": 0.0001254972297701773
+    },
+    {
+      "camera": "Gaussian sigma=.5",
+      "support": 64,
+      "downscale_error": 2.9990262038204207e-06,
+      "cycle_error": 3.9119588677791195e-07
+    },
+    {
+      "camera": "Gaussian sigma=1",
+      "support": 16,
+      "downscale_error": 0.004510663649746727,
+      "cycle_error": 0.005613355369191275
+    },
+    {
+      "camera": "Gaussian sigma=1",
+      "support": 32,
+      "downscale_error": 0.001233761331141503,
+      "cycle_error": 0.00017117560270063503
+    },
+    {
+      "camera": "Gaussian sigma=1",
+      "support": 64,
+      "downscale_error": 0.00031589783906038615,
+      "cycle_error": 0.0002772325544286858
+    }
+  ],
+  "airy_hard_case": [
+    {
+      "support": 16,
+      "downscale_error": 0.052321418597958025,
+      "cycle_error": 0.054749346761383544,
+      "warnings": []
+    },
+    {
+      "support": 32,
+      "downscale_error": 0.04507354762189675,
+      "cycle_error": 0.0684070499197098,
+      "warnings": [
+        "Camera inverse gain exceeds 1000. Finite kernels and noise may be unstable; consider regularization and check against method='fourier'."
+      ]
+    },
+    {
+      "support": 64,
+      "downscale_error": 0.03192233266330391,
+      "cycle_error": 0.6801291096916445,
+      "warnings": [
+        "Camera inverse gain exceeds 1000. Finite kernels and noise may be unstable; consider regularization and check against method='fourier'."
+      ]
+    }
+  ],
+  "airy_periodic_cycle_error": 7.105427357601002e-15,
+  "timings_192x192_float32_scale_075": [
+    {
+      "device": "numpy",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 3.8520582020282745
+    },
+    {
+      "device": "numpy",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 1.9199082162231207
+    },
+    {
+      "device": "numpy",
+      "camera": "Gaussian sigma=.7",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 0.6800915813073516
+    },
+    {
+      "device": "numpy",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 18.696808395907283
+    },
+    {
+      "device": "numpy",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 16.464383201673627
+    },
+    {
+      "device": "numpy",
+      "camera": "cubic anchor",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 3.089066594839096
+    },
+    {
+      "device": "numpy",
+      "camera": "Airy",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 2.1515750093385577
+    },
+    {
+      "device": "cpu",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 3.6516749998554587
+    },
+    {
+      "device": "cpu",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 3.9665000047534704
+    },
+    {
+      "device": "cpu",
+      "camera": "Gaussian sigma=.7",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 0.9162249974906445
+    },
+    {
+      "device": "cpu",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 23.53905839845538
+    },
+    {
+      "device": "cpu",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 24.03838320169598
+    },
+    {
+      "device": "cpu",
+      "camera": "cubic anchor",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 10.774500016123056
+    },
+    {
+      "device": "cpu",
+      "camera": "Airy",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 4.399433406069875
+    },
+    {
+      "device": "mps",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 6.463150004856288
+    },
+    {
+      "device": "mps",
+      "camera": "Gaussian sigma=.7",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 9.7140918020159
+    },
+    {
+      "device": "mps",
+      "camera": "Gaussian sigma=.7",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 2.0287000108510256
+    },
+    {
+      "device": "mps",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": false,
+      "milliseconds": 40.74709180276841
+    },
+    {
+      "device": "mps",
+      "camera": "cubic anchor",
+      "method": "spatial",
+      "polyphase": true,
+      "milliseconds": 45.29619999229908
+    },
+    {
+      "device": "mps",
+      "camera": "cubic anchor",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 37.26135001052171
+    },
+    {
+      "device": "mps",
+      "camera": "Airy",
+      "method": "fourier",
+      "polyphase": false,
+      "milliseconds": 2.0956166088581085
+    }
+  ]
+}

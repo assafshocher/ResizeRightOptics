@@ -1,0 +1,172 @@
+{
+  "formulation": "constrained linear least squares for the inverse camera kernel",
+  "basis": "integer translates of a fixed Lanczos-4 reconstruction function",
+  "grid": "frozen low-band homography; target pixel centers mapped directly into source coordinates",
+  "constraints": [
+    "sum(g)=1",
+    "first moment x=0",
+    "first moment y=0"
+  ],
+  "best_latent_solution": {
+    "ridge": 1e-10,
+    "train_latent_rmse": 0.0034786077028754196,
+    "validation_latent_rmse": 0.0038651073147043112,
+    "coefficient_l2": 0.2670377766900928
+  },
+  "ridge_candidates": [
+    {
+      "ridge": 1e-10,
+      "train_latent_rmse": 0.0034786077028754196,
+      "validation_latent_rmse": 0.0038651073147043112,
+      "coefficient_l2": 0.2670377766900928
+    },
+    {
+      "ridge": 3.1622776601683795e-10,
+      "train_latent_rmse": 0.003478607702932585,
+      "validation_latent_rmse": 0.00386510754411007,
+      "coefficient_l2": 0.26703419847405996
+    },
+    {
+      "ridge": 1e-09,
+      "train_latent_rmse": 0.003478607703504075,
+      "validation_latent_rmse": 0.0038651082698634093,
+      "coefficient_l2": 0.2670228856597736
+    },
+    {
+      "ridge": 3.1622776601683795e-09,
+      "train_latent_rmse": 0.0034786077092140984,
+      "validation_latent_rmse": 0.003865110567979437,
+      "coefficient_l2": 0.26698713635246674
+    },
+    {
+      "ridge": 1e-08,
+      "train_latent_rmse": 0.0034786077661602497,
+      "validation_latent_rmse": 0.003865117865962378,
+      "coefficient_l2": 0.2668743356717957
+    },
+    {
+      "ridge": 3.162277660168379e-08,
+      "train_latent_rmse": 0.0034786083308143228,
+      "validation_latent_rmse": 0.00386514124741512,
+      "coefficient_l2": 0.2665200840253306
+    },
+    {
+      "ridge": 1e-07,
+      "train_latent_rmse": 0.0034786138314181867,
+      "validation_latent_rmse": 0.0038652181031323058,
+      "coefficient_l2": 0.2654234965479248
+    },
+    {
+      "ridge": 3.162277660168379e-07,
+      "train_latent_rmse": 0.0034786647364873613,
+      "validation_latent_rmse": 0.0038654871505788392,
+      "coefficient_l2": 0.262168183732586
+    },
+    {
+      "ridge": 1e-06,
+      "train_latent_rmse": 0.0034790778984974792,
+      "validation_latent_rmse": 0.003866528026275847,
+      "coefficient_l2": 0.2534892383498338
+    },
+    {
+      "ridge": 3.162277660168379e-06,
+      "train_latent_rmse": 0.003481636943166873,
+      "validation_latent_rmse": 0.003870699713951396,
+      "coefficient_l2": 0.23499748790673178
+    },
+    {
+      "ridge": 1e-05,
+      "train_latent_rmse": 0.0034924879562943196,
+      "validation_latent_rmse": 0.003885314831909355,
+      "coefficient_l2": 0.20652039024194965
+    },
+    {
+      "ridge": 3.1622776601683795e-05,
+      "train_latent_rmse": 0.0035263481004483197,
+      "validation_latent_rmse": 0.003926979041623832,
+      "coefficient_l2": 0.17282173360093403
+    },
+    {
+      "ridge": 0.0001,
+      "train_latent_rmse": 0.0036056956143404326,
+      "validation_latent_rmse": 0.004017069335310992,
+      "coefficient_l2": 0.14118834718244666
+    },
+    {
+      "ridge": 0.00031622776601683794,
+      "train_latent_rmse": 0.003731651045526028,
+      "validation_latent_rmse": 0.004150292384500974,
+      "coefficient_l2": 0.12082030732628543
+    },
+    {
+      "ridge": 0.001,
+      "train_latent_rmse": 0.003856950320232078,
+      "validation_latent_rmse": 0.004277082545502537,
+      "coefficient_l2": 0.11301472947727609
+    },
+    {
+      "ridge": 0.0031622776601683794,
+      "train_latent_rmse": 0.003931819497445811,
+      "validation_latent_rmse": 0.004351381297259261,
+      "coefficient_l2": 0.11136580626234359
+    },
+    {
+      "ridge": 0.01,
+      "train_latent_rmse": 0.0039628967090819325,
+      "validation_latent_rmse": 0.004381999426474473,
+      "coefficient_l2": 0.11113939311377435
+    }
+  ],
+  "capture_candidates": [
+    {
+      "eta": 0.003,
+      "train_rmse": 0.010440142825245857,
+      "validation_rmse": 0.010734804905951023,
+      "output_gain": 0.9658561574290753,
+      "output_bias": 0.002638975201987217,
+      "psf_negative_mass_fraction": 0.4997023514363396
+    },
+    {
+      "eta": 0.01,
+      "train_rmse": 0.009137933142483234,
+      "validation_rmse": 0.00949298869818449,
+      "output_gain": 0.97342335062664,
+      "output_bias": 0.002059348643450276,
+      "psf_negative_mass_fraction": 0.49945573297726836
+    },
+    {
+      "eta": 0.025,
+      "train_rmse": 0.007971048355102539,
+      "validation_rmse": 0.008389871567487717,
+      "output_gain": 0.9798931031128494,
+      "output_bias": 0.0015978315293943403,
+      "psf_negative_mass_fraction": 0.4987637681005635
+    },
+    {
+      "eta": 0.05,
+      "train_rmse": 0.007088018581271172,
+      "validation_rmse": 0.007541712839156389,
+      "output_gain": 0.9859944806293995,
+      "output_bias": 0.0012679944744522372,
+      "psf_negative_mass_fraction": 0.4972481193421208
+    },
+    {
+      "eta": 0.1,
+      "train_rmse": 0.006126087624579668,
+      "validation_rmse": 0.006589839234948158,
+      "output_gain": 0.9983228008758258,
+      "output_bias": 0.0008876435205725049,
+      "psf_negative_mass_fraction": 0.49322443930445553
+    }
+  ],
+  "direct_bicubic_validation_rmse": 0.007399281486868858,
+  "best_capture_solution": {
+    "eta": 0.1,
+    "train_rmse": 0.006126087624579668,
+    "validation_rmse": 0.006589839234948158,
+    "output_gain": 0.9983228008758258,
+    "output_bias": 0.0008876435205725049,
+    "psf_negative_mass_fraction": 0.49322443930445553
+  },
+  "warning": "The homogeneous latent objective can favor a smoothing representation. Physical admissibility must be checked after recovering the camera PSF."
+}

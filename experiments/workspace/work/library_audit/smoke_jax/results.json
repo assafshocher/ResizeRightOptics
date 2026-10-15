@@ -1,0 +1,1026 @@
+{
+  "protocol": {
+    "dataset": "<capture-dataset>",
+    "scenes": [
+      "00007"
+    ],
+    "source_file": "00001.JPG",
+    "source_size": 1023,
+    "target_size": 255,
+    "evaluation_size": 224,
+    "paths": {
+      "1": [
+        1023,
+        255
+      ],
+      "2": [
+        1023,
+        511,
+        255
+      ]
+    },
+    "float_pipeline": true,
+    "boundary_handling": "evaluate center 224x224 of 255x255",
+    "models": [
+      "ResNet-18",
+      "MobileNetV3-Small"
+    ],
+    "device": "mps"
+  },
+  "versions": {
+    "python": "3.9.6 (default, Feb  3 2024, 15:58:27) \n[Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "numpy": "2.0.2",
+    "Pillow": "11.3.0",
+    "OpenCV": "5.0.0",
+    "JAX": "0.4.30",
+    "PyTorch": "2.8.0",
+    "torchvision": "0.23.0",
+    "scikit-image": "0.24.0"
+  },
+  "method_configurations": {
+    "Pillow bilinear": "Image.resize, Resampling.BILINEAR, float32 per channel",
+    "Pillow bicubic": "Image.resize, Resampling.BICUBIC, float32 per channel",
+    "Pillow Lanczos": "Image.resize, Resampling.LANCZOS, float32 per channel",
+    "OpenCV area": "cv2.resize, INTER_AREA, float32",
+    "OpenCV bicubic": "cv2.resize, INTER_CUBIC, float32",
+    "OpenCV Lanczos-4": "cv2.resize, INTER_LANCZOS4, float32",
+    "PyTorch bilinear AA": "torch.nn.functional.interpolate, bilinear, antialias=True, align_corners=False",
+    "PyTorch bicubic AA": "torch.nn.functional.interpolate, bicubic, antialias=True, align_corners=False",
+    "scikit-image linear AA": "skimage.transform.resize, order=1, anti_aliasing=True, reflect",
+    "scikit-image cubic AA": "skimage.transform.resize, order=3, anti_aliasing=True, reflect",
+    "JAX linear AA": "jax.image.resize, linear, antialias=True",
+    "JAX Lanczos-3 AA": "jax.image.resize, lanczos3, antialias=True",
+    "camera-consistent Gaussian": "centered Fourier realization, Gaussian camera sigma=0.75 input pixels"
+  },
+  "grid_audit": [
+    {
+      "method": "Pillow bilinear",
+      "rms_source_pixels": 0.0026902039535343647,
+      "max_source_pixels": 0.004568696022033691
+    },
+    {
+      "method": "Pillow bicubic",
+      "rms_source_pixels": 2.7057119950768538e-05,
+      "max_source_pixels": 0.00012183189392089844
+    },
+    {
+      "method": "Pillow Lanczos",
+      "rms_source_pixels": 0.006452854722738266,
+      "max_source_pixels": 0.009807467460632324
+    },
+    {
+      "method": "OpenCV area",
+      "rms_source_pixels": 0.0013036361197009683,
+      "max_source_pixels": 0.0024366378784179688
+    },
+    {
+      "method": "OpenCV bicubic",
+      "rms_source_pixels": 0.10585188865661621,
+      "max_source_pixels": 0.1877429485321045
+    },
+    {
+      "method": "OpenCV Lanczos-4",
+      "rms_source_pixels": 0.032194025814533234,
+      "max_source_pixels": 0.05823564529418945
+    },
+    {
+      "method": "PyTorch bilinear AA",
+      "rms_source_pixels": 0.0026978934183716774,
+      "max_source_pixels": 0.004812359809875488
+    },
+    {
+      "method": "PyTorch bicubic AA",
+      "rms_source_pixels": 0.00010624304559314623,
+      "max_source_pixels": 0.0006091594696044922
+    },
+    {
+      "method": "scikit-image linear AA",
+      "rms_source_pixels": 2.2492446078103967e-05,
+      "max_source_pixels": 0.00012183189392089844
+    },
+    {
+      "method": "scikit-image cubic AA",
+      "rms_source_pixels": 2.5673123673186637e-05,
+      "max_source_pixels": 0.00012183189392089844
+    },
+    {
+      "method": "JAX linear AA",
+      "rms_source_pixels": 0.0026992852799594402,
+      "max_source_pixels": 0.004812359809875488
+    },
+    {
+      "method": "JAX Lanczos-3 AA",
+      "rms_source_pixels": 0.006447753868997097,
+      "max_source_pixels": 0.01011204719543457
+    },
+    {
+      "method": "camera-consistent Gaussian",
+      "rms_source_pixels": 2.069593028863892e-05,
+      "max_source_pixels": 6.091594696044922e-05
+    }
+  ],
+  "aggregate": {
+    "image": {
+      "Pillow bilinear|2": {
+        "nrmse": {
+          "mean": 0.0034522991187522735,
+          "ci95": [
+            0.0034522991187522735,
+            0.0034522991187522735
+          ]
+        },
+        "psnr_db": {
+          "mean": 51.40897232263196,
+          "ci95": [
+            51.40897232263196,
+            51.40897232263196
+          ]
+        },
+        "ssim": {
+          "mean": 0.99910569190979,
+          "ci95": [
+            0.99910569190979,
+            0.99910569190979
+          ]
+        }
+      },
+      "Pillow bicubic|2": {
+        "nrmse": {
+          "mean": 0.0010520435835718628,
+          "ci95": [
+            0.0010520435835718628,
+            0.0010520435835718628
+          ]
+        },
+        "psnr_db": {
+          "mean": 61.66054772422633,
+          "ci95": [
+            61.66054772422633,
+            61.66054772422633
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999198317527771,
+          "ci95": [
+            0.9999198317527771,
+            0.9999198317527771
+          ]
+        }
+      },
+      "Pillow Lanczos|2": {
+        "nrmse": {
+          "mean": 0.000343985950821325,
+          "ci95": [
+            0.000343985950821325,
+            0.000343985950821325
+          ]
+        },
+        "psnr_db": {
+          "mean": 71.33344269215488,
+          "ci95": [
+            71.33344269215488,
+            71.33344269215488
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999920725822449,
+          "ci95": [
+            0.9999920725822449,
+            0.9999920725822449
+          ]
+        }
+      },
+      "OpenCV area|2": {
+        "nrmse": {
+          "mean": 0.0068440007061606875,
+          "ci95": [
+            0.0068440007061606875,
+            0.0068440007061606875
+          ]
+        },
+        "psnr_db": {
+          "mean": 45.42185137567641,
+          "ci95": [
+            45.42185137567641,
+            45.42185137567641
+          ]
+        },
+        "ssim": {
+          "mean": 0.9964801669120789,
+          "ci95": [
+            0.9964801669120789,
+            0.9964801669120789
+          ]
+        }
+      },
+      "OpenCV bicubic|2": {
+        "nrmse": {
+          "mean": 0.01885889488239059,
+          "ci95": [
+            0.01885889488239059,
+            0.01885889488239059
+          ]
+        },
+        "psnr_db": {
+          "mean": 36.4057212784556,
+          "ci95": [
+            36.4057212784556,
+            36.4057212784556
+          ]
+        },
+        "ssim": {
+          "mean": 0.9761258959770203,
+          "ci95": [
+            0.9761258959770203,
+            0.9761258959770203
+          ]
+        }
+      },
+      "OpenCV Lanczos-4|2": {
+        "nrmse": {
+          "mean": 0.01946034470025573,
+          "ci95": [
+            0.01946034470025573,
+            0.01946034470025573
+          ]
+        },
+        "psnr_db": {
+          "mean": 36.13285347244866,
+          "ci95": [
+            36.13285347244866,
+            36.13285347244866
+          ]
+        },
+        "ssim": {
+          "mean": 0.9744012355804443,
+          "ci95": [
+            0.9744012355804443,
+            0.9744012355804443
+          ]
+        }
+      },
+      "PyTorch bilinear AA|2": {
+        "nrmse": {
+          "mean": 0.003452262727816018,
+          "ci95": [
+            0.003452262727816018,
+            0.003452262727816018
+          ]
+        },
+        "psnr_db": {
+          "mean": 51.40906188749125,
+          "ci95": [
+            51.40906188749125,
+            51.40906188749125
+          ]
+        },
+        "ssim": {
+          "mean": 0.9991057515144348,
+          "ci95": [
+            0.9991057515144348,
+            0.9991057515144348
+          ]
+        }
+      },
+      "PyTorch bicubic AA|2": {
+        "nrmse": {
+          "mean": 0.0010520418266541727,
+          "ci95": [
+            0.0010520418266541727,
+            0.0010520418266541727
+          ]
+        },
+        "psnr_db": {
+          "mean": 61.660561570304665,
+          "ci95": [
+            61.660561570304665,
+            61.660561570304665
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999199509620667,
+          "ci95": [
+            0.9999199509620667,
+            0.9999199509620667
+          ]
+        }
+      },
+      "scikit-image linear AA|2": {
+        "nrmse": {
+          "mean": 0.009223462181747372,
+          "ci95": [
+            0.009223462181747372,
+            0.009223462181747372
+          ]
+        },
+        "psnr_db": {
+          "mean": 42.864449939029974,
+          "ci95": [
+            42.864449939029974,
+            42.864449939029974
+          ]
+        },
+        "ssim": {
+          "mean": 0.9947531223297119,
+          "ci95": [
+            0.9947531223297119,
+            0.9947531223297119
+          ]
+        }
+      },
+      "scikit-image cubic AA|2": {
+        "nrmse": {
+          "mean": 0.01405803688817901,
+          "ci95": [
+            0.01405803688817901,
+            0.01405803688817901
+          ]
+        },
+        "psnr_db": {
+          "mean": 39.19815192748014,
+          "ci95": [
+            39.19815192748014,
+            39.19815192748014
+          ]
+        },
+        "ssim": {
+          "mean": 0.9864190220832825,
+          "ci95": [
+            0.9864190220832825,
+            0.9864190220832825
+          ]
+        }
+      },
+      "JAX linear AA|2": {
+        "nrmse": {
+          "mean": 0.0034522622488842884,
+          "ci95": [
+            0.0034522622488842884,
+            0.0034522622488842884
+          ]
+        },
+        "psnr_db": {
+          "mean": 51.40906176300462,
+          "ci95": [
+            51.40906176300462,
+            51.40906176300462
+          ]
+        },
+        "ssim": {
+          "mean": 0.9991057515144348,
+          "ci95": [
+            0.9991057515144348,
+            0.9991057515144348
+          ]
+        }
+      },
+      "JAX Lanczos-3 AA|2": {
+        "nrmse": {
+          "mean": 0.00034397704024314717,
+          "ci95": [
+            0.00034397704024314717,
+            0.00034397704024314717
+          ]
+        },
+        "psnr_db": {
+          "mean": 71.33366638027931,
+          "ci95": [
+            71.33366638027931,
+            71.33366638027931
+          ]
+        },
+        "ssim": {
+          "mean": 0.9999920725822449,
+          "ci95": [
+            0.9999920725822449,
+            0.9999920725822449
+          ]
+        }
+      },
+      "camera-consistent Gaussian|2": {
+        "nrmse": {
+          "mean": 2.5006120048968693e-08,
+          "ci95": [
+            2.5006120048968693e-08,
+            2.5006120048968693e-08
+          ]
+        },
+        "psnr_db": {
+          "mean": 154.28008427873925,
+          "ci95": [
+            154.28008427873925,
+            154.28008427873925
+          ]
+        },
+        "ssim": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "models": {
+      "Pillow bilinear|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.001480613835155964,
+          "ci95": [
+            0.001480613835155964,
+            0.001480613835155964
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.00035452842712402344,
+          "ci95": [
+            0.00035452842712402344,
+            0.00035452842712402344
+          ]
+        }
+      },
+      "Pillow bilinear|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.0008435455383732915,
+          "ci95": [
+            0.0008435455383732915,
+            0.0008435455383732915
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.000858008861541748,
+          "ci95": [
+            0.000858008861541748,
+            0.000858008861541748
+          ]
+        }
+      },
+      "Pillow bicubic|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 6.36297045275569e-05,
+          "ci95": [
+            6.36297045275569e-05,
+            6.36297045275569e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 3.272294998168945e-05,
+          "ci95": [
+            3.272294998168945e-05,
+            3.272294998168945e-05
+          ]
+        }
+      },
+      "Pillow bicubic|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 5.350483115762472e-05,
+          "ci95": [
+            5.350483115762472e-05,
+            5.350483115762472e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 4.0531158447265625e-05,
+          "ci95": [
+            4.0531158447265625e-05,
+            4.0531158447265625e-05
+          ]
+        }
+      },
+      "Pillow Lanczos|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 9.312316251453012e-06,
+          "ci95": [
+            9.312316251453012e-06,
+            9.312316251453012e-06
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 5.125999450683594e-06,
+          "ci95": [
+            5.125999450683594e-06,
+            5.125999450683594e-06
+          ]
+        }
+      },
+      "Pillow Lanczos|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 1.3328084605745971e-05,
+          "ci95": [
+            1.3328084605745971e-05,
+            1.3328084605745971e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 4.649162292480469e-06,
+          "ci95": [
+            4.649162292480469e-06,
+            4.649162292480469e-06
+          ]
+        }
+      },
+      "OpenCV area|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.019469501450657845,
+          "ci95": [
+            0.019469501450657845,
+            0.019469501450657845
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0029053688049316406,
+          "ci95": [
+            0.0029053688049316406,
+            0.0029053688049316406
+          ]
+        }
+      },
+      "OpenCV area|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.003549396526068449,
+          "ci95": [
+            0.003549396526068449,
+            0.003549396526068449
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0019271373748779297,
+          "ci95": [
+            0.0019271373748779297,
+            0.0019271373748779297
+          ]
+        }
+      },
+      "OpenCV bicubic|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.013971845619380474,
+          "ci95": [
+            0.013971845619380474,
+            0.013971845619380474
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.005946516990661621,
+          "ci95": [
+            0.005946516990661621,
+            0.005946516990661621
+          ]
+        }
+      },
+      "OpenCV bicubic|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.017918936908245087,
+          "ci95": [
+            0.017918936908245087,
+            0.017918936908245087
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.005384862422943115,
+          "ci95": [
+            0.005384862422943115,
+            0.005384862422943115
+          ]
+        }
+      },
+      "OpenCV Lanczos-4|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.01264678593724966,
+          "ci95": [
+            0.01264678593724966,
+            0.01264678593724966
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.005769550800323486,
+          "ci95": [
+            0.005769550800323486,
+            0.005769550800323486
+          ]
+        }
+      },
+      "OpenCV Lanczos-4|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.014138562604784966,
+          "ci95": [
+            0.014138562604784966,
+            0.014138562604784966
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.004178822040557861,
+          "ci95": [
+            0.004178822040557861,
+            0.004178822040557861
+          ]
+        }
+      },
+      "PyTorch bilinear AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.001480674371123314,
+          "ci95": [
+            0.001480674371123314,
+            0.001480674371123314
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.00035452842712402344,
+          "ci95": [
+            0.00035452842712402344,
+            0.00035452842712402344
+          ]
+        }
+      },
+      "PyTorch bilinear AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.0008435273775830865,
+          "ci95": [
+            0.0008435273775830865,
+            0.0008435273775830865
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0008578300476074219,
+          "ci95": [
+            0.0008578300476074219,
+            0.0008578300476074219
+          ]
+        }
+      },
+      "PyTorch bicubic AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 6.364344153553247e-05,
+          "ci95": [
+            6.364344153553247e-05,
+            6.364344153553247e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 3.272294998168945e-05,
+          "ci95": [
+            3.272294998168945e-05,
+            3.272294998168945e-05
+          ]
+        }
+      },
+      "PyTorch bicubic AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 5.351136496756226e-05,
+          "ci95": [
+            5.351136496756226e-05,
+            5.351136496756226e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 4.07099723815918e-05,
+          "ci95": [
+            4.07099723815918e-05,
+            4.07099723815918e-05
+          ]
+        }
+      },
+      "scikit-image linear AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.07353273034095764,
+          "ci95": [
+            0.07353273034095764,
+            0.07353273034095764
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.010308563709259033,
+          "ci95": [
+            0.010308563709259033,
+            0.010308563709259033
+          ]
+        }
+      },
+      "scikit-image linear AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.013951492495834827,
+          "ci95": [
+            0.013951492495834827,
+            0.013951492495834827
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.005205988883972168,
+          "ci95": [
+            0.005205988883972168,
+            0.005205988883972168
+          ]
+        }
+      },
+      "scikit-image cubic AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.10582016408443451,
+          "ci95": [
+            0.10582016408443451,
+            0.10582016408443451
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.017450571060180664,
+          "ci95": [
+            0.017450571060180664,
+            0.017450571060180664
+          ]
+        }
+      },
+      "scikit-image cubic AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.01923578977584839,
+          "ci95": [
+            0.01923578977584839,
+            0.01923578977584839
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.008162915706634521,
+          "ci95": [
+            0.008162915706634521,
+            0.008162915706634521
+          ]
+        }
+      },
+      "JAX linear AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.0014807144179940224,
+          "ci95": [
+            0.0014807144179940224,
+            0.0014807144179940224
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.00035440921783447266,
+          "ci95": [
+            0.00035440921783447266,
+            0.00035440921783447266
+          ]
+        }
+      },
+      "JAX linear AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 0.000843545887619257,
+          "ci95": [
+            0.000843545887619257,
+            0.000843545887619257
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0008578896522521973,
+          "ci95": [
+            0.0008578896522521973,
+            0.0008578896522521973
+          ]
+        }
+      },
+      "JAX Lanczos-3 AA|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 9.321331162936985e-06,
+          "ci95": [
+            9.321331162936985e-06,
+            9.321331162936985e-06
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 5.185604095458984e-06,
+          "ci95": [
+            5.185604095458984e-06,
+            5.185604095458984e-06
+          ]
+        }
+      },
+      "JAX Lanczos-3 AA|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": 1.3338270946405828e-05,
+          "ci95": [
+            1.3338270946405828e-05,
+            1.3338270946405828e-05
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 4.649162292480469e-06,
+          "ci95": [
+            4.649162292480469e-06,
+            4.649162292480469e-06
+          ]
+        }
+      },
+      "camera-consistent Gaussian|2|ResNet-18": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -2.282281030829836e-09,
+          "ci95": [
+            -2.282281030829836e-09,
+            -2.282281030829836e-09
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "camera-consistent Gaussian|2|MobileNetV3-Small": {
+        "top1_flip": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "jensen_shannon_nats": {
+          "mean": -2.8687338726740563e-08,
+          "ci95": [
+            -2.8687338726740563e-08,
+            -2.8687338726740563e-08
+          ]
+        },
+        "feature_cosine_distance": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

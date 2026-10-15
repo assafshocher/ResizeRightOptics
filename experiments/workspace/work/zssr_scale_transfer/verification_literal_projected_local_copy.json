@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "remote": {
+    "files": 540,
+    "models": 150,
+    "predictions": 150,
+    "tree_sha256": "1acde275fde6ea2c80bfad7ea5e707ec5a4685bfa840f93577bf9a518223412b"
+  },
+  "local": {
+    "files": 540,
+    "models": 150,
+    "predictions": 150,
+    "tree_sha256": "1acde275fde6ea2c80bfad7ea5e707ec5a4685bfa840f93577bf9a518223412b"
+  }
+}

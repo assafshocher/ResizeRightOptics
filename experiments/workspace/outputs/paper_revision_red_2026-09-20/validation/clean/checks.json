@@ -1,0 +1,518 @@
+[
+  {
+    "family": "gaussian",
+    "scale": 2,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      256,
+      256
+    ],
+    "RR_matrix_max_error": 5.551115123125783e-16,
+    "adjoint_relative_error": 0.0,
+    "pinv_right_inverse_max_error": 6.770675135276541e-15,
+    "previous_float32_observation_max_difference": 2.913630942069645e-07,
+    "period_repetition_max_error": 2.4980018054066022e-15
+  },
+  {
+    "family": "gaussian",
+    "scale": 2,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      144,
+      144
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 3.0446031483291336e-16,
+    "pinv_right_inverse_max_error": 7.45885087094112e-15,
+    "previous_float32_observation_max_difference": 2.123584721402949e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 2,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      128,
+      128
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 1.3280864197517775e-16,
+    "pinv_right_inverse_max_error": 5.560523167423253e-15,
+    "previous_float32_observation_max_difference": 2.2976967262167136e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 2,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      140,
+      140
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 2.9552366962859595e-16,
+    "pinv_right_inverse_max_error": 1.0235001527580294e-14,
+    "previous_float32_observation_max_difference": 2.7574518268735915e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 2,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      172,
+      114
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 1.4984117854510395e-16,
+    "pinv_right_inverse_max_error": 1.0222334304512193e-14,
+    "previous_float32_observation_max_difference": 2.4610722149098763e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 3,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      171,
+      171
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 7.64325388173871e-16,
+    "pinv_right_inverse_max_error": 2.433546748502638e-15,
+    "previous_float32_observation_max_difference": 3.644933157520569e-07,
+    "period_repetition_max_error": 3.219646771412954e-15
+  },
+  {
+    "family": "gaussian",
+    "scale": 3,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      96,
+      96
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 2.1141631059286662e-15,
+    "pinv_right_inverse_max_error": 2.3175905639050143e-15,
+    "previous_float32_observation_max_difference": 2.553433685603679e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 3,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      86,
+      86
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 9.414219264212977e-16,
+    "pinv_right_inverse_max_error": 1.6980136829913892e-15,
+    "previous_float32_observation_max_difference": 2.6404745201435986e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 3,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      94,
+      94
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 8.14855785010689e-16,
+    "pinv_right_inverse_max_error": 2.220446049250313e-15,
+    "previous_float32_observation_max_difference": 2.957891219734776e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 3,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      115,
+      76
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 1.477554629486746e-14,
+    "pinv_right_inverse_max_error": 1.9984014443252818e-15,
+    "previous_float32_observation_max_difference": 3.255676247482242e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 4,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      128,
+      128
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 4.1610835510664645e-15,
+    "pinv_right_inverse_max_error": 1.7763568394002505e-15,
+    "previous_float32_observation_max_difference": 3.7729897539584556e-07,
+    "period_repetition_max_error": 5.88418203051333e-15
+  },
+  {
+    "family": "gaussian",
+    "scale": 4,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      72,
+      72
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 0.0,
+    "pinv_right_inverse_max_error": 1.65485294351907e-15,
+    "previous_float32_observation_max_difference": 2.582170778309134e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 4,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      64,
+      64
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 5.120935803409218e-16,
+    "pinv_right_inverse_max_error": 1.5543122344752192e-15,
+    "previous_float32_observation_max_difference": 3.050399989268371e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 4,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      70,
+      70
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 1.5859016514169754e-16,
+    "pinv_right_inverse_max_error": 1.7763568394002505e-15,
+    "previous_float32_observation_max_difference": 2.7080901232601207e-07
+  },
+  {
+    "family": "gaussian",
+    "scale": 4,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      86,
+      57
+    ],
+    "RR_matrix_max_error": 4.440892098500626e-16,
+    "adjoint_relative_error": 5.011867212597713e-16,
+    "pinv_right_inverse_max_error": 1.5587640727998284e-15,
+    "previous_float32_observation_max_difference": 3.127526883028864e-07
+  },
+  {
+    "family": "bicubic",
+    "scale": 2,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      256,
+      256
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 9.5952642736822e-16,
+    "pinv_right_inverse_max_error": 1.3322676295501878e-15,
+    "previous_float32_observation_max_difference": null,
+    "period_repetition_max_error": 2.6645352591003757e-15
+  },
+  {
+    "family": "bicubic",
+    "scale": 2,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      144,
+      144
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 4.0997608606124365e-16,
+    "pinv_right_inverse_max_error": 2.1094237467877974e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 2,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      128,
+      128
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 0.0,
+    "pinv_right_inverse_max_error": 1.6176879276350568e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 2,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      140,
+      140
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 1.9621503531885486e-15,
+    "pinv_right_inverse_max_error": 1.5543122344752192e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 2,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      172,
+      114
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 1.409734754464686e-16,
+    "pinv_right_inverse_max_error": 1.7763568394002505e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 3,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      171,
+      171
+    ],
+    "RR_matrix_max_error": 6.661338147750939e-16,
+    "adjoint_relative_error": 5.329070518200751e-15,
+    "pinv_right_inverse_max_error": 2.4424906541753444e-15,
+    "previous_float32_observation_max_difference": null,
+    "period_repetition_max_error": 2.55351295663786e-15
+  },
+  {
+    "family": "bicubic",
+    "scale": 3,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      96,
+      96
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 1.1488530534368044e-15,
+    "pinv_right_inverse_max_error": 2.6645352591003757e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 3,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      86,
+      86
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 1.6780066630573748e-15,
+    "pinv_right_inverse_max_error": 5.8839270451029194e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 3,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      94,
+      94
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 8.925140830970575e-16,
+    "pinv_right_inverse_max_error": 7.222908696995314e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 3,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      115,
+      76
+    ],
+    "RR_matrix_max_error": 3.3306690738754696e-16,
+    "adjoint_relative_error": 1.1263236429319834e-15,
+    "pinv_right_inverse_max_error": 2.220446049250313e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 4,
+    "image": "baby",
+    "shape": [
+      512,
+      512
+    ],
+    "input_shape": [
+      128,
+      128
+    ],
+    "RR_matrix_max_error": 5.551115123125783e-17,
+    "adjoint_relative_error": 6.550068763108212e-16,
+    "pinv_right_inverse_max_error": 2.3314683517128287e-15,
+    "previous_float32_observation_max_difference": null,
+    "period_repetition_max_error": 5.329070518200751e-15
+  },
+  {
+    "family": "bicubic",
+    "scale": 4,
+    "image": "bird",
+    "shape": [
+      288,
+      288
+    ],
+    "input_shape": [
+      72,
+      72
+    ],
+    "RR_matrix_max_error": 2.220446049250313e-16,
+    "adjoint_relative_error": 6.332468504427627e-16,
+    "pinv_right_inverse_max_error": 1.8861348504632496e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 4,
+    "image": "butterfly",
+    "shape": [
+      256,
+      256
+    ],
+    "input_shape": [
+      64,
+      64
+    ],
+    "RR_matrix_max_error": 1.1102230246251565e-16,
+    "adjoint_relative_error": 6.64572423907294e-16,
+    "pinv_right_inverse_max_error": 1.4421392377538585e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 4,
+    "image": "head",
+    "shape": [
+      280,
+      280
+    ],
+    "input_shape": [
+      70,
+      70
+    ],
+    "RR_matrix_max_error": 0.0,
+    "adjoint_relative_error": 1.89585350344333e-16,
+    "pinv_right_inverse_max_error": 1.5543122344752192e-15,
+    "previous_float32_observation_max_difference": null
+  },
+  {
+    "family": "bicubic",
+    "scale": 4,
+    "image": "woman",
+    "shape": [
+      344,
+      228
+    ],
+    "input_shape": [
+      86,
+      57
+    ],
+    "RR_matrix_max_error": 5.551115123125783e-17,
+    "adjoint_relative_error": 1.3467978963997176e-16,
+    "pinv_right_inverse_max_error": 1.887379141862766e-15,
+    "previous_float32_observation_max_difference": null
+  }
+]

@@ -1,0 +1,2842 @@
+{
+  "anchor": 2,
+  "base_sigmas": [
+    0.5,
+    1
+  ],
+  "m_max": 10,
+  "numpy_only": true,
+  "cached_resize_checked": false,
+  "truncate_sigma": 4,
+  "discarded_continuous_mass": 0.00006334248366623992,
+  "uses_hr": false,
+  "uses_psnr": false,
+  "kernel_modified_by_test": false,
+  "tolerances": {
+    "float64_identity": 1e-12,
+    "float32_cached_and_constant": 0.00002
+  },
+  "measurement_note": "Composition and sampled response errors have no pass threshold. Near-one uncovered phases are reported limitations, outside the pilot sweep.",
+  "cases": [
+    {
+      "base_sigma": 0.5,
+      "m": 1,
+      "method": "gaussian_consistent",
+      "factor": 2,
+      "sigma": 1,
+      "support_sz": 8,
+      "ideal_continuum_chain_vs_anchor": 0,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0,
+        "rmse": 0
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            512,
+            512
+          ],
+          "output_shape": [
+            256,
+            256
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            220,
+            220
+          ],
+          "output_shape": [
+            110,
+            110
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        }
+      ],
+      "phase_partition_range": 0.00012571530891225535,
+      "phase_response_errors": [
+        0.00014624538644401503,
+        0.00012032684219654021,
+        0.0003564891407263967,
+        0.004357159705723101
+      ],
+      "max_constant_error": 0,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 1,
+      "method": "gaussian_aa",
+      "factor": 2,
+      "sigma": 1,
+      "support_sz": 8,
+      "ideal_continuum_chain_vs_anchor": 0,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0,
+        "rmse": 0
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            512,
+            512
+          ],
+          "output_shape": [
+            256,
+            256
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            220,
+            220
+          ],
+          "output_shape": [
+            110,
+            110
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        }
+      ],
+      "phase_partition_range": 0.00012571530891225535,
+      "phase_response_errors": [
+        0.00014624538644401503,
+        0.00012032684219654021,
+        0.0003564891407263967,
+        0.004357159705723101
+      ],
+      "max_constant_error": 0,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 2,
+      "method": "gaussian_consistent",
+      "factor": 1.4142135623730951,
+      "sigma": 0.5773502691896258,
+      "support_sz": 4.618802153517007,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00011738482464240807,
+        "rmse": 0.000059674482516037005
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.1804327922609991,
+            "rmse": 0.05472531140598978
+          },
+          "interior": {
+            "max_abs": 0.1804327922609991,
+            "rmse": 0.05075327171054074
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.17226332419840565,
+            "rmse": 0.053593516329301615
+          },
+          "interior": {
+            "max_abs": 0.17226332419840565,
+            "rmse": 0.0522882576529645
+          }
+        }
+      ],
+      "phase_partition_range": 0.005668198053307538,
+      "phase_response_errors": [
+        0.0019356770068206979,
+        0.014751979091397895,
+        0.06212545143157764,
+        0.16316554977639153
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 2,
+      "method": "gaussian_aa",
+      "factor": 1.4142135623730951,
+      "sigma": 0.7071067811865476,
+      "support_sz": 5.656854249492381,
+      "ideal_continuum_chain_vs_anchor": 0.1481467871934748,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.14810315990895756,
+        "rmse": 0.08793058399064699
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.1492178491998558,
+            "rmse": 0.07143096409539694
+          },
+          "interior": {
+            "max_abs": 0.14750634246975158,
+            "rmse": 0.07011768274190341
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.14689296766751964,
+            "rmse": 0.07075086469625798
+          },
+          "interior": {
+            "max_abs": 0.14689296766751964,
+            "rmse": 0.07170903096640799
+          }
+        }
+      ],
+      "phase_partition_range": 0.00016728161850343426,
+      "phase_response_errors": [
+        0.00023339892462154884,
+        0.0019466293352926082,
+        0.01544476293254522,
+        0.06606016237216021
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 3,
+      "method": "gaussian_consistent",
+      "factor": 1.2599210498948732,
+      "sigma": 0.44249333402444213,
+      "support_sz": 3.539946672195537,
+      "ideal_continuum_chain_vs_anchor": 1.1102230246251565e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00018664858720435218,
+        "rmse": 0.00008863487027771978
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.3916981520756829,
+            "rmse": 0.11613729123358572
+          },
+          "interior": {
+            "max_abs": 0.35668467794013403,
+            "rmse": 0.10581726075177003
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.381802258242648,
+            "rmse": 0.1104641398626554
+          },
+          "interior": {
+            "max_abs": 0.381802258242648,
+            "rmse": 0.11963764070172643
+          }
+        }
+      ],
+      "phase_partition_range": 0.08379053616855758,
+      "phase_response_errors": [
+        0.016450370238768653,
+        0.08056216985121908,
+        0.1952030298954107,
+        0.3474947672906946
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 3,
+      "method": "gaussian_aa",
+      "factor": 1.2599210498948732,
+      "sigma": 0.6299605249474366,
+      "support_sz": 5.039684199579493,
+      "ideal_continuum_chain_vs_anchor": 0.2546007595185491,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.25454130239753847,
+        "rmse": 0.1464526196696429
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.26580083348552935,
+            "rmse": 0.12129890319542676
+          },
+          "interior": {
+            "max_abs": 0.26580083348552935,
+            "rmse": 0.11965796483277089
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.2621181647735033,
+            "rmse": 0.12141289166635065
+          },
+          "interior": {
+            "max_abs": 0.2621181647735033,
+            "rmse": 0.1228875102714763
+          }
+        }
+      ],
+      "phase_partition_range": 0.001752458074379959,
+      "phase_response_errors": [
+        0.000707922376049011,
+        0.006624205233289628,
+        0.03651848234303031,
+        0.11550788642445405
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 4,
+      "method": "gaussian_consistent",
+      "factor": 1.189207115002721,
+      "sigma": 0.37157931516393417,
+      "support_sz": 2.9726345213114733,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00023145813236968849,
+        "rmse": 0.00010909335722233074
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.41255510535764994,
+            "rmse": 0.15597587238849336
+          },
+          "interior": {
+            "max_abs": 0.41255510535764994,
+            "rmse": 0.15815433766602952
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.4772342587263767,
+            "rmse": 0.145003821324012
+          },
+          "interior": {
+            "max_abs": 0.3574735198301722,
+            "rmse": 0.13268139750464922
+          }
+        }
+      ],
+      "phase_partition_range": 0.2626959212056148,
+      "phase_response_errors": [
+        0.03621524135211333,
+        0.15677410926292865,
+        0.31503835870937874,
+        0.4843792831936886
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 4,
+      "method": "gaussian_aa",
+      "factor": 1.189207115002721,
+      "sigma": 0.5946035575013605,
+      "support_sz": 4.756828460010884,
+      "ideal_continuum_chain_vs_anchor": 0.3336357045248972,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.33357178914680397,
+        "rmse": 0.18774738200925822
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.3454237760560806,
+            "rmse": 0.1619706271393588
+          },
+          "interior": {
+            "max_abs": 0.32490300963426544,
+            "rmse": 0.1593765155973119
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.33831262542648954,
+            "rmse": 0.16195049206315684
+          },
+          "interior": {
+            "max_abs": 0.33831262542648954,
+            "rmse": 0.16341241464968984
+          }
+        }
+      ],
+      "phase_partition_range": 0.003916061070238341,
+      "phase_response_errors": [
+        0.0013951432444898318,
+        0.01144024024016612,
+        0.05241078052805993,
+        0.1461575644893747
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 5,
+      "method": "gaussian_consistent",
+      "factor": 1.148698354997035,
+      "sigma": 0.32634741752356206,
+      "support_sz": 2.6107793401884964,
+      "ideal_continuum_chain_vs_anchor": 3.885780586188048e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.000262648825305245,
+        "rmse": 0.00012469884316879863
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.6054439955878628,
+            "rmse": 0.2107497881711704
+          },
+          "interior": {
+            "max_abs": 0.6054439955878628,
+            "rmse": 0.21738590297593838
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.5709774212214411,
+            "rmse": 0.2076769275715518
+          },
+          "interior": {
+            "max_abs": 0.542820570368182,
+            "rmse": 0.1897000084159229
+          }
+        }
+      ],
+      "phase_partition_range": 0.4887744762877735,
+      "phase_response_errors": [
+        0.05297532857399933,
+        0.21944976111691097,
+        0.4084948060452283,
+        0.5881394406657209
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 5,
+      "method": "gaussian_aa",
+      "factor": 1.148698354997035,
+      "sigma": 0.5743491774985175,
+      "support_sz": 4.59479341998814,
+      "ideal_continuum_chain_vs_anchor": 0.39494884161514965,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.3948828630304507,
+        "rmse": 0.21865938557536074
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.4136565842235356,
+            "rmse": 0.19265494512575673
+          },
+          "interior": {
+            "max_abs": 0.4136565842235356,
+            "rmse": 0.19030251861288158
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.40314550819806305,
+            "rmse": 0.19418224471846335
+          },
+          "interior": {
+            "max_abs": 0.40314550819806305,
+            "rmse": 0.19437719052770264
+          }
+        }
+      ],
+      "phase_partition_range": 0.0060500960601553855,
+      "phase_response_errors": [
+        0.0020472263725984153,
+        0.015406242717090887,
+        0.06391659455486591,
+        0.1662672298097087
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 6,
+      "method": "gaussian_consistent",
+      "factor": 1.122462048309373,
+      "sigma": 0.2943473287885551,
+      "support_sz": 2.3547786303084406,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.0002855221155624865,
+        "rmse": 0.00013696285559845132
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.7313557742609735,
+            "rmse": 0.2776622094389577
+          },
+          "interior": {
+            "max_abs": 0.5288328940915339,
+            "rmse": 0.21676623480179788
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.6523115393843553,
+            "rmse": 0.252348260436246
+          },
+          "interior": {
+            "max_abs": 0.6523115393843553,
+            "rmse": 0.26779308090021
+          }
+        }
+      ],
+      "phase_partition_range": 0.7233168905019611,
+      "phase_response_errors": [
+        0.06588695614426988,
+        0.26767330621211644,
+        0.48105476617977344,
+        0.6688384901293677
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 6,
+      "method": "gaussian_aa",
+      "factor": 1.122462048309373,
+      "sigma": 0.5612310241546865,
+      "support_sz": 4.489848193237492,
+      "ideal_continuum_chain_vs_anchor": 0.44417244309805115,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.4441079193707711,
+        "rmse": 0.24283525405008002
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.44550934460759534,
+            "rmse": 0.21921819026526335
+          },
+          "interior": {
+            "max_abs": 0.41752388942953367,
+            "rmse": 0.21488634879066643
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.44594803635266045,
+            "rmse": 0.21997219540158258
+          },
+          "interior": {
+            "max_abs": 0.44594803635266045,
+            "rmse": 0.22106019506968735
+          }
+        }
+      ],
+      "phase_partition_range": 0.008046156983565478,
+      "phase_response_errors": [
+        0.0025925317722152045,
+        0.01853858722861627,
+        0.07253149493531953,
+        0.18031747724933483
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 7,
+      "method": "gaussian_consistent",
+      "factor": 1.1040895136738123,
+      "sigma": 0.27019354433718756,
+      "support_sz": 2.1615483546975005,
+      "ideal_continuum_chain_vs_anchor": 6.661338147750939e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00030290670971644396,
+        "rmse": 0.00014681128098290708
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.7066005493138671,
+            "rmse": 0.23274983320534606
+          },
+          "interior": {
+            "max_abs": 0.5726366172420475,
+            "rmse": 0.20388124585151773
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.8827156448474416,
+            "rmse": 0.3718717144468419
+          },
+          "interior": {
+            "max_abs": 0.8827156448474416,
+            "rmse": 0.3673642503187175
+          }
+        }
+      ],
+      "phase_partition_range": 0.9467244088984393,
+      "phase_response_errors": [
+        0.07587381454202445,
+        0.3052321457675408,
+        0.5382071548727735,
+        0.7344856341710458
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 7,
+      "method": "gaussian_aa",
+      "factor": 1.1040895136738123,
+      "sigma": 0.5520447568369061,
+      "support_sz": 4.416358054695249,
+      "ideal_continuum_chain_vs_anchor": 0.48474561213473333,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.4846882990467897,
+        "rmse": 0.2623721074820225
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.47120973958582363,
+            "rmse": 0.2422816738339323
+          },
+          "interior": {
+            "max_abs": 0.45923501416141144,
+            "rmse": 0.23599107522250642
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.481821011666529,
+            "rmse": 0.24092822991585766
+          },
+          "interior": {
+            "max_abs": 0.45460337934889655,
+            "rmse": 0.24192181016697417
+          }
+        }
+      ],
+      "phase_partition_range": 0.009811953422798947,
+      "phase_response_errors": [
+        0.002956992352991839,
+        0.021057352819422722,
+        0.07891122381976624,
+        0.19067148140770715
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 8,
+      "method": "gaussian_consistent",
+      "factor": 1.0905077326652577,
+      "sigma": 0.2511354979572589,
+      "support_sz": 2.0090839836580714,
+      "ideal_continuum_chain_vs_anchor": 4.440892098500626e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00031670671171729614,
+        "rmse": 0.0001548665336708231
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 1.035583947526229,
+            "rmse": 0.3436508144546662
+          },
+          "interior": {
+            "max_abs": 1.035583947526229,
+            "rmse": 0.2985561386867405
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.8022991544138385,
+            "rmse": 0.29252997016556875
+          },
+          "interior": {
+            "max_abs": 0.6284890982526411,
+            "rmse": 0.2937566817346846
+          }
+        }
+      ],
+      "phase_partition_range": 1.1518954130692078,
+      "phase_response_errors": [
+        0.08374928302346588,
+        0.334964948030401,
+        0.5838713913427589,
+        0.7879620604895442
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 8,
+      "method": "gaussian_aa",
+      "factor": 1.0905077326652577,
+      "sigma": 0.5452538663326288,
+      "support_sz": 4.362030930661031,
+      "ideal_continuum_chain_vs_anchor": 0.5189306950060573,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5188721270663671,
+        "rmse": 0.2785629418628994
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.47173029009335005,
+            "rmse": 0.25841957072667726
+          },
+          "interior": {
+            "max_abs": 0.46900475573051903,
+            "rmse": 0.25416205106113865
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.48911892488450315,
+            "rmse": 0.2593595344715062
+          },
+          "interior": {
+            "max_abs": 0.47314407513551765,
+            "rmse": 0.26035670811348743
+          }
+        }
+      ],
+      "phase_partition_range": 0.01134787875343668,
+      "phase_response_errors": [
+        0.0033677857637926852,
+        0.023125887023596515,
+        0.0839220363951796,
+        0.19859251223763585
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 9,
+      "method": "gaussian_consistent",
+      "factor": 1.080059738892306,
+      "sigma": 0.23560492324802015,
+      "support_sz": 1.8848393859841612,
+      "ideal_continuum_chain_vs_anchor": 6.106226635438361e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00032782924617880127,
+        "rmse": 0.00016156173859761903
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.9198443936019074,
+            "rmse": 0.35793745405677246
+          },
+          "interior": {
+            "max_abs": 0.8928678043234696,
+            "rmse": 0.34579142666997476
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 1.0091845106347646,
+            "rmse": 0.3792190269426261
+          },
+          "interior": {
+            "max_abs": 1.0091845106347646,
+            "rmse": 0.37683865537536027
+          }
+        }
+      ],
+      "phase_partition_range": 1.336992852881128,
+      "phase_response_errors": [
+        0.09020467382118093,
+        0.35886917858704515,
+        0.622444352316664,
+        0.8330186223983503
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 9,
+      "method": "gaussian_aa",
+      "factor": 1.080059738892306,
+      "sigma": 0.540029869446153,
+      "support_sz": 4.320238955569224,
+      "ideal_continuum_chain_vs_anchor": 0.5481866010227519,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5481334484025293,
+        "rmse": 0.2922509817296651
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.5018535641178488,
+            "rmse": 0.27348881056151203
+          },
+          "interior": {
+            "max_abs": 0.49630733375696096,
+            "rmse": 0.2690349109661445
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.4934652691806673,
+            "rmse": 0.27468320592766904
+          },
+          "interior": {
+            "max_abs": 0.4934652691806673,
+            "rmse": 0.27593082853383605
+          }
+        }
+      ],
+      "phase_partition_range": 0.012680003034365561,
+      "phase_response_errors": [
+        0.00371012235893681,
+        0.02483049277029545,
+        0.08795860585012752,
+        0.20484187718007793
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 10,
+      "method": "gaussian_consistent",
+      "factor": 1.0717734625362931,
+      "sigma": 0.22263449492912138,
+      "support_sz": 1.781075959432971,
+      "ideal_continuum_chain_vs_anchor": 4.440892098500626e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.0003369193572244078,
+        "rmse": 0.00016720538637404015
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.9723179586446133,
+            "rmse": 0.4203658737448217
+          },
+          "interior": {
+            "max_abs": 0.9523045052012094,
+            "rmse": 0.3619454359084668
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 1.0809818594139615,
+            "rmse": 0.47878901349148906
+          },
+          "interior": {
+            "max_abs": 1.0809818594139615,
+            "rmse": 0.47735565883430486
+          }
+        }
+      ],
+      "phase_partition_range": 1.5041049039281815,
+      "phase_response_errors": [
+        0.09547577059875167,
+        0.3795018869276987,
+        0.6541203245535631,
+        0.8704906397310542
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 0.5,
+      "m": 10,
+      "method": "gaussian_aa",
+      "factor": 1.0717734625362931,
+      "sigma": 0.5358867312681466,
+      "support_sz": 4.2870938501451725,
+      "ideal_continuum_chain_vs_anchor": 0.57352356191406,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5734746882276506,
+        "rmse": 0.30401147635507847
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.5406749324322777,
+            "rmse": 0.28785506703348906
+          },
+          "interior": {
+            "max_abs": 0.5406749324322777,
+            "rmse": 0.28227444515897704
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.5052425943415051,
+            "rmse": 0.287092734973712
+          },
+          "interior": {
+            "max_abs": 0.505242594341505,
+            "rmse": 0.2896532048420323
+          }
+        }
+      ],
+      "phase_partition_range": 0.013838546890274195,
+      "phase_response_errors": [
+        0.0039991076174708574,
+        0.02625582283558966,
+        0.09127189176888482,
+        0.20989539487173572
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 1,
+      "method": "gaussian_consistent",
+      "factor": 2,
+      "sigma": 2,
+      "support_sz": 16,
+      "ideal_continuum_chain_vs_anchor": 0,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0,
+        "rmse": 0
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            512,
+            512
+          ],
+          "output_shape": [
+            256,
+            256
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            220,
+            220
+          ],
+          "output_shape": [
+            110,
+            110
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        }
+      ],
+      "phase_partition_range": 0.00006486495465629627,
+      "phase_response_errors": [
+        0.0001422145699780454,
+        0.00006212970851256973,
+        0.00006816022142690448,
+        0.00006461712030362739
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 1,
+      "method": "gaussian_aa",
+      "factor": 2,
+      "sigma": 2,
+      "support_sz": 16,
+      "ideal_continuum_chain_vs_anchor": 0,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0,
+        "rmse": 0
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            512,
+            512
+          ],
+          "output_shape": [
+            256,
+            256
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        },
+        {
+          "input_shape": [
+            220,
+            220
+          ],
+          "output_shape": [
+            110,
+            110
+          ],
+          "all_pixels": {
+            "max_abs": 0,
+            "rmse": 0
+          },
+          "interior": {
+            "max_abs": 0,
+            "rmse": 0
+          }
+        }
+      ],
+      "phase_partition_range": 0.00006486495465629627,
+      "phase_response_errors": [
+        0.0001422145699780454,
+        0.00006212970851256973,
+        0.00006816022142690448,
+        0.00006461712030362739
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 2,
+      "method": "gaussian_consistent",
+      "factor": 1.4142135623730951,
+      "sigma": 1.1547005383792517,
+      "support_sz": 9.237604307034013,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00011722654705675906,
+        "rmse": 0.00004779684617806915
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.05034161688911254,
+            "rmse": 0.008918921982951836
+          },
+          "interior": {
+            "max_abs": 0.00020011835862554506,
+            "rmse": 0.00008720955672280719
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.03414066815211492,
+            "rmse": 0.00557192834696122
+          },
+          "interior": {
+            "max_abs": 0.00016534804443651963,
+            "rmse": 0.00007684628816472517
+          }
+        }
+      ],
+      "phase_partition_range": 0.00011451166749498753,
+      "phase_response_errors": [
+        0.00014938422924038236,
+        0.00008461056065300908,
+        0.00009405139068819767,
+        0.0008058211718889338
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 2,
+      "method": "gaussian_aa",
+      "factor": 1.4142135623730951,
+      "sigma": 1.4142135623730951,
+      "support_sz": 11.313708498984761,
+      "ideal_continuum_chain_vs_anchor": 0.1481467871934748,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.14810315990895756,
+        "rmse": 0.062184329637919034
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.15078846331000562,
+            "rmse": 0.06547207528487796
+          },
+          "interior": {
+            "max_abs": 0.14807515559721668,
+            "rmse": 0.06270274762192542
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.1411137680832102,
+            "rmse": 0.06300743531175305
+          },
+          "interior": {
+            "max_abs": 0.14083316058059864,
+            "rmse": 0.06428466743372123
+          }
+        }
+      ],
+      "phase_partition_range": 0.00009299609670665454,
+      "phase_response_errors": [
+        0.00014822037388566013,
+        0.00006785978787368055,
+        0.00009133817593253843,
+        0.00006606788086253985
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 3,
+      "method": "gaussian_consistent",
+      "factor": 1.2599210498948732,
+      "sigma": 0.8849866680488843,
+      "support_sz": 7.079893344391074,
+      "ideal_continuum_chain_vs_anchor": 1.1102230246251565e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00018632856593125968,
+        "rmse": 0.00006627514176859975
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.08409682136261187,
+            "rmse": 0.011702831082756498
+          },
+          "interior": {
+            "max_abs": 0.0007468663192698336,
+            "rmse": 0.00022729034565078634
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.04869390008723744,
+            "rmse": 0.007000151686701077
+          },
+          "interior": {
+            "max_abs": 0.0008046063829585716,
+            "rmse": 0.00023473507390506622
+          }
+        }
+      ],
+      "phase_partition_range": 0.00014661653569469912,
+      "phase_response_errors": [
+        0.00015250920995267073,
+        0.0001434823265463455,
+        0.001512891312013813,
+        0.014108143059276542
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 3,
+      "method": "gaussian_aa",
+      "factor": 1.2599210498948732,
+      "sigma": 1.2599210498948732,
+      "support_sz": 10.079368399158986,
+      "ideal_continuum_chain_vs_anchor": 0.2546007595185491,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.25454130239753847,
+        "rmse": 0.10356312315465116
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.2612250354414656,
+            "rmse": 0.10747708201326982
+          },
+          "interior": {
+            "max_abs": 0.25218437405109173,
+            "rmse": 0.1043979944103868
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.24191292782318524,
+            "rmse": 0.10468242412307385
+          },
+          "interior": {
+            "max_abs": 0.24038345154900218,
+            "rmse": 0.10703580425118497
+          }
+        }
+      ],
+      "phase_partition_range": 0.0001039378338612007,
+      "phase_response_errors": [
+        0.000148274672497953,
+        0.00007427826609804499,
+        0.00010473887895909415,
+        0.00024900208908697284
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 4,
+      "method": "gaussian_consistent",
+      "factor": 1.189207115002721,
+      "sigma": 0.7431586303278683,
+      "support_sz": 5.945269042622947,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00023145813236968849,
+        "rmse": 0.00008005962672873767
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.02470991084623131,
+            "rmse": 0.004427200521781585
+          },
+          "interior": {
+            "max_abs": 0.0025731019879003565,
+            "rmse": 0.0007337929481141053
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.039234470237980656,
+            "rmse": 0.005553142303880351
+          },
+          "interior": {
+            "max_abs": 0.0025939194683735275,
+            "rmse": 0.0007926390342373584
+          }
+        }
+      ],
+      "phase_partition_range": 0.0002363183064084673,
+      "phase_response_errors": [
+        0.00014598051664163354,
+        0.0013620660480999636,
+        0.009981254010090201,
+        0.049864776786595566
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 4,
+      "method": "gaussian_aa",
+      "factor": 1.189207115002721,
+      "sigma": 1.189207115002721,
+      "support_sz": 9.513656920021768,
+      "ideal_continuum_chain_vs_anchor": 0.3334952719191962,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.3334285889843769,
+        "rmse": 0.13276175636302223
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.3395962995858426,
+            "rmse": 0.13958955544198717
+          },
+          "interior": {
+            "max_abs": 0.32160267778787577,
+            "rmse": 0.13192348806669021
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.30775709412320545,
+            "rmse": 0.1332720583952901
+          },
+          "interior": {
+            "max_abs": 0.30775709412320545,
+            "rmse": 0.13528216157678757
+          }
+        }
+      ],
+      "phase_partition_range": 0.00011769567861008579,
+      "phase_response_errors": [
+        0.0001490264582118124,
+        0.00008989307978708898,
+        0.00008326186427010984,
+        0.000562890530830109
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 5,
+      "method": "gaussian_consistent",
+      "factor": 1.148698354997035,
+      "sigma": 0.6526948350471241,
+      "support_sz": 5.221558680376993,
+      "ideal_continuum_chain_vs_anchor": 3.885780586188048e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00026237771214310257,
+        "rmse": 0.0000907523074938317
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.036373032455214505,
+            "rmse": 0.005538806525782469
+          },
+          "interior": {
+            "max_abs": 0.010563954332110919,
+            "rmse": 0.003375158905287017
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.05211530651125759,
+            "rmse": 0.008831630035462123
+          },
+          "interior": {
+            "max_abs": 0.010957580175769553,
+            "rmse": 0.00259713386898588
+          }
+        }
+      ],
+      "phase_partition_range": 0.00091813330584678,
+      "phase_response_errors": [
+        0.00048098458479989314,
+        0.0045846310253298845,
+        0.02862412270155087,
+        0.09862547681298019
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 5,
+      "method": "gaussian_aa",
+      "factor": 1.148698354997035,
+      "sigma": 1.148698354997035,
+      "support_sz": 9.18958683997628,
+      "ideal_continuum_chain_vs_anchor": 0.39494884161514965,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.3948828630304507,
+        "rmse": 0.1546192361763555
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.39454977350024706,
+            "rmse": 0.1573283608573936
+          },
+          "interior": {
+            "max_abs": 0.3673260816198091,
+            "rmse": 0.15006214964825004
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.35532782988241185,
+            "rmse": 0.15072578298823022
+          },
+          "interior": {
+            "max_abs": 0.35350027578570403,
+            "rmse": 0.1539287788642748
+          }
+        }
+      ],
+      "phase_partition_range": 0.00011147600840244465,
+      "phase_response_errors": [
+        0.00014536388433808252,
+        0.00008213036080386923,
+        0.0000907666229375616,
+        0.0008564073634816444
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 6,
+      "method": "gaussian_consistent",
+      "factor": 1.122462048309373,
+      "sigma": 0.5886946575771101,
+      "support_sz": 4.709557260616881,
+      "ideal_continuum_chain_vs_anchor": 2.220446049250313e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.0002855221155624865,
+        "rmse": 0.0000992120660432878
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.057143887699402485,
+            "rmse": 0.009945489987273954
+          },
+          "interior": {
+            "max_abs": 0.014816963017696944,
+            "rmse": 0.005397052910111302
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.06312772977108526,
+            "rmse": 0.011837455546852409
+          },
+          "interior": {
+            "max_abs": 0.01979598601163085,
+            "rmse": 0.00856168918228857
+          }
+        }
+      ],
+      "phase_partition_range": 0.004438120776866228,
+      "phase_response_errors": [
+        0.001562147982187371,
+        0.012492422746599459,
+        0.05555859760241155,
+        0.15182754940918455
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 6,
+      "method": "gaussian_aa",
+      "factor": 1.122462048309373,
+      "sigma": 1.122462048309373,
+      "support_sz": 8.979696386474984,
+      "ideal_continuum_chain_vs_anchor": 0.44417244309805115,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.4441079193707711,
+        "rmse": 0.17171378826900943
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.4354127716675504,
+            "rmse": 0.17101190504408595
+          },
+          "interior": {
+            "max_abs": 0.39735289661347023,
+            "rmse": 0.16197976388394333
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.3882718303229672,
+            "rmse": 0.1629111646978627
+          },
+          "interior": {
+            "max_abs": 0.38442451548944023,
+            "rmse": 0.16620061505955555
+          }
+        }
+      ],
+      "phase_partition_range": 0.00019899864882721996,
+      "phase_response_errors": [
+        0.00018499708082531097,
+        0.00010303991548848979,
+        0.00018489350995379988,
+        0.0011999423551788384
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 7,
+      "method": "gaussian_consistent",
+      "factor": 1.1040895136738123,
+      "sigma": 0.5403870886743751,
+      "support_sz": 4.323096709395001,
+      "ideal_continuum_chain_vs_anchor": 6.661338147750939e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00030290670971644396,
+        "rmse": 0.00010602904524524016
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.05543319335927849,
+            "rmse": 0.01290589887494242
+          },
+          "interior": {
+            "max_abs": 0.029567028170994096,
+            "rmse": 0.00849061753621584
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.07582173580411385,
+            "rmse": 0.02207176222493784
+          },
+          "interior": {
+            "max_abs": 0.040499238990959585,
+            "rmse": 0.016747665704440137
+          }
+        }
+      ],
+      "phase_partition_range": 0.012584457090431656,
+      "phase_response_errors": [
+        0.0036859454059286483,
+        0.02471068432431542,
+        0.08767757116860601,
+        0.20441019896342366
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 7,
+      "method": "gaussian_aa",
+      "factor": 1.1040895136738123,
+      "sigma": 1.1040895136738123,
+      "support_sz": 8.832716109390498,
+      "ideal_continuum_chain_vs_anchor": 0.4845681921401178,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.484503519183325,
+        "rmse": 0.18552818160885837
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.4857510537014247,
+            "rmse": 0.18222674117957216
+          },
+          "interior": {
+            "max_abs": 0.4170154817400442,
+            "rmse": 0.1698067039032398
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.4130114258804187,
+            "rmse": 0.1709212488825622
+          },
+          "interior": {
+            "max_abs": 0.4058049302221461,
+            "rmse": 0.17426951783756164
+          }
+        }
+      ],
+      "phase_partition_range": 0.0001629792737013469,
+      "phase_response_errors": [
+        0.0001567128497091986,
+        0.00008921017853406127,
+        0.0001409988779369369,
+        0.0014304626620743983
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 8,
+      "method": "gaussian_consistent",
+      "factor": 1.0905077326652577,
+      "sigma": 0.5022709959145178,
+      "support_sz": 4.018167967316143,
+      "ideal_continuum_chain_vs_anchor": 4.440892098500626e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.000316418755806791,
+        "rmse": 0.00011161690044951704
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.07022980591256328,
+            "rmse": 0.02272986320579038
+          },
+          "interior": {
+            "max_abs": 0.052760825591516874,
+            "rmse": 0.018885672978970727
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.060199394330964946,
+            "rmse": 0.0198970806651449
+          },
+          "interior": {
+            "max_abs": 0.044278302280929126,
+            "rmse": 0.01826119434972222
+          }
+        }
+      ],
+      "phase_partition_range": 0.027510227726572967,
+      "phase_response_errors": [
+        0.007024113874928003,
+        0.040516328158515504,
+        0.12198963002092862,
+        0.2541311492402112
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 8,
+      "method": "gaussian_aa",
+      "factor": 1.0905077326652577,
+      "sigma": 1.0905077326652577,
+      "support_sz": 8.724061861322062,
+      "ideal_continuum_chain_vs_anchor": 0.5186036082770252,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5185535268319046,
+        "rmse": 0.19697665107464796
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.483561165589874,
+            "rmse": 0.18658557827351568
+          },
+          "interior": {
+            "max_abs": 0.4299609281315817,
+            "rmse": 0.17487567390349315
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.4227234194854474,
+            "rmse": 0.17631215644615533
+          },
+          "interior": {
+            "max_abs": 0.4227234194854474,
+            "rmse": 0.17969187530260136
+          }
+        }
+      ],
+      "phase_partition_range": 0.00014489772091308417,
+      "phase_response_errors": [
+        0.00014621100686778421,
+        0.00008694086823782557,
+        0.0001237908933201328,
+        0.0016423656644173777
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 9,
+      "method": "gaussian_consistent",
+      "factor": 1.080059738892306,
+      "sigma": 0.4712098464960403,
+      "support_sz": 3.7696787719683225,
+      "ideal_continuum_chain_vs_anchor": 6.106226635438361e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00032742481969644244,
+        "rmse": 0.00011626850521831324
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.14563418728387456,
+            "rmse": 0.037662895865066257
+          },
+          "interior": {
+            "max_abs": 0.08955321897733354,
+            "rmse": 0.03176362521937056
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.06667008990922303,
+            "rmse": 0.029725306180545013
+          },
+          "interior": {
+            "max_abs": 0.06522783675463109,
+            "rmse": 0.028306100187634523
+          }
+        }
+      ],
+      "phase_partition_range": 0.04975180458800221,
+      "phase_response_errors": [
+        0.011172656948430813,
+        0.05868760680740395,
+        0.15688511860530582,
+        0.3002466668932152
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 9,
+      "method": "gaussian_aa",
+      "factor": 1.080059738892306,
+      "sigma": 1.080059738892306,
+      "support_sz": 8.640477911138449,
+      "ideal_continuum_chain_vs_anchor": 0.5481866010227519,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5481334484025293,
+        "rmse": 0.20665542078520663
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.5017205711625532,
+            "rmse": 0.18940262566067093
+          },
+          "interior": {
+            "max_abs": 0.4383857339791573,
+            "rmse": 0.17816799942607975
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.43361755964801385,
+            "rmse": 0.17980600276188682
+          },
+          "interior": {
+            "max_abs": 0.43361755964801385,
+            "rmse": 0.1831901034520199
+          }
+        }
+      ],
+      "phase_partition_range": 0.00013806096437840587,
+      "phase_response_errors": [
+        0.00014667527771356664,
+        0.00009175026248259507,
+        0.0001272649678208351,
+        0.0018324184802683682
+      ],
+      "max_constant_error": 5.551115123125783e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 10,
+      "method": "gaussian_consistent",
+      "factor": 1.0717734625362931,
+      "sigma": 0.44526898985824276,
+      "support_sz": 3.562151918865942,
+      "ideal_continuum_chain_vs_anchor": 3.608224830031759e-16,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.00033678172567241926,
+        "rmse": 0.00012019423065850851
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.14857915431187943,
+            "rmse": 0.05199633420054049
+          },
+          "interior": {
+            "max_abs": 0.13552715334059315,
+            "rmse": 0.04717587712351487
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.15035054916703317,
+            "rmse": 0.060119431767492966
+          },
+          "interior": {
+            "max_abs": 0.15035054916703317,
+            "rmse": 0.059481915001963204
+          }
+        }
+      ],
+      "phase_partition_range": 0.07980095217040528,
+      "phase_response_errors": [
+        0.01587426829611333,
+        0.07822209182726267,
+        0.1912404083838255,
+        0.3427266657346204
+      ],
+      "max_constant_error": 4.440892098500626e-16,
+      "anchor_max_error": 0
+    },
+    {
+      "base_sigma": 1,
+      "m": 10,
+      "method": "gaussian_aa",
+      "factor": 1.0717734625362931,
+      "sigma": 1.0717734625362931,
+      "support_sz": 8.574187700290345,
+      "ideal_continuum_chain_vs_anchor": 0.5729544284523889,
+      "normalized_truncated_continuum_chain_vs_anchor": {
+        "max_abs": 0.5728935937997894,
+        "rmse": 0.21497123913847627
+      },
+      "sampled_chain_vs_direct": [
+        {
+          "input_shape": [
+            65,
+            67
+          ],
+          "output_shape": [
+            33,
+            34
+          ],
+          "all_pixels": {
+            "max_abs": 0.5117697515994722,
+            "rmse": 0.19378213247401369
+          },
+          "interior": {
+            "max_abs": 0.44403193134982427,
+            "rmse": 0.1803350155426864
+          }
+        },
+        {
+          "input_shape": [
+            64,
+            70
+          ],
+          "output_shape": [
+            32,
+            35
+          ],
+          "all_pixels": {
+            "max_abs": 0.4430128212683615,
+            "rmse": 0.18196941240536216
+          },
+          "interior": {
+            "max_abs": 0.4430128212683615,
+            "rmse": 0.185582690727516
+          }
+        }
+      ],
+      "phase_partition_range": 0.00013291841793217074,
+      "phase_response_errors": [
+        0.00014551454566244065,
+        0.00009398102523158256,
+        0.00013313716339632538,
+        0.002001483624844709
+      ],
+      "max_constant_error": 6.661338147750939e-16,
+      "anchor_max_error": 0
+    }
+  ],
+  "near_identity": [
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_consistent",
+      "factor": 1.01,
+      "sigma": 0.08185352771872453,
+      "ideal_gain_at_pi_over_2": 0.991768274056453,
+      "uncovered_phases": 23,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 1
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_consistent",
+      "factor": 1.001,
+      "sigma": 0.02582634314028849,
+      "ideal_gain_at_pi_over_2": 0.9991774602045337,
+      "uncovered_phases": 51,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_consistent",
+      "factor": 1.0001,
+      "sigma": 0.008165169930870554,
+      "ideal_gain_at_pi_over_2": 0.999917752566828,
+      "uncovered_phases": 59,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_consistent",
+      "factor": 1.000001,
+      "sigma": 0.0008164967850182606,
+      "ideal_gain_at_pi_over_2": 0.9999991775328937,
+      "uncovered_phases": 63,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_aa",
+      "factor": 1.01,
+      "sigma": 0.505,
+      "ideal_gain_at_pi_over_2": 0.7300629740061874,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_aa",
+      "factor": 1.001,
+      "sigma": 0.5005,
+      "ideal_gain_at_pi_over_2": 0.7341497176011389,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 5.551115123125783e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_aa",
+      "factor": 1.0001,
+      "sigma": 0.50005,
+      "ideal_gain_at_pi_over_2": 0.7345576294578144,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 5.551115123125783e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 0.5,
+      "method": "gaussian_aa",
+      "factor": 1.000001,
+      "sigma": 0.5000005,
+      "ideal_gain_at_pi_over_2": 0.7346024911885184,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_consistent",
+      "factor": 1.01,
+      "sigma": 0.16370705543744907,
+      "ideal_gain_at_pi_over_2": 0.967477437519265,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 2.220446049250313e-16
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_consistent",
+      "factor": 1.001,
+      "sigma": 0.05165268628057698,
+      "ideal_gain_at_pi_over_2": 0.9967138980228548,
+      "uncovered_phases": 37,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_consistent",
+      "factor": 1.0001,
+      "sigma": 0.01633033986174111,
+      "ideal_gain_at_pi_over_2": 0.9996710508529283,
+      "uncovered_phases": 55,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_consistent",
+      "factor": 1.000001,
+      "sigma": 0.0016329935700365211,
+      "ideal_gain_at_pi_over_2": 0.9999967101356333,
+      "uncovered_phases": 63,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 0
+      },
+      "off_grid": {
+        "backend_error": "ValueError",
+        "message": "index can't contain negative values"
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_aa",
+      "factor": 1.01,
+      "sigma": 1.01,
+      "ideal_gain_at_pi_over_2": 0.2840804145165997,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 5.551115123125783e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 5.551115123125783e-16
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_aa",
+      "factor": 1.001,
+      "sigma": 1.001,
+      "ideal_gain_at_pi_over_2": 0.29049492145169087,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_aa",
+      "factor": 1.0001,
+      "sigma": 1.0001,
+      "ideal_gain_at_pi_over_2": 0.291141084574921,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    },
+    {
+      "base_sigma": 1,
+      "method": "gaussian_aa",
+      "factor": 1.000001,
+      "sigma": 1.000001,
+      "ideal_gain_at_pi_over_2": 0.2912122146754364,
+      "uncovered_phases": 0,
+      "phase_count": 65,
+      "aligned_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      },
+      "off_grid": {
+        "finite": true,
+        "constant_max_error": 4.440892098500626e-16
+      }
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

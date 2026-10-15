@@ -1,0 +1,1444 @@
+{
+  "config": {
+    "image": "baby",
+    "steps": 2000,
+    "batch": 1,
+    "crop": 64,
+    "width": 64,
+    "depth": 8,
+    "lr": 0.001,
+    "radius": 64,
+    "seed": 0,
+    "m": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "methods": [
+      "consistent",
+      "aa_bandlimited",
+      "aa",
+      "noaa"
+    ],
+    "input_kind": "bandlimited",
+    "device": "cuda",
+    "run_name": "first_image_v1",
+    "torch": "2.8.0+cu129",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "RR_commit": "510d4d5b67dccf4efdee9f311ed42609a71f17c5",
+    "ZSSR_commit": "d2948526fde799a0c111469b78cd9e1b8659cb0f",
+    "evaluation": "Clipped float RGB; BT.601 Y with peak 1; 2 HR pixel border; no registration; also unclipped scores",
+    "shared_anchor": "consistent and aa_bandlimited only; literal AA and noAA are additional software references"
+  },
+  "bicubic": {
+    "psnr_rgb": 35.13436838195821,
+    "psnr_y": 36.60504141503624,
+    "psnr_rgb_unclipped": 35.13416844978685,
+    "psnr_y_unclipped": 36.60483771908082
+  },
+  "results": [
+    {
+      "image": "baby",
+      "m": 1,
+      "elementary_scale": 2.0,
+      "method": "consistent",
+      "label": "Camera law (band-limited)",
+      "psnr_rgb": 33.69014732398084,
+      "psnr_y": 36.32975919534588,
+      "psnr_rgb_unclipped": 33.68992187901671,
+      "psnr_y_unclipped": 36.32951194729566,
+      "train_seconds": 2.663785918848589,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5332781076431274
+        },
+        {
+          "step": 250,
+          "l1": 0.03127412497997284
+        },
+        {
+          "step": 500,
+          "l1": 0.052983105182647705
+        },
+        {
+          "step": 750,
+          "l1": 0.06644339114427567
+        },
+        {
+          "step": 1000,
+          "l1": 0.03910183906555176
+        },
+        {
+          "step": 1250,
+          "l1": 0.00962150003761053
+        },
+        {
+          "step": 1500,
+          "l1": 0.023297365754842758
+        },
+        {
+          "step": 1750,
+          "l1": 0.010509881190955639
+        },
+        {
+          "step": 2000,
+          "l1": 0.013666890561580658
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 220,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.06933281687088311,
+      "inference_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -0.2752822196903608
+    },
+    {
+      "image": "baby",
+      "m": 1,
+      "elementary_scale": 2.0,
+      "method": "aa_bandlimited",
+      "label": "AA stretch (same band limit)",
+      "psnr_rgb": 33.69014732398084,
+      "psnr_y": 36.32975919534588,
+      "psnr_rgb_unclipped": 33.68992187901671,
+      "psnr_y_unclipped": 36.32951194729566,
+      "train_seconds": 2.663785918848589,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5332781076431274
+        },
+        {
+          "step": 250,
+          "l1": 0.03127412497997284
+        },
+        {
+          "step": 500,
+          "l1": 0.052983105182647705
+        },
+        {
+          "step": 750,
+          "l1": 0.06644339114427567
+        },
+        {
+          "step": 1000,
+          "l1": 0.03910183906555176
+        },
+        {
+          "step": 1250,
+          "l1": 0.00962150003761053
+        },
+        {
+          "step": 1500,
+          "l1": 0.023297365754842758
+        },
+        {
+          "step": 1750,
+          "l1": 0.010509881190955639
+        },
+        {
+          "step": 2000,
+          "l1": 0.013666890561580658
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 220,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.06933281687088311,
+      "inference_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -0.2752822196903608,
+      "reused_identical_anchor_run": true
+    },
+    {
+      "image": "baby",
+      "m": 1,
+      "elementary_scale": 2.0,
+      "method": "aa",
+      "label": "Literal RR bicubic-AA",
+      "psnr_rgb": 33.922161697227146,
+      "psnr_y": 36.54584241994398,
+      "psnr_rgb_unclipped": 33.92167037832414,
+      "psnr_y_unclipped": 36.54513988421095,
+      "train_seconds": 1.5663453941233456,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5332742929458618
+        },
+        {
+          "step": 250,
+          "l1": 0.037737131118774414
+        },
+        {
+          "step": 500,
+          "l1": 0.07398173213005066
+        },
+        {
+          "step": 750,
+          "l1": 0.02875378541648388
+        },
+        {
+          "step": 1000,
+          "l1": 0.034320563077926636
+        },
+        {
+          "step": 1250,
+          "l1": 0.009295720607042313
+        },
+        {
+          "step": 1500,
+          "l1": 0.022108597680926323
+        },
+        {
+          "step": 1750,
+          "l1": 0.010133343748748302
+        },
+        {
+          "step": 2000,
+          "l1": 0.013168854638934135
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 220,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.003657991997897625,
+      "inference_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -0.059198995092259565
+    },
+    {
+      "image": "baby",
+      "m": 1,
+      "elementary_scale": 2.0,
+      "method": "noaa",
+      "label": "Literal RR bicubic, no AA",
+      "psnr_rgb": 33.62921956443523,
+      "psnr_y": 36.325680555998666,
+      "psnr_rgb_unclipped": 33.628885692136805,
+      "psnr_y_unclipped": 36.32536957218483,
+      "train_seconds": 1.5892153589520603,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333001613616943
+        },
+        {
+          "step": 250,
+          "l1": 0.10791110247373581
+        },
+        {
+          "step": 500,
+          "l1": 0.03236394375562668
+        },
+        {
+          "step": 750,
+          "l1": 0.04283832758665085
+        },
+        {
+          "step": 1000,
+          "l1": 0.029545947909355164
+        },
+        {
+          "step": 1250,
+          "l1": 0.010942867025732994
+        },
+        {
+          "step": 1500,
+          "l1": 0.022926270961761475
+        },
+        {
+          "step": 1750,
+          "l1": 0.010593141429126263
+        },
+        {
+          "step": 2000,
+          "l1": 0.01367483101785183
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 220,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.0036308830603957176,
+      "inference_shapes": [
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -0.279360859037574
+    },
+    {
+      "image": "baby",
+      "m": 2,
+      "elementary_scale": 1.4142135623730951,
+      "method": "consistent",
+      "label": "Camera law (band-limited)",
+      "psnr_rgb": 31.87341641782835,
+      "psnr_y": 34.56818380237068,
+      "psnr_rgb_unclipped": 31.872898591043036,
+      "psnr_y_unclipped": 34.56741979787905,
+      "train_seconds": 1.5387826028745621,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333105325698853
+        },
+        {
+          "step": 250,
+          "l1": 0.04418909177184105
+        },
+        {
+          "step": 500,
+          "l1": 0.0483984649181366
+        },
+        {
+          "step": 750,
+          "l1": 0.10333477705717087
+        },
+        {
+          "step": 1000,
+          "l1": 0.03183658421039581
+        },
+        {
+          "step": 1250,
+          "l1": 0.010506412014365196
+        },
+        {
+          "step": 1500,
+          "l1": 0.0196470245718956
+        },
+        {
+          "step": 1750,
+          "l1": 0.010337778367102146
+        },
+        {
+          "step": 2000,
+          "l1": 0.011992951855063438
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.05741666187532246,
+      "inference_shapes": [
+        [
+          363,
+          363
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -2.036857612665557
+    },
+    {
+      "image": "baby",
+      "m": 2,
+      "elementary_scale": 1.4142135623730951,
+      "method": "aa_bandlimited",
+      "label": "AA stretch (same band limit)",
+      "psnr_rgb": 32.246351614402855,
+      "psnr_y": 34.87313535890192,
+      "psnr_rgb_unclipped": 32.24609761496262,
+      "psnr_y_unclipped": 34.873027120403634,
+      "train_seconds": 1.5407950428780168,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333079695701599
+        },
+        {
+          "step": 250,
+          "l1": 0.03314179927110672
+        },
+        {
+          "step": 500,
+          "l1": 0.03306330367922783
+        },
+        {
+          "step": 750,
+          "l1": 0.06570999324321747
+        },
+        {
+          "step": 1000,
+          "l1": 0.05092804878950119
+        },
+        {
+          "step": 1250,
+          "l1": 0.00946237426251173
+        },
+        {
+          "step": 1500,
+          "l1": 0.019119221717119217
+        },
+        {
+          "step": 1750,
+          "l1": 0.009883571416139603
+        },
+        {
+          "step": 2000,
+          "l1": 0.011909174732863903
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.005170240066945553,
+      "inference_shapes": [
+        [
+          363,
+          363
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -1.7319060561343207
+    },
+    {
+      "image": "baby",
+      "m": 2,
+      "elementary_scale": 1.4142135623730951,
+      "method": "aa",
+      "label": "Literal RR bicubic-AA",
+      "psnr_rgb": 32.32315489261708,
+      "psnr_y": 34.95703924215075,
+      "psnr_rgb_unclipped": 32.32266864810632,
+      "psnr_y_unclipped": 34.95626686131636,
+      "train_seconds": 1.5675246471073478,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333051085472107
+        },
+        {
+          "step": 250,
+          "l1": 0.0965978130698204
+        },
+        {
+          "step": 500,
+          "l1": 0.08645164221525192
+        },
+        {
+          "step": 750,
+          "l1": 0.024971403181552887
+        },
+        {
+          "step": 1000,
+          "l1": 0.07623925805091858
+        },
+        {
+          "step": 1250,
+          "l1": 0.00947200134396553
+        },
+        {
+          "step": 1500,
+          "l1": 0.018913377076387405
+        },
+        {
+          "step": 1750,
+          "l1": 0.00974510982632637
+        },
+        {
+          "step": 2000,
+          "l1": 0.011549858376383781
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.005044254008680582,
+      "inference_shapes": [
+        [
+          363,
+          363
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -1.6480021728854908
+    },
+    {
+      "image": "baby",
+      "m": 2,
+      "elementary_scale": 1.4142135623730951,
+      "method": "noaa",
+      "label": "Literal RR bicubic, no AA",
+      "psnr_rgb": 32.275403797792194,
+      "psnr_y": 35.02953344293826,
+      "psnr_rgb_unclipped": 32.274696736082895,
+      "psnr_y_unclipped": 35.02856595436344,
+      "train_seconds": 1.5408449890092015,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333131551742554
+        },
+        {
+          "step": 250,
+          "l1": 0.1089552789926529
+        },
+        {
+          "step": 500,
+          "l1": 0.03647342696785927
+        },
+        {
+          "step": 750,
+          "l1": 0.03548751398921013
+        },
+        {
+          "step": 1000,
+          "l1": 0.02600102685391903
+        },
+        {
+          "step": 1250,
+          "l1": 0.010343877598643303
+        },
+        {
+          "step": 1500,
+          "l1": 0.018139611929655075
+        },
+        {
+          "step": 1750,
+          "l1": 0.009486435912549496
+        },
+        {
+          "step": 2000,
+          "l1": 0.011405731551349163
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.005069209961220622,
+      "inference_shapes": [
+        [
+          363,
+          363
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -1.5755079720979808
+    },
+    {
+      "image": "baby",
+      "m": 3,
+      "elementary_scale": 1.2599210498948732,
+      "method": "consistent",
+      "label": "Camera law (band-limited)",
+      "psnr_rgb": 30.96655951556513,
+      "psnr_y": 33.521390282648134,
+      "psnr_rgb_unclipped": 30.9658254597029,
+      "psnr_y_unclipped": 33.52047039792657,
+      "train_seconds": 1.5224386148620397,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333151817321777
+        },
+        {
+          "step": 250,
+          "l1": 0.03495490923523903
+        },
+        {
+          "step": 500,
+          "l1": 0.032103702425956726
+        },
+        {
+          "step": 750,
+          "l1": 0.02016623690724373
+        },
+        {
+          "step": 1000,
+          "l1": 0.026557140052318573
+        },
+        {
+          "step": 1250,
+          "l1": 0.009488983079791069
+        },
+        {
+          "step": 1500,
+          "l1": 0.017541812732815742
+        },
+        {
+          "step": 1750,
+          "l1": 0.009196174331009388
+        },
+        {
+          "step": 2000,
+          "l1": 0.011218927800655365
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.10668244399130344,
+      "inference_shapes": [
+        [
+          323,
+          323
+        ],
+        [
+          407,
+          407
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -3.0836511323881055
+    },
+    {
+      "image": "baby",
+      "m": 3,
+      "elementary_scale": 1.2599210498948732,
+      "method": "aa_bandlimited",
+      "label": "AA stretch (same band limit)",
+      "psnr_rgb": 30.90825057522579,
+      "psnr_y": 33.58451944082467,
+      "psnr_rgb_unclipped": 30.90735979511262,
+      "psnr_y_unclipped": 33.58303612196703,
+      "train_seconds": 1.519086612854153,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333123207092285
+        },
+        {
+          "step": 250,
+          "l1": 0.10327040404081345
+        },
+        {
+          "step": 500,
+          "l1": 0.053643472492694855
+        },
+        {
+          "step": 750,
+          "l1": 0.02121884748339653
+        },
+        {
+          "step": 1000,
+          "l1": 0.024656683206558228
+        },
+        {
+          "step": 1250,
+          "l1": 0.010166569612920284
+        },
+        {
+          "step": 1500,
+          "l1": 0.017722396180033684
+        },
+        {
+          "step": 1750,
+          "l1": 0.009887855499982834
+        },
+        {
+          "step": 2000,
+          "l1": 0.011514900252223015
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.006663419073447585,
+      "inference_shapes": [
+        [
+          323,
+          323
+        ],
+        [
+          407,
+          407
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -3.0205219742115688
+    },
+    {
+      "image": "baby",
+      "m": 3,
+      "elementary_scale": 1.2599210498948732,
+      "method": "aa",
+      "label": "Literal RR bicubic-AA",
+      "psnr_rgb": 30.842149557408675,
+      "psnr_y": 33.28795875871038,
+      "psnr_rgb_unclipped": 30.841161864297693,
+      "psnr_y_unclipped": 33.286581296230764,
+      "train_seconds": 1.5230113239958882,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333119630813599
+        },
+        {
+          "step": 250,
+          "l1": 0.08891256898641586
+        },
+        {
+          "step": 500,
+          "l1": 0.038225337862968445
+        },
+        {
+          "step": 750,
+          "l1": 0.01833873987197876
+        },
+        {
+          "step": 1000,
+          "l1": 0.06488144397735596
+        },
+        {
+          "step": 1250,
+          "l1": 0.01032262109220028
+        },
+        {
+          "step": 1500,
+          "l1": 0.018071532249450684
+        },
+        {
+          "step": 1750,
+          "l1": 0.009536154568195343
+        },
+        {
+          "step": 2000,
+          "l1": 0.011515958234667778
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.00704327505081892,
+      "inference_shapes": [
+        [
+          323,
+          323
+        ],
+        [
+          407,
+          407
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -3.3170826563258586
+    },
+    {
+      "image": "baby",
+      "m": 3,
+      "elementary_scale": 1.2599210498948732,
+      "method": "noaa",
+      "label": "Literal RR bicubic, no AA",
+      "psnr_rgb": 30.569430106639924,
+      "psnr_y": 33.33855653823033,
+      "psnr_rgb_unclipped": 30.567183806125044,
+      "psnr_y_unclipped": 33.334780228078486,
+      "train_seconds": 1.5554463269654661,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333174467086792
+        },
+        {
+          "step": 250,
+          "l1": 0.08887799829244614
+        },
+        {
+          "step": 500,
+          "l1": 0.03334944695234299
+        },
+        {
+          "step": 750,
+          "l1": 0.045667245984077454
+        },
+        {
+          "step": 1000,
+          "l1": 0.04966088756918907
+        },
+        {
+          "step": 1250,
+          "l1": 0.009698840789496899
+        },
+        {
+          "step": 1500,
+          "l1": 0.018717169761657715
+        },
+        {
+          "step": 1750,
+          "l1": 0.00971184577792883
+        },
+        {
+          "step": 2000,
+          "l1": 0.011814425699412823
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.006996734067797661,
+      "inference_shapes": [
+        [
+          323,
+          323
+        ],
+        [
+          407,
+          407
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -3.2664848768059116
+    },
+    {
+      "image": "baby",
+      "m": 4,
+      "elementary_scale": 1.189207115002721,
+      "method": "consistent",
+      "label": "Camera law (band-limited)",
+      "psnr_rgb": 29.94826822270142,
+      "psnr_y": 32.30994102981893,
+      "psnr_rgb_unclipped": 29.946839015719494,
+      "psnr_y_unclipped": 32.30807773276695,
+      "train_seconds": 1.535438199993223,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333178043365479
+        },
+        {
+          "step": 250,
+          "l1": 0.044302791357040405
+        },
+        {
+          "step": 500,
+          "l1": 0.043457381427288055
+        },
+        {
+          "step": 750,
+          "l1": 0.04410836100578308
+        },
+        {
+          "step": 1000,
+          "l1": 0.027170684188604355
+        },
+        {
+          "step": 1250,
+          "l1": 0.009138211607933044
+        },
+        {
+          "step": 1500,
+          "l1": 0.01799103431403637
+        },
+        {
+          "step": 1750,
+          "l1": 0.0093706538900733
+        },
+        {
+          "step": 2000,
+          "l1": 0.011233486235141754
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.10893751191906631,
+      "inference_shapes": [
+        [
+          305,
+          305
+        ],
+        [
+          363,
+          363
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -4.29510038521731
+    },
+    {
+      "image": "baby",
+      "m": 4,
+      "elementary_scale": 1.189207115002721,
+      "method": "aa_bandlimited",
+      "label": "AA stretch (same band limit)",
+      "psnr_rgb": 29.42398254056057,
+      "psnr_y": 31.755345642869578,
+      "psnr_rgb_unclipped": 29.42338305289805,
+      "psnr_y_unclipped": 31.754511406525637,
+      "train_seconds": 1.5413481639698148,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333149433135986
+        },
+        {
+          "step": 250,
+          "l1": 0.035832781344652176
+        },
+        {
+          "step": 500,
+          "l1": 0.05168580263853073
+        },
+        {
+          "step": 750,
+          "l1": 0.032043635845184326
+        },
+        {
+          "step": 1000,
+          "l1": 0.05048269033432007
+        },
+        {
+          "step": 1250,
+          "l1": 0.009840726852416992
+        },
+        {
+          "step": 1500,
+          "l1": 0.017347954213619232
+        },
+        {
+          "step": 1750,
+          "l1": 0.009897123090922832
+        },
+        {
+          "step": 2000,
+          "l1": 0.011402766220271587
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.008539831032976508,
+      "inference_shapes": [
+        [
+          305,
+          305
+        ],
+        [
+          363,
+          363
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -4.849695772166662
+    },
+    {
+      "image": "baby",
+      "m": 4,
+      "elementary_scale": 1.189207115002721,
+      "method": "aa",
+      "label": "Literal RR bicubic-AA",
+      "psnr_rgb": 29.396548709052418,
+      "psnr_y": 31.911708084054627,
+      "psnr_rgb_unclipped": 29.39267107486641,
+      "psnr_y_unclipped": 31.906313154820744,
+      "train_seconds": 1.542988188099116,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333121418952942
+        },
+        {
+          "step": 250,
+          "l1": 0.04294075816869736
+        },
+        {
+          "step": 500,
+          "l1": 0.03698921576142311
+        },
+        {
+          "step": 750,
+          "l1": 0.0223349891602993
+        },
+        {
+          "step": 1000,
+          "l1": 0.027996670454740524
+        },
+        {
+          "step": 1250,
+          "l1": 0.009515926241874695
+        },
+        {
+          "step": 1500,
+          "l1": 0.016858449205756187
+        },
+        {
+          "step": 1750,
+          "l1": 0.009093411266803741
+        },
+        {
+          "step": 2000,
+          "l1": 0.01048547588288784
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.008228498045355082,
+      "inference_shapes": [
+        [
+          305,
+          305
+        ],
+        [
+          363,
+          363
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -4.693333330981613
+    },
+    {
+      "image": "baby",
+      "m": 4,
+      "elementary_scale": 1.189207115002721,
+      "method": "noaa",
+      "label": "Literal RR bicubic, no AA",
+      "psnr_rgb": 29.72161856913123,
+      "psnr_y": 32.0367211826148,
+      "psnr_rgb_unclipped": 29.72074414704484,
+      "psnr_y_unclipped": 32.035647769085166,
+      "train_seconds": 1.5480987350456417,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333148241043091
+        },
+        {
+          "step": 250,
+          "l1": 0.06271153688430786
+        },
+        {
+          "step": 500,
+          "l1": 0.07321445643901825
+        },
+        {
+          "step": 750,
+          "l1": 0.019382402300834656
+        },
+        {
+          "step": 1000,
+          "l1": 0.039098478853702545
+        },
+        {
+          "step": 1250,
+          "l1": 0.010594958439469337
+        },
+        {
+          "step": 1500,
+          "l1": 0.017444372177124023
+        },
+        {
+          "step": 1750,
+          "l1": 0.009485336020588875
+        },
+        {
+          "step": 2000,
+          "l1": 0.011107448488473892
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.008295535109937191,
+      "inference_shapes": [
+        [
+          305,
+          305
+        ],
+        [
+          363,
+          363
+        ],
+        [
+          431,
+          431
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -4.568320232421442
+    },
+    {
+      "image": "baby",
+      "m": 5,
+      "elementary_scale": 1.148698354997035,
+      "method": "consistent",
+      "label": "Camera law (band-limited)",
+      "psnr_rgb": 28.91598020425284,
+      "psnr_y": 31.164193741073156,
+      "psnr_rgb_unclipped": 28.914136285775474,
+      "psnr_y_unclipped": 31.161882899374135,
+      "train_seconds": 1.526185309048742,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333201289176941
+        },
+        {
+          "step": 250,
+          "l1": 0.08666273951530457
+        },
+        {
+          "step": 500,
+          "l1": 0.029671844094991684
+        },
+        {
+          "step": 750,
+          "l1": 0.04618948698043823
+        },
+        {
+          "step": 1000,
+          "l1": 0.10840177536010742
+        },
+        {
+          "step": 1250,
+          "l1": 0.010766692459583282
+        },
+        {
+          "step": 1500,
+          "l1": 0.016574006527662277
+        },
+        {
+          "step": 1750,
+          "l1": 0.00915322545915842
+        },
+        {
+          "step": 2000,
+          "l1": 0.010891641490161419
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.20828684302978218,
+      "inference_shapes": [
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -5.440847673963084
+    },
+    {
+      "image": "baby",
+      "m": 5,
+      "elementary_scale": 1.148698354997035,
+      "method": "aa_bandlimited",
+      "label": "AA stretch (same band limit)",
+      "psnr_rgb": 27.95245251144901,
+      "psnr_y": 30.196267918385796,
+      "psnr_rgb_unclipped": 27.940716708681627,
+      "psnr_y_unclipped": 30.178661749089247,
+      "train_seconds": 1.542667510919273,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333168506622314
+        },
+        {
+          "step": 250,
+          "l1": 0.13279852271080017
+        },
+        {
+          "step": 500,
+          "l1": 0.04207736253738403
+        },
+        {
+          "step": 750,
+          "l1": 0.023970220237970352
+        },
+        {
+          "step": 1000,
+          "l1": 0.09067162871360779
+        },
+        {
+          "step": 1250,
+          "l1": 0.009824123233556747
+        },
+        {
+          "step": 1500,
+          "l1": 0.017232108861207962
+        },
+        {
+          "step": 1750,
+          "l1": 0.01002373918890953
+        },
+        {
+          "step": 2000,
+          "l1": 0.011164243333041668
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.010874692117795348,
+      "inference_shapes": [
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -6.4087734966504435
+    },
+    {
+      "image": "baby",
+      "m": 5,
+      "elementary_scale": 1.148698354997035,
+      "method": "aa",
+      "label": "Literal RR bicubic-AA",
+      "psnr_rgb": 28.860333059769005,
+      "psnr_y": 30.918025172484846,
+      "psnr_rgb_unclipped": 28.84771058683585,
+      "psnr_y_unclipped": 30.911701282363314,
+      "train_seconds": 1.5521753439679742,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.5333160161972046
+        },
+        {
+          "step": 250,
+          "l1": 0.11607863754034042
+        },
+        {
+          "step": 500,
+          "l1": 0.04475150629878044
+        },
+        {
+          "step": 750,
+          "l1": 0.019106175750494003
+        },
+        {
+          "step": 1000,
+          "l1": 0.03691398352384567
+        },
+        {
+          "step": 1250,
+          "l1": 0.008887043222784996
+        },
+        {
+          "step": 1500,
+          "l1": 0.016314007341861725
+        },
+        {
+          "step": 1750,
+          "l1": 0.00898638553917408
+        },
+        {
+          "step": 2000,
+          "l1": 0.010824060998857021
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.010852251900359988,
+      "inference_shapes": [
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -5.687016242551394
+    },
+    {
+      "image": "baby",
+      "m": 5,
+      "elementary_scale": 1.148698354997035,
+      "method": "noaa",
+      "label": "Literal RR bicubic, no AA",
+      "psnr_rgb": 28.377971612095028,
+      "psnr_y": 30.606212733153846,
+      "psnr_rgb_unclipped": 28.37207351264759,
+      "psnr_y_unclipped": 30.59887732768179,
+      "train_seconds": 1.5763478530570865,
+      "losses": [
+        {
+          "step": 1,
+          "l1": 0.533318817615509
+        },
+        {
+          "step": 250,
+          "l1": 0.04141515865921974
+        },
+        {
+          "step": 500,
+          "l1": 0.04946775734424591
+        },
+        {
+          "step": 750,
+          "l1": 0.0835832804441452
+        },
+        {
+          "step": 1000,
+          "l1": 0.06818941235542297
+        },
+        {
+          "step": 1250,
+          "l1": 0.01021651178598404
+        },
+        {
+          "step": 1500,
+          "l1": 0.0168418288230896
+        },
+        {
+          "step": 1750,
+          "l1": 0.009514158591628075
+        },
+        {
+          "step": 2000,
+          "l1": 0.010812822729349136
+        }
+      ],
+      "coordinate_sha256": "bd41c84f0b5a251361e8f79dc686196c5586d23f7ea4b1fb15bce8c62e0bd909",
+      "parameters": 225091,
+      "father_size": 218,
+      "core_size": 64,
+      "inference_seconds_including_RR_setup": 0.010655215941369534,
+      "inference_shapes": [
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "gain_over_bicubic_y": -5.998828681882394
+    }
+  ]
+}

@@ -1,0 +1,2162 @@
+[
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.07014652553151181,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 9.53804536216254e-16,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.004975839988102955,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 9.53804536216254e-16,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 9.53804536216254e-16,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.12295561679877945,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 7.952736294920839e-16,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.00739629225778819,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.02329597858129927,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 7.952736294920839e-16,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.1666216762438493,
+    "chain_vs_direct_nrmse": 0.00131324362771286
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 6.584369759961915e-16,
+    "chain_vs_direct_nrmse": 1.0653849232978516e-15
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.008557329791048913,
+    "chain_vs_direct_nrmse": 0.06796944390700613
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.04108929033823851,
+    "chain_vs_direct_nrmse": 0.04022250659469028
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 6.584369759961915e-16,
+    "chain_vs_direct_nrmse": 1.0653849232978516e-15
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.07571962922219191,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.01784987465542817,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 3.4936145005507293,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.01784987465542817,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.01784987465542817,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.12513351187886573,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.013547826661143403,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 260.16561654291485,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.027587084310727573,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.013547826661143403,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.16786586478002935,
+    "chain_vs_direct_nrmse": 0.0014836424750021514
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.011608212382353723,
+    "chain_vs_direct_nrmse": 9.429420131778287e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 141.6826350684977,
+    "chain_vs_direct_nrmse": 1.0060269066790923
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.04307146303586258,
+    "chain_vs_direct_nrmse": 0.04024572763232849
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.011608212382353723,
+    "chain_vs_direct_nrmse": 9.429420131778287e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.04927094398797014,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.00012557710909302358,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0029614847746927005,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.005545679154042285,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.005545679154042285,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.08436890409485957,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 3.409217600865115e-12,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.004296969801351814,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.018239211537621876,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.006136328692779026,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.11212293259480965,
+    "chain_vs_direct_nrmse": 0.001784601239770057
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 8.611782556805702e-16,
+    "chain_vs_direct_nrmse": 0.00018641729214748066
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.004932147734709409,
+    "chain_vs_direct_nrmse": 0.00208093216781098
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.030952303818173182,
+    "chain_vs_direct_nrmse": 0.029386603025290815
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.007909177954123141,
+    "chain_vs_direct_nrmse": 9.022845402399598e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.056662639377047255,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.021246761878556657,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.02157204350485053,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.02147593411201919,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.02147593411201919,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.08743889351755137,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.016084830831168427,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.016794462393372338,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.024972214982018317,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.016982717057370134,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.11390011275177189,
+    "chain_vs_direct_nrmse": 0.00191363657030277
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.013692237746437136,
+    "chain_vs_direct_nrmse": 0.00030163956839654465
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.014764062554632574,
+    "chain_vs_direct_nrmse": 0.0025398035025587943
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.0344075358862073,
+    "chain_vs_direct_nrmse": 0.029463075406992008
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.015782712113006494,
+    "chain_vs_direct_nrmse": 9.469872457048846e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.03928630807879416,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.0007807768694605887,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0023331831598180958,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.00872059289666979,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.00872059289666979,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.06643055486639034,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.00019365260250386014,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.003183608296273739,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.017289769304650943,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.009834194849572996,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.08751230136058205,
+    "chain_vs_direct_nrmse": 0.002006028927969343
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 8.422227921421596e-05,
+    "chain_vs_direct_nrmse": 0.0011527711773813194
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0036279245533367395,
+    "chain_vs_direct_nrmse": 0.0019008636718809552
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.027598600411751217,
+    "chain_vs_direct_nrmse": 0.024137430185438735
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.012305163225934649,
+    "chain_vs_direct_nrmse": 8.57303852202805e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.048131393527863595,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.022918204482046095,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.023077106149512257,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.023732555738568684,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.023732555738568684,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.07026035056919318,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.01745477640498517,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.01782102165708823,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.025049025428487838,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.019671907799942594,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.08976340718263089,
+    "chain_vs_direct_nrmse": 0.002121816232295006
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.014827804033477398,
+    "chain_vs_direct_nrmse": 0.0017621784143068003
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.015379959599428842,
+    "chain_vs_direct_nrmse": 0.002389399309513692
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.031896980899891667,
+    "chain_vs_direct_nrmse": 0.024215880165600605
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.019217423151777772,
+    "chain_vs_direct_nrmse": 9.342786425209674e-16
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.02743770100736066,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.0023369718416013474,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.002710402408274043,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.01365245917294453,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.01365245917294453,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.045552333484417604,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.0006837131230612388,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0021957954574640852,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.018788277519285444,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.015419517148381712,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.0595439333896788,
+    "chain_vs_direct_nrmse": 0.0022497554722526736
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.00033584006923046924,
+    "chain_vs_direct_nrmse": 0.0034204822928725585
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0024005205905403997,
+    "chain_vs_direct_nrmse": 0.0033036568214582737
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.026765887947360918,
+    "chain_vs_direct_nrmse": 0.018094372721897903
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.019078787174820786,
+    "chain_vs_direct_nrmse": 1.0239225661163023e-15
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.03895107146808851,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.02502152529502839,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.025018406192370352,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.027383965475530247,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.027383965475530247,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.050925301644896524,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.01927324713658756,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.019416670736477914,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.027037085462765932,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.024119991194008896,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.06276966570178077,
+    "chain_vs_direct_nrmse": 0.00235372982094808
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.016365947120933373,
+    "chain_vs_direct_nrmse": 0.004284824104303216
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.016597390762463256,
+    "chain_vs_direct_nrmse": 0.003994956204898355
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.031849550372248944,
+    "chain_vs_direct_nrmse": 0.01816889541748216
+  },
+  {
+    "kind": "1/f",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.025046779866881023,
+    "chain_vs_direct_nrmse": 8.54372531249214e-16
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.4659851967550802,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 2.5959839697444814e-15,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.00495286909548911,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 2.5959839697444814e-15,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 2.5959839697444814e-15,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.7249470806933814,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 2.641997595874409e-15,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.00685980968893588,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.12072739208602809,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 2.641997595874409e-15,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.8773717815539003,
+    "chain_vs_direct_nrmse": 0.01321962394720091
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 2.825949689550282e-15,
+    "chain_vs_direct_nrmse": 3.945477638227823e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.007646387805417511,
+    "chain_vs_direct_nrmse": 0.013688643181251814
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.18903986248710286,
+    "chain_vs_direct_nrmse": 0.16721720814552973
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 2.825949689550282e-15,
+    "chain_vs_direct_nrmse": 3.945477638227823e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.47401888287057137,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.05557951993519459,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.4725709432553399,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.05557951993519459,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.05557951993519459,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.7302317157643783,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.05048937309822932,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 57.930299057959566,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.13276675126517196,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.05048937309822932,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.8820544666694874,
+    "chain_vs_direct_nrmse": 0.013351810711682024
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.048812789468173336,
+    "chain_vs_direct_nrmse": 3.3915963137226733e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 34.98440197393417,
+    "chain_vs_direct_nrmse": 1.0037208970651452
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.1964469493785191,
+    "chain_vs_direct_nrmse": 0.16713765809265763
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 0.9,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.048812789468173336,
+    "chain_vs_direct_nrmse": 3.3915963137226733e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.32027184899451144,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.0020319808462092043,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0030739108818707162,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.08968179468710019,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.08968179468710019,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.48612391367470115,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 6.629478061377174e-11,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0032228155662491023,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.1395047314589261,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.09351763522136043,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.5734414359694734,
+    "chain_vs_direct_nrmse": 0.01721567494361357
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 2.8875199241860147e-15,
+    "chain_vs_direct_nrmse": 0.004124519128524286
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.0036438203500827326,
+    "chain_vs_direct_nrmse": 0.00491176609629157
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.18983763717697943,
+    "chain_vs_direct_nrmse": 0.1423247345390657
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.10188117014667435,
+    "chain_vs_direct_nrmse": 2.9848619396918707e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.3276400297255595,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.05411409675984472,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.05424105718110278,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.10418294613545942,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.10418294613545942,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.491378949606515,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.04938568440383841,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.04966074596392618,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.14883510606915426,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.10522681492819433,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.5781387355947738,
+    "chain_vs_direct_nrmse": 0.017294541972733175
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.047892938607700386,
+    "chain_vs_direct_nrmse": 0.004190882232884503
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.04826608930287386,
+    "chain_vs_direct_nrmse": 0.004976139633303799
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.19733030283384248,
+    "chain_vs_direct_nrmse": 0.14242484588465842
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 1.5,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.11289486816118448,
+    "chain_vs_direct_nrmse": 2.780858449602443e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.25022982190972765,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.01141487790627189,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.011485974004551381,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.1275272761414438,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.1275272761414438,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.3713014287936069,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.0034209164770277168,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.00405020236654135,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.1653971197313931,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.14064832119147722,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.43344235966688666,
+    "chain_vs_direct_nrmse": 0.019160012633096486
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.0017037556336694272,
+    "chain_vs_direct_nrmse": 0.023298701746143572
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.002962874698955451,
+    "chain_vs_direct_nrmse": 0.022197179021184253
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.20112983499173032,
+    "chain_vs_direct_nrmse": 0.12005434777005411
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.14898067912754953,
+    "chain_vs_direct_nrmse": 3.2498499279338358e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.2578564870645422,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.053960206638439964,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.05397743347482201,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.13736523557427902,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.13736523557427902,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.3769672901956791,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.048706904513311375,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.04886342460142427,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.17287758860552976,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.1483990816039889,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.4385362053243883,
+    "chain_vs_direct_nrmse": 0.019223228690158255
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.04727314646620773,
+    "chain_vs_direct_nrmse": 0.023746427638471526
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.04746568597720615,
+    "chain_vs_direct_nrmse": 0.022592302652032447
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.20797882612579643,
+    "chain_vs_direct_nrmse": 0.12015582664903728
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 2.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.15663620830281444,
+    "chain_vs_direct_nrmse": 2.6543971213864657e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.16638652934571563,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.03028241138362826,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.02965010493953585,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.17691922797114784,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.17691922797114784,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.23778004220450635,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.010714565669250758,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.010576088222773016,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.20801913621795207,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.19746859990573767,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.2744530367879135,
+    "chain_vs_direct_nrmse": 0.021419025737968143
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.006060113041082419,
+    "chain_vs_direct_nrmse": 0.061604968888223255
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.006414227387287372,
+    "chain_vs_direct_nrmse": 0.0558831600894273
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.2328002626269993,
+    "chain_vs_direct_nrmse": 0.09171968149158756
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.20861891889369008,
+    "chain_vs_direct_nrmse": 2.6204209069948532e-15
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.1753139197856622,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "full_band",
+    "prediction_nrmse": 0.05920819384996344,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.05875744152035158,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.1834997116673107,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 2,
+    "method": "projected",
+    "prediction_nrmse": 0.1834997116673107,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.24471055213630696,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "full_band",
+    "prediction_nrmse": 0.04894911367002179,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.048965375341106517,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.21346418419272117,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 3,
+    "method": "projected",
+    "prediction_nrmse": 0.20269891795139316,
+    "chain_vs_direct_nrmse": null
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "cubic_AA",
+    "prediction_nrmse": 0.28074624247412555,
+    "chain_vs_direct_nrmse": 0.021468349454281117
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "full_band",
+    "prediction_nrmse": 0.04693546492541471,
+    "chain_vs_direct_nrmse": 0.06203286339133353
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "heldout_LS",
+    "prediction_nrmse": 0.04702523364464275,
+    "chain_vs_direct_nrmse": 0.056212971560573664
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "matched_AA",
+    "prediction_nrmse": 0.2385765424408363,
+    "chain_vs_direct_nrmse": 0.0918124509091845
+  },
+  {
+    "kind": "texture",
+    "cutoff_pi": 3.0,
+    "noise": 0.005,
+    "factor": 4,
+    "method": "projected",
+    "prediction_nrmse": 0.2141855904956799,
+    "chain_vs_direct_nrmse": 2.7871278933144393e-15
+  }
+]

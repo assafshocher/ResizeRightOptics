@@ -1,0 +1,165 @@
+{
+  "scale": 2,
+  "radius": 64,
+  "max_m": 10,
+  "uses_original_hr": false,
+  "anchor_telescope_max_error": 4.440892098500626e-16,
+  "anchor_lut_max_error": 0.0,
+  "rr_checks": [
+    {
+      "scale": 0.5,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "aa",
+      "cache_max_error": 1.7881393432617188e-07,
+      "constant_max_error": 0.0
+    },
+    {
+      "scale": 0.5,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 0.0,
+      "constant_max_error": 0.0
+    },
+    {
+      "scale": 0.5,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "lut",
+      "cache_max_error": 6.556510925292969e-07,
+      "constant_max_error": 6.556510925292969e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "aa",
+      "cache_max_error": 1.7881393432617188e-07,
+      "constant_max_error": 3.5762786865234375e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.980232238769531e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "lut",
+      "cache_max_error": 7.152557373046875e-07,
+      "constant_max_error": 1.3113021850585938e-06
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "aa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.980232238769531e-07
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.980232238769531e-07
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        249,
+        253
+      ],
+      "kernel": "lut",
+      "cache_max_error": 7.152557373046875e-07,
+      "constant_max_error": 1.3113021850585938e-06
+    }
+  ],
+  "support_sensitivity": [
+    {
+      "m": 1,
+      "factor": 2.0,
+      "radius_vs_double_rmse": 1.6076994511490693e-05,
+      "radius_vs_double_max": 5.3688551779562665e-05
+    },
+    {
+      "m": 2,
+      "factor": 1.4142135623730951,
+      "radius_vs_double_rmse": 1.067986710195487e-06,
+      "radius_vs_double_max": 4.1424221387531546e-06
+    },
+    {
+      "m": 3,
+      "factor": 1.2599210498948732,
+      "radius_vs_double_rmse": 9.672187102185687e-07,
+      "radius_vs_double_max": 3.3722787197466852e-06
+    },
+    {
+      "m": 4,
+      "factor": 1.189207115002721,
+      "radius_vs_double_rmse": 5.972392953271216e-07,
+      "radius_vs_double_max": 2.5699862427064346e-06
+    },
+    {
+      "m": 5,
+      "factor": 1.148698354997035,
+      "radius_vs_double_rmse": 5.345083584763836e-07,
+      "radius_vs_double_max": 1.9219155497074425e-06
+    },
+    {
+      "m": 6,
+      "factor": 1.122462048309373,
+      "radius_vs_double_rmse": 2.8721438307666326e-07,
+      "radius_vs_double_max": 1.1112763560472416e-06
+    },
+    {
+      "m": 7,
+      "factor": 1.1040895136738123,
+      "radius_vs_double_rmse": 4.0141303295085836e-07,
+      "radius_vs_double_max": 1.8315339320729151e-06
+    },
+    {
+      "m": 8,
+      "factor": 1.0905077326652577,
+      "radius_vs_double_rmse": 5.816066671887077e-07,
+      "radius_vs_double_max": 2.1363440666499756e-06
+    },
+    {
+      "m": 9,
+      "factor": 1.080059738892306,
+      "radius_vs_double_rmse": 4.856762888405282e-07,
+      "radius_vs_double_max": 1.8152187937622508e-06
+    },
+    {
+      "m": 10,
+      "factor": 1.0717734625362931,
+      "radius_vs_double_rmse": 1.3134645085683201e-06,
+      "radius_vs_double_max": 5.200203814115234e-06
+    }
+  ],
+  "literal_vs_matched_baby_rmse": 0.004558220040053129,
+  "support_gate_passed": true,
+  "notes": "Finite support and RR per-phase normalization approximate the canonical law; no exact finite-image composition claim. Training uses matched input unless explicitly stated."
+}

@@ -1,0 +1,138 @@
+{
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "scales": [
+    2,
+    3,
+    4
+  ],
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "methods": [
+    "gaussian_consistent",
+    "gaussian_aa",
+    "aa_grid_gaussian"
+  ],
+  "anchor_sigma": 2.0,
+  "truncate": 4.0,
+  "seed": 0,
+  "training_by_scale": {
+    "2": {
+      "image": "IMAGE",
+      "scale": 2,
+      "m": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "steps": 10000,
+      "batch": 1,
+      "crop": 64,
+      "crop_margin": 16,
+      "width": 64,
+      "depth": 8,
+      "lr": 0.0001,
+      "radius": 64,
+      "seed": 0,
+      "residual": true,
+      "device": "cuda"
+    },
+    "3": {
+      "image": "IMAGE",
+      "scale": 3,
+      "m": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "steps": 10000,
+      "batch": 1,
+      "crop": 64,
+      "crop_margin": 16,
+      "width": 64,
+      "depth": 8,
+      "lr": 0.0001,
+      "radius": 96,
+      "seed": 0,
+      "residual": true,
+      "device": "cuda"
+    },
+    "4": {
+      "image": "IMAGE",
+      "scale": 4,
+      "m": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "steps": 10000,
+      "batch": 1,
+      "crop": 64,
+      "crop_margin": 16,
+      "width": 64,
+      "depth": 8,
+      "lr": 0.0001,
+      "radius": 128,
+      "seed": 0,
+      "residual": true,
+      "device": "cuda"
+    }
+  },
+  "source_sha256": {
+    "experiment.py": "d56e4a2377b4f91a9b0efba1c0099188fe1e8d51a1961e5ba1984e6fa3c757d7",
+    "kernels.py": "52e2c691c0d1dfb633a2faf19b5fddf114c9ea197ece587f8ab387eefab45993",
+    "matched_kernels.py": "260fc5e637c286247f600447b9329af8167fdeb714c39e62b307b7ad19ab0611",
+    "gaussian_kernels.py": "d390967ce5e4cf8dacddbea713a5b968e6abb3e00760f48876c4cfd6414af0ff",
+    "check_gaussian_suite.py": "36ebf4a0d3660ab079dbbb9ec5e75e7167d122a7decede16df3e03577b54aa5a",
+    "run_gaussian_suite.py": "a03510d69b9d084ca998bbba43b172a062051b0f9af9a2689d5b2e646fc99f85",
+    "GAUSSIAN_SUITE_PROTOCOL.md": "68971f4eb56ef8f69c0432a3265ca5277704f77789ec99356760277483b2e6a3",
+    "figures/gen_fig_gaussian_suite.py": "b36deaa453bba8ad1aee8d2f2888a28f16bf528f545dc690ed2fc264b2f90b0d",
+    "check_gaussian_kernels.py": "fcb97d8af4ce8f71282e8419821466c74299374dbd1b3fd791ab6fee80f9b2aa",
+    "vendor/ResizeRight/resize_right.py": "a902a052789aad3db4dfd13a5877b9519d2b21be25860e1943614fc7edd8a694",
+    "vendor/ResizeRight/interp_methods.py": "590406de7dd3c10acb4ecd21a44340e9e2a3634c5d1a9885afa8fcd39a12164b"
+  },
+  "HR_sha256": {
+    "baby": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+    "bird": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+    "butterfly": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+    "head": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+    "woman": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac"
+  },
+  "qualification": "Spatially truncated Gaussian; no frequency cutoff; approximate sampled composition."
+}

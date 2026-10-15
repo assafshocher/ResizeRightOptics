@@ -1,0 +1,115 @@
+{
+  "anchor_telescope_max_error": 4.440892098500626e-16,
+  "anchor_lut_max_error": 0.0,
+  "rr_checks": [
+    {
+      "scale": 0.5,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "aa",
+      "cache_max_error": 1.1920928955078125e-07,
+      "constant_max_error": 0.0
+    },
+    {
+      "scale": 0.5,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 0.0,
+      "constant_max_error": 0.0
+    },
+    {
+      "scale": 0.5,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "lut",
+      "cache_max_error": 5.364418029785156e-07,
+      "constant_max_error": 6.556510925292969e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "aa",
+      "cache_max_error": 1.7881393432617188e-07,
+      "constant_max_error": 3.5762786865234375e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.384185791015625e-07
+    },
+    {
+      "scale": 0.7937005259840998,
+      "shape": [
+        149,
+        153
+      ],
+      "kernel": "lut",
+      "cache_max_error": 7.152557373046875e-07,
+      "constant_max_error": 1.3113021850585938e-06
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        69,
+        73
+      ],
+      "kernel": "aa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.384185791015625e-07
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        69,
+        73
+      ],
+      "kernel": "noaa",
+      "cache_max_error": 2.384185791015625e-07,
+      "constant_max_error": 2.384185791015625e-07
+    },
+    {
+      "scale": 1.2599210498948732,
+      "shape": [
+        69,
+        73
+      ],
+      "kernel": "lut",
+      "cache_max_error": 5.960464477539062e-07,
+      "constant_max_error": 9.5367431640625e-07
+    }
+  ],
+  "support_sensitivity": [
+    {
+      "factor": 2,
+      "radius64_vs128_rmse": 1.6118154235300608e-05,
+      "radius64_vs128_max": 5.3822994232177734e-05
+    },
+    {
+      "factor": 1.2599210498948732,
+      "radius64_vs128_rmse": 9.763140269569703e-07,
+      "radius64_vs128_max": 3.516674041748047e-06
+    },
+    {
+      "factor": 1.148698354997035,
+      "radius64_vs128_rmse": 6.384254334079742e-07,
+      "radius64_vs128_max": 4.172325134277344e-06
+    }
+  ],
+  "literal_vs_matched_x2_baby_rmse": 0.004558220040053129,
+  "notes": "Finite support and RR per-phase normalization approximate the canonical law; no exact finite-image composition claim. Training uses matched input unless explicitly stated."
+}

@@ -1,0 +1,40 @@
+{
+  "images": [
+    "baby",
+    "bird",
+    "butterfly",
+    "head",
+    "woman"
+  ],
+  "n": 192,
+  "scales": [
+    2,
+    3,
+    4
+  ],
+  "etas": [
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "primary_eta": 0.01,
+  "noise_255": [
+    0,
+    1
+  ],
+  "noise_repeats": 3,
+  "telescope_factors": 40,
+  "boundaries": "periodic",
+  "grid": "centered, S*j+(S-1)/2",
+  "reference": "independently rendered HR camera capture, not latent scene",
+  "source_sha256": "140f8a02f12063776fb505963d6baa15d43f536f608a470663fe452124683725",
+  "data_sha256": {
+    "baby": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+    "bird": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+    "butterfly": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+    "head": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+    "woman": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac"
+  }
+}

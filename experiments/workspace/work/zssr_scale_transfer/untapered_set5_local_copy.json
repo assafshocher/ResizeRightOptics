@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "files": 151,
+  "manifest_algorithm": "SHA256 of each file; sorted relative filenames and digests identical on remote and local",
+  "data_hashes_unchanged": true,
+  "all_50_source_maps_match_pilot": true
+}

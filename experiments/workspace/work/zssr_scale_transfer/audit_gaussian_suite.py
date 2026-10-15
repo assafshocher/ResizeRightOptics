@@ -1,0 +1,380 @@
+"""Independent, read-only numerical/artifact audit of the completed Gaussian suite.
+
+Recompute PSNR in NumPy float64 from saved HWC predictions and original HR,
+without importing the experiment, kernels, models, or plotting implementation.
+Load checkpoints with weights_only=True on CPU and check the architecture from
+explicit tensor dimensions. Only the requested audit JSON is written.
+"""
+from __future__ import annotations
+
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import tempfile
+import time
+
+import numpy as np
+
+
+ROOT = Path(__file__).resolve().parent
+RUN = Path("runs/gaussian_sigma2_suite_v1")
+IMAGES = ("baby", "bird", "butterfly", "head", "woman")
+METHODS = ("gaussian_consistent", "gaussian_aa", "aa_grid_gaussian")
+SCALES = (2, 3, 4)
+METRICS = ("psnr_rgb", "psnr_y", "psnr_rgb_unclipped", "psnr_y_unclipped")
+
+
+def digest(path):
+    result = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            result.update(block)
+    return result.hexdigest()
+
+
+def read_json(path):
+    return json.loads(Path(path).read_text())
+
+
+def metrics(prediction, truth, shave):
+    pred = np.asarray(prediction, dtype=np.float64)[shave:-shave, shave:-shave, :]
+    gt = np.asarray(truth, dtype=np.float64)[shave:-shave, shave:-shave, :]
+    if pred.shape != gt.shape or not pred.size:
+        raise ValueError(("Metric shape mismatch", pred.shape, gt.shape))
+    weights = np.array([65.481, 128.553, 24.966], dtype=np.float64) / 255
+    clipped, raw = np.clip(pred, 0, 1) - gt, pred - gt
+
+    def psnr(delta):
+        return -10 * math.log10(max(float(np.mean(np.square(delta))), 1e-30))
+
+    return dict(psnr_rgb=psnr(clipped), psnr_y=psnr(np.sum(clipped * weights, axis=2)),
+                psnr_rgb_unclipped=psnr(raw), psnr_y_unclipped=psnr(np.sum(raw * weights, axis=2)))
+
+
+def range_stats(array):
+    return dict(output_min=float(np.min(array)), output_max=float(np.max(array)),
+                output_out_of_range_fraction=float(np.count_nonzero((array < 0) | (array > 1)) / array.size))
+
+
+def coordinate_hash(observed_shape, core):
+    rng = np.random.default_rng(0)
+    y = rng.integers(0, observed_shape[0] - core + 1, size=(10000, 1), dtype=np.int64)
+    x = rng.integers(0, observed_shape[1] - core + 1, size=(10000, 1), dtype=np.int64)
+    aug = rng.integers(0, 8, size=10000, dtype=np.int64)
+    return hashlib.sha256(y.tobytes() + x.tobytes() + aug.tobytes()).hexdigest()
+
+
+def checkpoint_shapes():
+    expected = {}
+    for layer in range(8):
+        outgoing = 3 if layer == 7 else 64
+        incoming = 3 if layer == 0 else 64
+        expected[f"{2 * layer}.weight"] = (outgoing, incoming, 3, 3)
+        expected[f"{2 * layer}.bias"] = (outgoing,)
+    return expected
+
+
+def clean_json(value):
+    if isinstance(value, float) and not math.isfinite(value):
+        return None
+    if isinstance(value, dict):
+        return {key: clean_json(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [clean_json(item) for item in value]
+    return value
+
+
+def save_atomic(path, report):
+    path = Path(path)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                         prefix=f".{path.name}.", suffix=".tmp", delete=False) as stream:
+            temporary = Path(stream.name)
+            json.dump(clean_json(report), stream, indent=2, allow_nan=False)
+            stream.write("\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+        temporary = None
+        fd = os.open(path.parent, os.O_RDONLY | getattr(os, "O_DIRECTORY", 0))
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def audit(root):
+    root = Path(root).resolve()
+    start = time.perf_counter()
+    report = dict(passed=False, started_utc=datetime.now(timezone.utc).isoformat(), root=str(root),
+        auditor_sha256=digest(Path(__file__)), numpy_version=np.__version__, failures=[],
+        tolerances=dict(psnr_db=1e-8, summary_db=1e-12, output_fraction=1e-7),
+        methodology=dict(metric_backend="independent NumPy float64, HWC", shave="S HR pixels",
+            y_weights=[65.481 / 255, 128.553 / 255, 24.966 / 255],
+            clipping="Clip RGB prediction to [0,1] before RGB/Y errors; leave truth unchanged",
+            averaging="Equal-weight mean of five image-level dB values",
+            checkpoint_backend="torch.load(weights_only=True, map_location=cpu)",
+            expected_parameters=225091, training_executed=False, gpu_used=False,
+            caveat="Checkpoint structure/finiteness checked; predictions are not regenerated by inference"),
+        row_count=0, prediction_count=0, checkpoint_count=0, baseline_count=0,
+        max_psnr_difference_db=0., max_baseline_difference_db=0., max_summary_difference_db=0.,
+        max_output_fraction_difference=0., source_sha256={}, data_sha256={},
+        per_scale={}, cases=[], files_sha256={})
+
+    def gate(condition, check, **context):
+        if not condition:
+            report["failures"].append(dict(check=check, **context))
+        return bool(condition)
+
+    def equal_metrics(actual, recorded, context, baseline=False):
+        maximum = 0.
+        for metric in METRICS:
+            delta = abs(actual[metric] - recorded[metric])
+            maximum = max(maximum, delta)
+            gate(math.isfinite(actual[metric]) and delta <= report["tolerances"]["psnr_db"],
+                 "independent_psnr", metric=metric, difference_db=delta, **context)
+        key = "max_baseline_difference_db" if baseline else "max_psnr_difference_db"
+        report[key] = max(report[key], maximum)
+        return maximum
+
+    def compare_curve(actual, archived, **context):
+        if not gate(len(actual) == len(archived) == 10, "ten_point_curve", **context):
+            return
+        delta = max(abs(float(a) - float(b)) for a, b in zip(actual, archived))
+        report["max_summary_difference_db"] = max(report["max_summary_difference_db"], delta)
+        gate(delta <= report["tolerances"]["summary_db"], "summary_mean_or_curve", difference=delta, **context)
+
+    try:
+        import torch
+        torch.set_num_threads(2)
+        torch.set_num_interop_threads(1)
+        report["torch_version"] = torch.__version__
+        config = read_json(root / RUN / "config.json")
+        status = read_json(root / RUN / "status.json")
+        final = read_json(root / RUN / "summary.json")
+        gate(status["state"] == "complete" and final["passed"] and final["complete"], "suite_complete")
+        gate(final["config"] == config, "final_config_matches")
+        gate(set(status["completed"]) == {f"x{s}/{i}" for s in SCALES for i in IMAGES}, "status_complete_images")
+        gate(config["scales"] == list(SCALES) and config["images"] == list(IMAGES)
+             and config["methods"] == list(METHODS) and config["m"] == list(range(1, 11))
+             and config["anchor_sigma"] == 2. and config["truncate"] == 4. and config["seed"] == 0,
+             "fixed_experiment_configuration")
+        for name, expected in config["source_sha256"].items():
+            report["source_sha256"][name] = digest(root / name)
+            gate(report["source_sha256"][name] == expected, "source_hash_unchanged", file=name)
+        for image, expected in config["HR_sha256"].items():
+            report["data_sha256"][image] = digest(root / "data" / f"{image}_hr.npy")
+            gate(report["data_sha256"][image] == expected, "hr_hash_unchanged", image=image)
+        preflight = read_json(root / RUN / "kernel_checks.json")
+        gate(preflight["passed"] and preflight["scales"] == list(SCALES)
+             and preflight["anchor_sigma"] == 2. and preflight["device"] == "cuda"
+             and preflight["cached_resize_checked"] and preflight["cuda_checked"]
+             and not preflight["failures"], "full_cuda_preflight_passed")
+        gate({(r["scale"], r["image"], r["m"]) for r in preflight["cases"]}
+             == {(s, i, m) for s in SCALES for i in IMAGES for m in range(1, 11)}
+             and len(preflight["cases"]) == 150, "preflight_case_coverage")
+        for name, expected in preflight["source_sha256"].items():
+            gate(digest(root / name) == expected, "preflight_source_hash", file=name)
+        gate(preflight["data_sha256"] == config["HR_sha256"], "preflight_data_hashes")
+        expected_shapes = checkpoint_shapes()
+        gate(sum(math.prod(shape) for shape in expected_shapes.values()) == 225091, "independent_architecture_count")
+        all_stems, all_predictions = set(), set()
+        all_expected_files = set()
+
+        for scale in SCALES:
+            summary = read_json(root / RUN / f"summary_x{scale}.json")
+            gate(summary["passed"] and summary["complete"] and summary["images"] == list(IMAGES)
+                 and summary["scale"] == scale and summary["config"] == config,
+                 "scale_summary_metadata", scale=scale)
+            gate(summary == next(v for v in final["per_scale"] if v["scale"] == scale),
+                 "final_embeds_exact_scale_summary", scale=scale)
+            per_image, independent_curves, row_curves, baselines = [], {}, {}, []
+            for image in IMAGES:
+                context = dict(scale=scale, image=image)
+                folder = root / RUN / f"x{scale}" / f"{image}_seed0"
+                results, verified = read_json(folder / "results.json"), read_json(folder / "verified.json")
+                rows = results["results"]
+                keyed = {(row["m"], row["method"]): row for row in rows}
+                gate(len(rows) == len(keyed) == 30 and set(keyed)
+                     == {(m, a) for m in range(1, 11) for a in METHODS}, "complete_image_rows", **context)
+                gate(results["config"] == config, "image_config", **context)
+                gate(verified == next(v for v in summary["per_image"] if v["image"] == image),
+                     "verified_matches_scale_summary", **context)
+                report["row_count"] += len(rows)
+                truth = np.load(root / "data" / f"{image}_hr.npy", allow_pickle=False)
+                gate(truth.ndim == 3 and truth.shape[2] == 3 and bool(np.isfinite(truth).all()), "valid_hr", **context)
+                observed = np.load(folder / "input.npy", allow_pickle=False)
+                observed_shape = tuple(math.ceil(n / scale) for n in truth.shape[:2])
+                gate(observed.shape == (*observed_shape, 3) and bool(np.isfinite(observed).all()),
+                     "observed_shape_and_finiteness", **context)
+                baseline = np.load(folder / "bicubic_baseline.npy", allow_pickle=False)
+                gate(baseline.shape == truth.shape and bool(np.isfinite(baseline).all()), "baseline_valid", **context)
+                baseline_scores = metrics(baseline, truth, scale)
+                equal_metrics(baseline_scores, results["bicubic"], context, baseline=True)
+                gate(verified["baseline_y"] == results["bicubic"]["psnr_y"], "verified_baseline", **context)
+                baselines.append(baseline_scores["psnr_y"])
+                report["baseline_count"] += 1
+                core = min(64, min(observed_shape) - 16)
+                expected_coordinates = coordinate_hash(observed_shape, core)
+                image_stems, cached_metrics, recomputed = set(), {}, {}
+                for m in range(1, 11):
+                    gate(len({keyed[m, a]["coordinate_sha256"] for a in METHODS}) == 1,
+                         "paired_crop_coordinates", m=m, **context)
+                anchor_left, anchor_right = keyed[1, METHODS[0]], keyed[1, METHODS[1]]
+                for field in (*METRICS, "artifact_stem", "coordinate_sha256", "losses",
+                              "output_min", "output_max", "output_out_of_range_fraction"):
+                    gate(anchor_left[field] == anchor_right[field], "exact_m1_reuse", field=field, **context)
+
+                for (m, method), row in sorted(keyed.items()):
+                    case = dict(context, m=m, method=method)
+                    gate(row["anchor_sigma"] == 2. and row["base_sigma"] == 2. / scale,
+                         "row_fixed_sigma", **case)
+                    gate(row["parameters"] == 225091 and [v["step"] for v in row["losses"]]
+                         == [1] + list(range(250, 10001, 250))
+                         and all(math.isfinite(v["l1"]) and v["l1"] >= 0 for v in row["losses"]),
+                         "complete_finite_training_losses", **case)
+                    gate(row["coordinate_sha256"] == expected_coordinates,
+                         "independent_crop_coordinate_hash", **case)
+                    halo = 32 * scale + math.ceil(2 * scale ** (1 / m)) + 10
+                    father = core + 2 * halo
+                    gate(row["core_size"] == core and row["father_size"] == father,
+                         "training_crop_geometry", **case)
+                    expected_stem = f"m{m}_{METHODS[0] if m == 1 and method == METHODS[1] else method}"
+                    gate(row["artifact_stem"] == expected_stem, "artifact_stem", **case)
+                    stem = folder / expected_stem
+                    relative_stem = str(stem.relative_to(root))
+                    image_stems.add(relative_stem)
+                    for extension in (".npy", ".png", ".pt"):
+                        artifact = stem.with_suffix(extension)
+                        gate(artifact.is_file() and artifact.stat().st_size > 0,
+                             "artifact_exists_nonempty", artifact=str(artifact.relative_to(root)), **case)
+                        all_expected_files.add(str(artifact.relative_to(root)))
+                    if relative_stem not in cached_metrics:
+                        prediction = np.load(stem.with_suffix(".npy"), allow_pickle=False)
+                        gate(prediction.shape == truth.shape and bool(np.isfinite(prediction).all()),
+                             "prediction_shape_finiteness", **case)
+                        scores, ranges = metrics(prediction, truth, scale), range_stats(prediction)
+                        cached_metrics[relative_stem] = (scores, ranges)
+                        all_predictions.add(relative_stem)
+                    scores, ranges = cached_metrics[relative_stem]
+                    discrepancy = equal_metrics(scores, row, case)
+                    for name, actual in ranges.items():
+                        delta = abs(actual - row[name])
+                        tolerance = report["tolerances"]["output_fraction"] if name.endswith("fraction") else 0.
+                        gate(delta <= tolerance, "recomputed_output_range", metric=name, difference=delta, **case)
+                        if name.endswith("fraction"):
+                            report["max_output_fraction_difference"] = max(report["max_output_fraction_difference"], delta)
+                    recomputed[m, method] = dict(scores, **ranges)
+                    if relative_stem not in all_stems:
+                        state = torch.load(stem.with_suffix(".pt"), map_location="cpu", weights_only=True)
+                        gate(set(state) == set(expected_shapes), "checkpoint_keys", **case)
+                        gate(all(isinstance(state[name], torch.Tensor)
+                                 and tuple(state[name].shape) == shape
+                                 and state[name].device.type == "cpu" and state[name].dtype == torch.float32
+                                 and bool(torch.isfinite(state[name]).all())
+                                 for name, shape in expected_shapes.items()), "checkpoint_shapes_finiteness", **case)
+                        gate(sum(v.numel() for v in state.values()) == 225091, "checkpoint_parameter_count", **case)
+                        all_stems.add(relative_stem)
+                        del state
+                    report["cases"].append(dict(case, artifact_stem=relative_stem,
+                                                maximum_psnr_difference_db=discrepancy,
+                                                recomputed=scores, output_range=ranges))
+                gate(len(image_stems) == 29 and verified["checkpoints_verified"] == 29,
+                     "29_unique_image_checkpoints", **context)
+                independent_curves[image], row_curves[image] = {}, {}
+                for method in METHODS:
+                    independent_curves[image][method] = {}
+                    row_curves[image][method] = {}
+                    for metric in ("psnr_y", "psnr_y_unclipped"):
+                        exact = [keyed[m, method][metric] for m in range(1, 11)]
+                        independent = [recomputed[m, method][metric] for m in range(1, 11)]
+                        compare_curve(exact, verified[metric][method], metric=metric, method=method, **context)
+                        independent_curves[image][method][metric] = independent
+                        row_curves[image][method][metric] = exact
+                    recorded_fractions = [keyed[m, method]["output_out_of_range_fraction"] for m in range(1, 11)]
+                    gate(recorded_fractions == verified["output_out_of_range_fraction"][method],
+                         "verified_output_fraction_curve", method=method, **context)
+                per_image.append(dict(image=image, baseline_y=baseline_scores["psnr_y"],
+                    ours_m10_minus_baseline=recomputed[10, METHODS[0]]["psnr_y"] - baseline_scores["psnr_y"],
+                    m10={a:recomputed[10, a] for a in METHODS}))
+                print(json.dumps(dict(event="audit_image", **context, rows=len(rows), checkpoints=len(image_stems))), flush=True)
+            mean_curves = {}
+            for method in METHODS:
+                mean_curves[method] = {}
+                for metric, summary_key in (("psnr_y", "mean_psnr_y"), ("psnr_y_unclipped", "mean_psnr_y_unclipped")):
+                    exact = [sum(row_curves[i][method][metric][m] for i in IMAGES) / 5 for m in range(10)]
+                    independent = [sum(independent_curves[i][method][metric][m] for i in IMAGES) / 5 for m in range(10)]
+                    compare_curve(exact, summary[summary_key][method], scale=scale, method=method, metric=metric)
+                    mean_curves[method][metric] = independent
+            gate(abs(sum(baselines) / 5 - summary["baseline_mean_y"]) <= report["tolerances"]["psnr_db"],
+                 "independent_baseline_mean", scale=scale)
+            first = read_json(root / RUN / f"first_image_x{scale}.json")
+            gate(first["passed"] and first["complete"] and first["images"] == ["baby"]
+                 and first["per_image"] == [summary["per_image"][0]], "first_image_summary", scale=scale)
+            for method in METHODS:
+                for metric, summary_key in (("psnr_y", "mean_psnr_y"), ("psnr_y_unclipped", "mean_psnr_y_unclipped")):
+                    compare_curve(row_curves["baby"][method][metric], first[summary_key][method],
+                                  scale=scale, image="baby", method=method, metric=metric)
+            gate(first["baseline_mean_y"] == summary["per_image"][0]["baseline_y"], "first_image_baseline", scale=scale)
+            report["per_scale"][str(scale)] = dict(baseline_mean_y=sum(baselines) / 5,
+                independently_recomputed_mean_curves=mean_curves, per_image=per_image,
+                ours_m10_below_baseline=[r["image"] for r in per_image if r["ours_m10_minus_baseline"] < 0],
+                m10_mean_output_fraction={a:sum(r["m10"][a]["output_out_of_range_fraction"] for r in per_image) / 5 for a in METHODS})
+        report["prediction_count"] = len(all_predictions)
+        report["checkpoint_count"] = len(all_stems)
+        gate(report["row_count"] == 450 and len(report["cases"]) == 450, "450_rows")
+        gate(len(all_predictions) == len(all_stems) == 435, "435_unique_predictions_checkpoints")
+        gate(report["baseline_count"] == 15, "15_baselines")
+        for name, expected in config["source_sha256"].items():
+            gate(digest(root / name) == expected, "source_hash_unchanged_after_audit", file=name)
+        for image, expected in config["HR_sha256"].items():
+            gate(digest(root / "data" / f"{image}_hr.npy") == expected, "data_hash_unchanged_after_audit", image=image)
+        manifest_paths = [p for p in (root / RUN).rglob("*") if p.is_file()]
+        for suffix in ("x2", "x3", "x4", "all_scales"):
+            for extension in ("png", "pdf"):
+                path = root / "figures" / f"fig_gaussian_sigma2_{suffix}.{extension}"
+                gate(path.is_file() and path.stat().st_size > 0, "final_figure_exists", file=str(path.relative_to(root)))
+                manifest_paths.append(path)
+        manifest_paths.extend((root / "logs").glob("gaussian_suite_launch_*.log"))
+        manifest_paths.extend(root / name for name in config["source_sha256"])
+        manifest_paths.extend(root / "data" / f"{image}_hr.npy" for image in IMAGES)
+        report["files_sha256"] = {str(path.relative_to(root)):digest(path) for path in sorted(set(manifest_paths))}
+        report["manifest_file_count"] = len(report["files_sha256"])
+        gate(all_expected_files <= set(report["files_sha256"]), "all_artifacts_manifested")
+        actual_checkpoints = {str(p.with_suffix("").relative_to(root)) for p in (root / RUN).rglob("*.pt")}
+        gate(actual_checkpoints == all_stems, "no_missing_or_extra_checkpoints")
+        report["suite_finished_utc"] = final["finished_utc"]
+    except Exception as error:
+        import traceback
+        gate(False, "audit_exception", error_type=type(error).__name__, message=str(error), traceback=traceback.format_exc())
+    report["passed"] = not report["failures"]
+    report["finished_utc"] = datetime.now(timezone.utc).isoformat()
+    report["elapsed_seconds"] = time.perf_counter() - start
+    return report
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=ROOT)
+    parser.add_argument("--output", type=Path, default=ROOT / "GAUSSIAN_SUITE_AUDIT.json")
+    args = parser.parse_args()
+    report = audit(args.root)
+    save_atomic(args.output, report)
+    print(json.dumps(dict(passed=report["passed"], row_count=report["row_count"],
+        prediction_count=report["prediction_count"], checkpoint_count=report["checkpoint_count"],
+        max_psnr_difference_db=report["max_psnr_difference_db"], failures=report["failures"],
+        output=str(args.output))), flush=True)
+    if not report["passed"]:
+        raise SystemExit(1)
+
+
+if __name__ == "__main__":
+    main()

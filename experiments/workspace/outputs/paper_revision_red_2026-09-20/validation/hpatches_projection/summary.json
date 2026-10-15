@@ -1,0 +1,8 @@
+{
+  "reference_images": 116,
+  "comparisons": 1044,
+  "maximum_error": 2.757654780083385e-07,
+  "max_rmse": 4.0639002143508006e-08,
+  "quantized_pixel_difference_fraction": 5.519876102624266e-06,
+  "comparisons_with_quantization_changes": 976
+}

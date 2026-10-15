@@ -1,0 +1,50 @@
+{
+  "image": "butterfly",
+  "steps": 10000,
+  "batch": 1,
+  "crop": 64,
+  "crop_margin": 16,
+  "width": 64,
+  "depth": 8,
+  "lr": 0.0001,
+  "radius": 128,
+  "seed": 0,
+  "scale": 4,
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "methods": [
+    "consistent_untapered"
+  ],
+  "input_kind": "literal",
+  "device": "cuda",
+  "run_name": "untapered_set5_x4_v1",
+  "residual": true,
+  "torch": "2.8.0+cu129",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "RR_commit": "510d4d5b67dccf4efdee9f311ed42609a71f17c5",
+  "ZSSR_commit": "d2948526fde799a0c111469b78cd9e1b8659cb0f",
+  "evaluation": "Clipped float RGB; BT.601 Y with peak 1; 4 HR pixel border; no registration; also unclipped scores",
+  "shared_anchor": "Untapered bicubic anchor matches in-band symbol, not exact literal sampled AA; m1 independently trained",
+  "rr_weight_device": "cuda",
+  "untapered_construction": {
+    "camera": "product_j=0..17 U(omega/anchor**j)",
+    "multiplier": "H(factor*omega)/H(omega)",
+    "spectral_domain": "abs(omega)<=pi/factor",
+    "smooth_window": false,
+    "ridge": false,
+    "density": 512,
+    "quadrature": 4097,
+    "exact_literal_anchor_claimed": false,
+    "protocol": "UNTAPERED_PILOT_PROTOCOL.md"
+  }
+}

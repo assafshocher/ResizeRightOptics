@@ -1,0 +1,28 @@
+{
+  "scene": "00293",
+  "source_index": "00001",
+  "target_index": "00002",
+  "feature_geometry": {
+    "ratio_test_matches": 1775,
+    "inliers": 468,
+    "median_reprojection_px": 0.9509439468383789
+  },
+  "low_band_ecc_correlation": 0.9908565870851785,
+  "target_to_source_area_scale": 2.4176731234500024,
+  "target_to_source_linear_scale": 1.5548868522982637,
+  "photometric_gain": 1.0087481333431996,
+  "photometric_bias": 0.0002612667229092358,
+  "robust_dynamic_range": 0.07195039838552475,
+  "target_roi_xywh": [
+    1936,
+    1232,
+    384,
+    384
+  ],
+  "source_crop_xyxy": [
+    1739,
+    1026,
+    2529,
+    1816
+  ]
+}

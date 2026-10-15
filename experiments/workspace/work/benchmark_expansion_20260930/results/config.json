@@ -1,0 +1,76 @@
+{
+  "source_sha256": {
+    "run_benchmarks.py": "b3e2d6ef9f5087e99d7b08cd35825b37fd9cafa7c25319f84a544e739ff204b6",
+    "work/zssr_scale_transfer/matched_kernels.py": "260fc5e637c286247f600447b9329af8167fdeb714c39e62b307b7ad19ab0611",
+    "work/zssr_scale_transfer/literal_spectrum.py": "a4bedf625d62e6ef87096ac1c5f227d93feb3b481f6e96252eb922ba53ef66a2",
+    "work/zssr_scale_transfer/kernels.py": "52e2c691c0d1dfb633a2faf19b5fddf114c9ea197ece587f8ab387eefab45993",
+    "work/zssr_scale_transfer/experiment.py": "d56e4a2377b4f91a9b0efba1c0099188fe1e8d51a1961e5ba1984e6fa3c757d7",
+    "work/zssr_scale_transfer/untapered_kernels.py": "c852fd3cb525006aff9dfcb98a7c6331112f151fdb9d43fa3c9488e45ac6daba",
+    "work/zssr_scale_transfer/gaussian_kernels.py": "d390967ce5e4cf8dacddbea713a5b968e6abb3e00760f48876c4cfd6414af0ff",
+    "figures/check_revision_observations.py": "082eb2542c72651d584324fa95094f300377ac3cc2071ea9c2af68af9a30d8bd",
+    "figures/gen_clean_upscaling_validation.py": "e2456d156bf6d188bd6fd220afc4aabd4f2d6e6016b5c732c992aa67abb1ef65",
+    "work/zssr_scale_transfer/vendor/ResizeRight/interp_methods.py": "590406de7dd3c10acb4ecd21a44340e9e2a3634c5d1a9885afa8fcd39a12164b",
+    "work/zssr_scale_transfer/vendor/ResizeRight/resize_right.py": "a902a052789aad3db4dfd13a5877b9519d2b21be25860e1943614fc7edd8a694"
+  },
+  "datasets": {
+    "BSD100": [
+      "7a20e0a3c51c5e5153a4416c8606a1476565fa74",
+      100
+    ],
+    "Set14": [
+      "5afcf80d267dba61cdfa9a32b1a6fe4cca57b6d7",
+      14
+    ]
+  },
+  "scales": [
+    2,
+    3,
+    4
+  ],
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "methods": {
+    "bandlimited": [
+      "consistent",
+      "aa_bandlimited",
+      "aa_grid_bandlimited"
+    ],
+    "gaussian": [
+      "gaussian_consistent",
+      "gaussian_aa",
+      "aa_grid_gaussian"
+    ],
+    "bicubic": [
+      "consistent_untapered",
+      "aa",
+      "aa_grid_literal"
+    ]
+  },
+  "training": {
+    "image": "IMAGE",
+    "scale": 2,
+    "steps": 10000,
+    "batch": 1,
+    "crop": 64,
+    "crop_margin": 16,
+    "width": 64,
+    "depth": 8,
+    "lr": 0.0001,
+    "radius": 64,
+    "seed": 0,
+    "residual": true,
+    "device": "cuda"
+  },
+  "scope": "One-shot + quantized; ZSSR; seed 0",
+  "ordering": "BSD100 first, then Set14. Image names sorted; no outcome selection."
+}

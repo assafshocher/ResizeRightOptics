@@ -1,0 +1,48 @@
+{
+  "image": "baby",
+  "scale": 2,
+  "m": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "steps": 10000,
+  "batch": 1,
+  "crop": 64,
+  "crop_margin": 16,
+  "width": 64,
+  "depth": 8,
+  "lr": 0.0001,
+  "radius": 64,
+  "seed": 0,
+  "residual": true,
+  "device": "cuda",
+  "base_sigmas": [
+    0.5,
+    1.0
+  ],
+  "truncate": 4.0,
+  "methods": [
+    "gaussian_consistent",
+    "gaussian_aa"
+  ],
+  "source_sha256": {
+    "experiment.py": "d56e4a2377b4f91a9b0efba1c0099188fe1e8d51a1961e5ba1984e6fa3c757d7",
+    "kernels.py": "52e2c691c0d1dfb633a2faf19b5fddf114c9ea197ece587f8ab387eefab45993",
+    "matched_kernels.py": "260fc5e637c286247f600447b9329af8167fdeb714c39e62b307b7ad19ab0611",
+    "gaussian_kernels.py": "d390967ce5e4cf8dacddbea713a5b968e6abb3e00760f48876c4cfd6414af0ff",
+    "check_gaussian_kernels.py": "fcb97d8af4ce8f71282e8419821466c74299374dbd1b3fd791ab6fee80f9b2aa",
+    "gaussian_pilot.py": "9b1be4fcc7b69bdddf683d43cea7d453076b622956cdd967543378c5eed7ec56",
+    "GAUSSIAN_PILOT_PROTOCOL.md": "67df78ed58bbae309a14fd2d4f2f2e3c8085c5f7b92d6cd6e469da5afdbabf0c",
+    "figures/gen_fig_gaussian_pilot.py": "48bf2a1295dfd275ba5a917850a49ff8e9c37d5b1233f5f7471db0752124108a"
+  },
+  "HR_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+  "qualification": "Continuous Gaussian law; truncated spatial sampling is approximate; no frequency cutoff."
+}

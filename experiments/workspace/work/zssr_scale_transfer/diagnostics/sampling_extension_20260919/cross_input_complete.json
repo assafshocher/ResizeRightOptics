@@ -1,0 +1,1830 @@
+{
+  "complete": true,
+  "training_performed": false,
+  "qualification": "Existing bandlimited-trained models evaluated on literal bicubic inputs; diagnostic domain shift, NOT matched retraining or a fair new benchmark.",
+  "records": [
+    {
+      "scale": 2,
+      "image": "baby",
+      "m": 2,
+      "cross_input_psnr_y": 38.13433616487701,
+      "original_bandlimited_psnr_y": 37.82974531099765,
+      "literal_extension_psnr_y": 36.54434539671962,
+      "literal_aa_psnr_y": 38.482515759733225,
+      "literal_bicubic_baseline_y": 37.110885909942155,
+      "checkpoint": "runs/first_image_residual_v1/baby_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "4661816770bb8f4f9a51781f2459d587c2023bb20ff0a2bba3e625d2eaa46482",
+      "lr_sha256": "a9f0fcd7fb1e989655524e09eeecdd20026acdb325ba1a2f9131c42658edfa86",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          363,
+          363
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "baby",
+      "m": 5,
+      "cross_input_psnr_y": 37.717041775274566,
+      "original_bandlimited_psnr_y": 37.47445899119279,
+      "literal_extension_psnr_y": 33.7103504970954,
+      "literal_aa_psnr_y": 36.133999319067904,
+      "literal_bicubic_baseline_y": 37.110885909942155,
+      "checkpoint": "runs/first_image_residual_v1/baby_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "538a2a9eab19435d3be6596054509ff7ca092a8c325fcc2d6aa4465a71520675",
+      "lr_sha256": "a9f0fcd7fb1e989655524e09eeecdd20026acdb325ba1a2f9131c42658edfa86",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "baby",
+      "m": 10,
+      "cross_input_psnr_y": 35.85876237722178,
+      "original_bandlimited_psnr_y": 35.44502398826151,
+      "literal_extension_psnr_y": 28.98980811034701,
+      "literal_aa_psnr_y": 30.36532137038113,
+      "literal_bicubic_baseline_y": 37.110885909942155,
+      "checkpoint": "runs/set5_x2_m6_10/baby_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "ad79541ddfd6830afdc4da7eaed18056a254b509bb5ce90e62e9fd3ced75beb6",
+      "lr_sha256": "a9f0fcd7fb1e989655524e09eeecdd20026acdb325ba1a2f9131c42658edfa86",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          275,
+          275
+        ],
+        [
+          295,
+          295
+        ],
+        [
+          316,
+          316
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          363,
+          363
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          416,
+          416
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          478,
+          478
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "bird",
+      "m": 2,
+      "cross_input_psnr_y": 39.049571743544135,
+      "original_bandlimited_psnr_y": 39.47209352368451,
+      "literal_extension_psnr_y": 36.79551904326507,
+      "literal_aa_psnr_y": 40.03366528316959,
+      "literal_bicubic_baseline_y": 36.8519596506287,
+      "checkpoint": "runs/first_image_residual_v1/bird_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "6c84ce2235085cd4c8d8017b48e4f67ab27254160de2522e6116214e31ad4dda",
+      "lr_sha256": "d8ed686f1c2efeade1fb20747f3b93ed9cd275a0e50f5017e78e5dab1091de8b",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          204,
+          204
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "bird",
+      "m": 5,
+      "cross_input_psnr_y": 38.816843090899475,
+      "original_bandlimited_psnr_y": 38.83126771314534,
+      "literal_extension_psnr_y": 32.31557911411312,
+      "literal_aa_psnr_y": 36.35826281672538,
+      "literal_bicubic_baseline_y": 36.8519596506287,
+      "checkpoint": "runs/first_image_residual_v1/bird_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "2937fc270b53761a04c8db517cd488ddd770578e107a97214c25d9671c2fe033",
+      "lr_sha256": "d8ed686f1c2efeade1fb20747f3b93ed9cd275a0e50f5017e78e5dab1091de8b",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          166,
+          166
+        ],
+        [
+          191,
+          191
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "bird",
+      "m": 10,
+      "cross_input_psnr_y": 37.29864163833594,
+      "original_bandlimited_psnr_y": 37.308235135959514,
+      "literal_extension_psnr_y": 24.407436742824444,
+      "literal_aa_psnr_y": 32.757244343199304,
+      "literal_bicubic_baseline_y": 36.8519596506287,
+      "checkpoint": "runs/set5_x2_m6_10/bird_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "6283e898d70f56f1c7b8e00bb53ecbbebbd78e4dbbc786562b2887682689eb96",
+      "lr_sha256": "d8ed686f1c2efeade1fb20747f3b93ed9cd275a0e50f5017e78e5dab1091de8b",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          155,
+          155
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          178,
+          178
+        ],
+        [
+          191,
+          191
+        ],
+        [
+          204,
+          204
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          234,
+          234
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "butterfly",
+      "m": 2,
+      "cross_input_psnr_y": 32.006977255909646,
+      "original_bandlimited_psnr_y": 32.32539147870192,
+      "literal_extension_psnr_y": 29.913735196056777,
+      "literal_aa_psnr_y": 32.68128155959728,
+      "literal_bicubic_baseline_y": 27.4398775008367,
+      "checkpoint": "runs/first_image_residual_v1/butterfly_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "5bef503a64b755b0c2bdb8e0d361f45d304cd641e45fdedadaf820f87211aeca",
+      "lr_sha256": "c19459bb8be0aeb2a2c79367a23df13dad671ab46300bd89a4097f16f0e06531",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          182,
+          182
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "butterfly",
+      "m": 5,
+      "cross_input_psnr_y": 31.33428971162449,
+      "original_bandlimited_psnr_y": 31.50463022500926,
+      "literal_extension_psnr_y": 27.16248782573098,
+      "literal_aa_psnr_y": 30.468958764877723,
+      "literal_bicubic_baseline_y": 27.4398775008367,
+      "checkpoint": "runs/first_image_residual_v1/butterfly_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "80237fb07dfcfbec2a6b6259aa9e367965258ab41708e5b6bf0c0407a4c1ad7a",
+      "lr_sha256": "c19459bb8be0aeb2a2c79367a23df13dad671ab46300bd89a4097f16f0e06531",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          148,
+          148
+        ],
+        [
+          169,
+          169
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "butterfly",
+      "m": 10,
+      "cross_input_psnr_y": 29.530487028839417,
+      "original_bandlimited_psnr_y": 29.628077020531496,
+      "literal_extension_psnr_y": 22.45342053495431,
+      "literal_aa_psnr_y": 29.00118968266547,
+      "literal_bicubic_baseline_y": 27.4398775008367,
+      "checkpoint": "runs/set5_x2_m6_10/butterfly_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "c722ff99d23c31a6a4bc9ec0770059ec668e7fb7e5433101edf2ce9517359b34",
+      "lr_sha256": "c19459bb8be0aeb2a2c79367a23df13dad671ab46300bd89a4097f16f0e06531",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          138,
+          138
+        ],
+        [
+          148,
+          148
+        ],
+        [
+          158,
+          158
+        ],
+        [
+          169,
+          169
+        ],
+        [
+          182,
+          182
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          208,
+          208
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          239,
+          239
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "head",
+      "m": 2,
+      "cross_input_psnr_y": 34.98629075675636,
+      "original_bandlimited_psnr_y": 34.992266726065736,
+      "literal_extension_psnr_y": 35.119891431577194,
+      "literal_aa_psnr_y": 35.3608091856204,
+      "literal_bicubic_baseline_y": 34.8949577413595,
+      "checkpoint": "runs/first_image_residual_v1/head_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "1abaa24ca0ddf11d16c1e14b385c47ec1779ec4179ec3f97bf1c0ace33216873",
+      "lr_sha256": "71c8edf3713f2ebbb92cb7fd8d0d8599015305393506b1843a26ca1ad1084bb8",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          198,
+          198
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "head",
+      "m": 5,
+      "cross_input_psnr_y": 34.90362620159702,
+      "original_bandlimited_psnr_y": 34.85755959370431,
+      "literal_extension_psnr_y": 32.92298514966327,
+      "literal_aa_psnr_y": 33.70170738232186,
+      "literal_bicubic_baseline_y": 34.8949577413595,
+      "checkpoint": "runs/first_image_residual_v1/head_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "5b0a7d406b43aad0ab4283c9eea32a8d525a933c04e72377a5f456555195ad9c",
+      "lr_sha256": "71c8edf3713f2ebbb92cb7fd8d0d8599015305393506b1843a26ca1ad1084bb8",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          161,
+          161
+        ],
+        [
+          185,
+          185
+        ],
+        [
+          213,
+          213
+        ],
+        [
+          244,
+          244
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "head",
+      "m": 10,
+      "cross_input_psnr_y": 33.96119350566739,
+      "original_bandlimited_psnr_y": 33.79320806119077,
+      "literal_extension_psnr_y": 24.33973225756217,
+      "literal_aa_psnr_y": 28.811922195784998,
+      "literal_bicubic_baseline_y": 34.8949577413595,
+      "checkpoint": "runs/set5_x2_m6_10/head_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "ff384079f5d3c03b0e239a56549f91ed6fa39532d5e438e2de87cde91c16a808",
+      "lr_sha256": "71c8edf3713f2ebbb92cb7fd8d0d8599015305393506b1843a26ca1ad1084bb8",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          151,
+          151
+        ],
+        [
+          161,
+          161
+        ],
+        [
+          173,
+          173
+        ],
+        [
+          185,
+          185
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          213,
+          213
+        ],
+        [
+          228,
+          228
+        ],
+        [
+          244,
+          244
+        ],
+        [
+          262,
+          262
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "woman",
+      "m": 2,
+      "cross_input_psnr_y": 34.117680222214844,
+      "original_bandlimited_psnr_y": 34.05983557135724,
+      "literal_extension_psnr_y": 33.22971886269261,
+      "literal_aa_psnr_y": 34.7372919786177,
+      "literal_bicubic_baseline_y": 32.161357561469686,
+      "checkpoint": "runs/first_image_residual_v1/woman_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "86eb1f3bfb9e50d3a5104aa9adc475b1bfeaefe32053e09d014785b81fbceb3c",
+      "lr_sha256": "3b11e0d1db0fd4e5736c98fbae46bf13c5e195246236a4f465a3b95b180df4fb",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          244,
+          162
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "woman",
+      "m": 5,
+      "cross_input_psnr_y": 33.773763539844516,
+      "original_bandlimited_psnr_y": 33.82789849076807,
+      "literal_extension_psnr_y": 29.923893063779747,
+      "literal_aa_psnr_y": 32.34464420558881,
+      "literal_bicubic_baseline_y": 32.161357561469686,
+      "checkpoint": "runs/first_image_residual_v1/woman_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "0a2b71bde9ae41331a93e77634971d88df5ae5d42219e339801414932ed86667",
+      "lr_sha256": "3b11e0d1db0fd4e5736c98fbae46bf13c5e195246236a4f465a3b95b180df4fb",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          198,
+          131
+        ],
+        [
+          227,
+          151
+        ],
+        [
+          261,
+          173
+        ],
+        [
+          300,
+          199
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "image": "woman",
+      "m": 10,
+      "cross_input_psnr_y": 32.80169761431687,
+      "original_bandlimited_psnr_y": 32.88231177643687,
+      "literal_extension_psnr_y": 25.023986032870106,
+      "literal_aa_psnr_y": 28.877264592890093,
+      "literal_bicubic_baseline_y": 32.161357561469686,
+      "checkpoint": "runs/set5_x2_m6_10/woman_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "61f8522ac8ae12075d25048228e021b49065ea2809b5d18a56fb386af167c1e2",
+      "lr_sha256": "3b11e0d1db0fd4e5736c98fbae46bf13c5e195246236a4f465a3b95b180df4fb",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          185,
+          123
+        ],
+        [
+          198,
+          131
+        ],
+        [
+          212,
+          141
+        ],
+        [
+          227,
+          151
+        ],
+        [
+          244,
+          162
+        ],
+        [
+          261,
+          173
+        ],
+        [
+          280,
+          186
+        ],
+        [
+          300,
+          199
+        ],
+        [
+          321,
+          213
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "baby",
+      "m": 2,
+      "cross_input_psnr_y": 34.1737797819968,
+      "original_bandlimited_psnr_y": 34.08659455937122,
+      "literal_extension_psnr_y": 32.011222982722465,
+      "literal_aa_psnr_y": 34.76667323737452,
+      "literal_bicubic_baseline_y": 33.91471188099581,
+      "checkpoint": "runs/set5_x3_m1_10/baby_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "d850bbbefc35900c976bf610c5d531320e67670969be36e6847d0fc1c4851f97",
+      "lr_sha256": "a7dc4be776044d23c4d40886b7c627544eff47573e87ac92a56d05650dbac9ee",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          297,
+          297
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "baby",
+      "m": 5,
+      "cross_input_psnr_y": 34.41104519239378,
+      "original_bandlimited_psnr_y": 34.26708370235187,
+      "literal_extension_psnr_y": 24.94002197622091,
+      "literal_aa_psnr_y": 33.561989944188824,
+      "literal_bicubic_baseline_y": 33.91471188099581,
+      "checkpoint": "runs/set5_x3_m1_10/baby_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "0c32982b1294304fbd5d109e2eb98830c9223e2027fbd894e83a7f15f5e65db1",
+      "lr_sha256": "a7dc4be776044d23c4d40886b7c627544eff47573e87ac92a56d05650dbac9ee",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          214,
+          214
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          331,
+          331
+        ],
+        [
+          412,
+          412
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "baby",
+      "m": 10,
+      "cross_input_psnr_y": 33.52377930631839,
+      "original_bandlimited_psnr_y": 33.51603838937211,
+      "literal_extension_psnr_y": 24.485662505872774,
+      "literal_aa_psnr_y": 28.921650261069964,
+      "literal_bicubic_baseline_y": 33.91471188099581,
+      "checkpoint": "runs/set5_x3_m1_10/baby_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "e6a2b79e2084bea55d5067e2564db78febe372a8212c4f015be800a3956ef073",
+      "lr_sha256": "a7dc4be776044d23c4d40886b7c627544eff47573e87ac92a56d05650dbac9ee",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          191,
+          191
+        ],
+        [
+          214,
+          214
+        ],
+        [
+          238,
+          238
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          297,
+          297
+        ],
+        [
+          331,
+          331
+        ],
+        [
+          369,
+          369
+        ],
+        [
+          412,
+          412
+        ],
+        [
+          460,
+          460
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "bird",
+      "m": 2,
+      "cross_input_psnr_y": 33.52697547275161,
+      "original_bandlimited_psnr_y": 33.52369557989285,
+      "literal_extension_psnr_y": 30.425559480581356,
+      "literal_aa_psnr_y": 34.553488046008944,
+      "literal_bicubic_baseline_y": 32.59031210786323,
+      "checkpoint": "runs/set5_x3_m1_10/bird_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "fdd453d00affc00e61acf0eaa6a8a450b5e0b0e60bcf8f615367b0226bb08539",
+      "lr_sha256": "6a1a9444c6eece0c11d81be36c245a0443144b6d7e2accdf4d85dba57a9fc6d7",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          167,
+          167
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "bird",
+      "m": 5,
+      "cross_input_psnr_y": 33.630363137565695,
+      "original_bandlimited_psnr_y": 33.68691582835296,
+      "literal_extension_psnr_y": 22.20745279260647,
+      "literal_aa_psnr_y": 32.35660538036174,
+      "literal_bicubic_baseline_y": 32.59031210786323,
+      "checkpoint": "runs/set5_x3_m1_10/bird_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "fabd1ef770d990aed2d4cf0108517f5542c7072dc0cc4c076bfc3e34532194a4",
+      "lr_sha256": "6a1a9444c6eece0c11d81be36c245a0443144b6d7e2accdf4d85dba57a9fc6d7",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          120,
+          120
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          186,
+          186
+        ],
+        [
+          232,
+          232
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "bird",
+      "m": 10,
+      "cross_input_psnr_y": 32.90300985900576,
+      "original_bandlimited_psnr_y": 32.91668460777721,
+      "literal_extension_psnr_y": 22.226221209749518,
+      "literal_aa_psnr_y": 28.804865131002156,
+      "literal_bicubic_baseline_y": 32.59031210786323,
+      "checkpoint": "runs/set5_x3_m1_10/bird_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "2d427b46d2bca0d9eec404f68013e644eb4791396afa27192136418822c60b55",
+      "lr_sha256": "6a1a9444c6eece0c11d81be36c245a0443144b6d7e2accdf4d85dba57a9fc6d7",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          108,
+          108
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          167,
+          167
+        ],
+        [
+          186,
+          186
+        ],
+        [
+          208,
+          208
+        ],
+        [
+          232,
+          232
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "butterfly",
+      "m": 2,
+      "cross_input_psnr_y": 27.418240422838895,
+      "original_bandlimited_psnr_y": 27.25130005026856,
+      "literal_extension_psnr_y": 25.84244905573091,
+      "literal_aa_psnr_y": 28.315868058920127,
+      "literal_bicubic_baseline_y": 24.111426824472808,
+      "checkpoint": "runs/set5_x3_m1_10/butterfly_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "e7ff89581b02e7fc5828c0f7d1f22a54ac253a88a02054e5f207b620480d50b8",
+      "lr_sha256": "be2e14ffa89ff0c89ca93aa9fb42a5fe88d35f954f92da0adeefa694ec4661cb",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          149,
+          149
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "butterfly",
+      "m": 5,
+      "cross_input_psnr_y": 27.453775043483777,
+      "original_bandlimited_psnr_y": 27.568352097275906,
+      "literal_extension_psnr_y": 18.809466271677213,
+      "literal_aa_psnr_y": 26.83012069897027,
+      "literal_bicubic_baseline_y": 24.111426824472808,
+      "checkpoint": "runs/set5_x3_m1_10/butterfly_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "a3aa46fc0b2b4ba5fdddf0e12588f8a17ade6dc992ac07785f3924be63c48824",
+      "lr_sha256": "be2e14ffa89ff0c89ca93aa9fb42a5fe88d35f954f92da0adeefa694ec4661cb",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          108,
+          108
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          167,
+          167
+        ],
+        [
+          208,
+          208
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "butterfly",
+      "m": 10,
+      "cross_input_psnr_y": 26.387290897178506,
+      "original_bandlimited_psnr_y": 26.499018515255017,
+      "literal_extension_psnr_y": 16.679470178760223,
+      "literal_aa_psnr_y": 24.31589248961216,
+      "literal_bicubic_baseline_y": 24.111426824472808,
+      "checkpoint": "runs/set5_x3_m1_10/butterfly_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "449a290818b60845351a2dfd2a775304302f222f10b3927ec7ad7159d6b02bda",
+      "lr_sha256": "be2e14ffa89ff0c89ca93aa9fb42a5fe88d35f954f92da0adeefa694ec4661cb",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          96,
+          96
+        ],
+        [
+          108,
+          108
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          167,
+          167
+        ],
+        [
+          186,
+          186
+        ],
+        [
+          208,
+          208
+        ],
+        [
+          232,
+          232
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "head",
+      "m": 2,
+      "cross_input_psnr_y": 31.972364565247812,
+      "original_bandlimited_psnr_y": 32.045634294408174,
+      "literal_extension_psnr_y": 31.662427476517582,
+      "literal_aa_psnr_y": 32.54056050708982,
+      "literal_bicubic_baseline_y": 32.89056943509992,
+      "checkpoint": "runs/set5_x3_m1_10/head_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "34449fcd825a8b3d89f17843e95a81fd3b2c6ef288def40a560523ffd2fb61e7",
+      "lr_sha256": "4bd24ef781575052f19ca0f30bcfd8b6839d0aa5c2cd9ec0efa1bb2599a95791",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          163,
+          163
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "head",
+      "m": 5,
+      "cross_input_psnr_y": 32.136161161369834,
+      "original_bandlimited_psnr_y": 32.188459213082815,
+      "literal_extension_psnr_y": 28.240918480678335,
+      "literal_aa_psnr_y": 31.58974827345869,
+      "literal_bicubic_baseline_y": 32.89056943509992,
+      "checkpoint": "runs/set5_x3_m1_10/head_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "25611a377f4601f1657117814a00d993cfb60312048669f201172b3e3f1639c7",
+      "lr_sha256": "4bd24ef781575052f19ca0f30bcfd8b6839d0aa5c2cd9ec0efa1bb2599a95791",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          118,
+          118
+        ],
+        [
+          146,
+          146
+        ],
+        [
+          182,
+          182
+        ],
+        [
+          227,
+          227
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "head",
+      "m": 10,
+      "cross_input_psnr_y": 32.304564686405776,
+      "original_bandlimited_psnr_y": 32.32403204431733,
+      "literal_extension_psnr_y": 28.167436228785828,
+      "literal_aa_psnr_y": 28.88050683036748,
+      "literal_bicubic_baseline_y": 32.89056943509992,
+      "checkpoint": "runs/set5_x3_m1_10/head_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "9407a6abca8290842e9a02fef4ad77bdc173134a5d3999fffec0af42956d4e93",
+      "lr_sha256": "4bd24ef781575052f19ca0f30bcfd8b6839d0aa5c2cd9ec0efa1bb2599a95791",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          105,
+          105
+        ],
+        [
+          118,
+          118
+        ],
+        [
+          131,
+          131
+        ],
+        [
+          146,
+          146
+        ],
+        [
+          163,
+          163
+        ],
+        [
+          182,
+          182
+        ],
+        [
+          203,
+          203
+        ],
+        [
+          227,
+          227
+        ],
+        [
+          253,
+          253
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "woman",
+      "m": 2,
+      "cross_input_psnr_y": 29.209542559062424,
+      "original_bandlimited_psnr_y": 29.218031086641506,
+      "literal_extension_psnr_y": 27.823459757488514,
+      "literal_aa_psnr_y": 30.608862270494054,
+      "literal_bicubic_baseline_y": 28.59191513721879,
+      "checkpoint": "runs/set5_x3_m1_10/woman_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "ee2123b307fe29aac404f0e8a4f15f266296839239da6c8786a7a9ef619512ad",
+      "lr_sha256": "6f58df56878a42cf768058f3f8f7102ce26a2f9ccb5b01396abc4eba97c5c6ee",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          200,
+          132
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "woman",
+      "m": 5,
+      "cross_input_psnr_y": 30.287556016345718,
+      "original_bandlimited_psnr_y": 30.320099180968192,
+      "literal_extension_psnr_y": 22.042587204385914,
+      "literal_aa_psnr_y": 29.052795077352684,
+      "literal_bicubic_baseline_y": 28.59191513721879,
+      "checkpoint": "runs/set5_x3_m1_10/woman_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "b5183a7015ff03e0ee664817625a6f3d186e8e0b7abc07b483fd9b8995b44be6",
+      "lr_sha256": "6f58df56878a42cf768058f3f8f7102ce26a2f9ccb5b01396abc4eba97c5c6ee",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          144,
+          95
+        ],
+        [
+          179,
+          118
+        ],
+        [
+          223,
+          147
+        ],
+        [
+          277,
+          184
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 3,
+      "image": "woman",
+      "m": 10,
+      "cross_input_psnr_y": 29.37762376586661,
+      "original_bandlimited_psnr_y": 29.413003898757864,
+      "literal_extension_psnr_y": 21.204180018628513,
+      "literal_aa_psnr_y": 25.29938413996073,
+      "literal_bicubic_baseline_y": 28.59191513721879,
+      "checkpoint": "runs/set5_x3_m1_10/woman_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "d168b01b7583dc140ff547d1e8566f332035c0e0a40b8884329bc7b8f6beb5f2",
+      "lr_sha256": "6f58df56878a42cf768058f3f8f7102ce26a2f9ccb5b01396abc4eba97c5c6ee",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          129,
+          85
+        ],
+        [
+          144,
+          95
+        ],
+        [
+          160,
+          106
+        ],
+        [
+          179,
+          118
+        ],
+        [
+          200,
+          132
+        ],
+        [
+          223,
+          147
+        ],
+        [
+          249,
+          164
+        ],
+        [
+          277,
+          184
+        ],
+        [
+          310,
+          205
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "baby",
+      "m": 2,
+      "cross_input_psnr_y": 31.736180054546725,
+      "original_bandlimited_psnr_y": 31.659975861896868,
+      "literal_extension_psnr_y": 20.12661783128975,
+      "literal_aa_psnr_y": 32.222769436908486,
+      "literal_bicubic_baseline_y": 31.790807857619576,
+      "checkpoint": "runs/set5_x4_m1_10/baby_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "8e8c9ef338947721e9612b9d54f157294eaa9efe291274daf3153b12f2b024aa",
+      "lr_sha256": "452fd828d7174647a542c2e67f3fae98b39f4d685f433bb6efebfbd6af6c30c2",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          256,
+          256
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "baby",
+      "m": 5,
+      "cross_input_psnr_y": 31.386192004165636,
+      "original_bandlimited_psnr_y": 31.47385003668238,
+      "literal_extension_psnr_y": 24.60008861471479,
+      "literal_aa_psnr_y": 31.627684381808425,
+      "literal_bicubic_baseline_y": 31.790807857619576,
+      "checkpoint": "runs/set5_x4_m1_10/baby_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "8881603b9fc5800a11e6de21d4aa09c903baa54a5b8f2063a5a68f0b9651584d",
+      "lr_sha256": "452fd828d7174647a542c2e67f3fae98b39f4d685f433bb6efebfbd6af6c30c2",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          169,
+          169
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          295,
+          295
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "baby",
+      "m": 10,
+      "cross_input_psnr_y": 31.48334843928321,
+      "original_bandlimited_psnr_y": 31.449346323739537,
+      "literal_extension_psnr_y": 22.72620606059562,
+      "literal_aa_psnr_y": 28.597901887304197,
+      "literal_bicubic_baseline_y": 31.790807857619576,
+      "checkpoint": "runs/set5_x4_m1_10/baby_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "b5bb9765a36bab60d71eee02379d857c0e7ed751bdb3a0ae6989fa04af1aa38a",
+      "lr_sha256": "452fd828d7174647a542c2e67f3fae98b39f4d685f433bb6efebfbd6af6c30c2",
+      "hr_sha256": "61e2e20e1a809c638e57b28c74b165cf7677e07bcf1d4065f7ef5616f65dc38d",
+      "output_shapes": [
+        [
+          148,
+          148
+        ],
+        [
+          169,
+          169
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          295,
+          295
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          446,
+          446
+        ],
+        [
+          512,
+          512
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "bird",
+      "m": 2,
+      "cross_input_psnr_y": 29.00924617515333,
+      "original_bandlimited_psnr_y": 28.939580251422505,
+      "literal_extension_psnr_y": 16.90752515020204,
+      "literal_aa_psnr_y": 29.921110510430182,
+      "literal_bicubic_baseline_y": 30.187136176690636,
+      "checkpoint": "runs/set5_x4_m1_10/bird_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "ae2c8e14c2b832ca5f0d8839b80215bd6485a9c6736abdac699f84d4127c3898",
+      "lr_sha256": "cdcd391ea1e0bd6b3de064d20142e7566260f357e0a4845d6e55828052224b64",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          144,
+          144
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "bird",
+      "m": 5,
+      "cross_input_psnr_y": 30.185597154786464,
+      "original_bandlimited_psnr_y": 30.255098172905235,
+      "literal_extension_psnr_y": 22.715323515670423,
+      "literal_aa_psnr_y": 29.853701358661322,
+      "literal_bicubic_baseline_y": 30.187136176690636,
+      "checkpoint": "runs/set5_x4_m1_10/bird_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "a7b43f9294c0d261908dcb8054efea74a3c5c2d9f67405af0e446a0ea3d3944f",
+      "lr_sha256": "cdcd391ea1e0bd6b3de064d20142e7566260f357e0a4845d6e55828052224b64",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          96,
+          96
+        ],
+        [
+          126,
+          126
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "bird",
+      "m": 10,
+      "cross_input_psnr_y": 29.867043847035596,
+      "original_bandlimited_psnr_y": 29.924081648853434,
+      "literal_extension_psnr_y": 17.125961370205015,
+      "literal_aa_psnr_y": 26.990717092848517,
+      "literal_bicubic_baseline_y": 30.187136176690636,
+      "checkpoint": "runs/set5_x4_m1_10/bird_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "55576db877357c2073a0743a8c1939072530b8ffcc7bfc1de5aca0a023fdb5ce",
+      "lr_sha256": "cdcd391ea1e0bd6b3de064d20142e7566260f357e0a4845d6e55828052224b64",
+      "hr_sha256": "21d83c7000bcbb20983ca81d246be551cbe02a074f175c884580fca6f0ce96f7",
+      "output_shapes": [
+        [
+          83,
+          83
+        ],
+        [
+          96,
+          96
+        ],
+        [
+          110,
+          110
+        ],
+        [
+          126,
+          126
+        ],
+        [
+          144,
+          144
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          191,
+          191
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          288,
+          288
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "butterfly",
+      "m": 2,
+      "cross_input_psnr_y": 23.54721688114467,
+      "original_bandlimited_psnr_y": 23.384669375251516,
+      "literal_extension_psnr_y": 15.698299177099235,
+      "literal_aa_psnr_y": 24.84588368554946,
+      "literal_bicubic_baseline_y": 22.102047803297946,
+      "checkpoint": "runs/set5_x4_m1_10/butterfly_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "5aa502cb01b3cbf80c97df63ff9a882858a07c7e4aa2653038085e33ba5ed9c6",
+      "lr_sha256": "046fdb10a58620141b06f7cba9aca51f388da04982ff21e7d4617194fcfa3e96",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          128,
+          128
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "butterfly",
+      "m": 5,
+      "cross_input_psnr_y": 24.639542832893984,
+      "original_bandlimited_psnr_y": 24.709952813688094,
+      "literal_extension_psnr_y": 15.947480230447582,
+      "literal_aa_psnr_y": 24.65979749726355,
+      "literal_bicubic_baseline_y": 22.102047803297946,
+      "checkpoint": "runs/set5_x4_m1_10/butterfly_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "04ce4ee45d9b155033aa2ca5a9b41efa9b4fd048d8c4626dc0e45c824c6c8307",
+      "lr_sha256": "046fdb10a58620141b06f7cba9aca51f388da04982ff21e7d4617194fcfa3e96",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          85,
+          85
+        ],
+        [
+          112,
+          112
+        ],
+        [
+          148,
+          148
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "butterfly",
+      "m": 10,
+      "cross_input_psnr_y": 23.556014535672297,
+      "original_bandlimited_psnr_y": 23.57697833421851,
+      "literal_extension_psnr_y": 14.238220355060399,
+      "literal_aa_psnr_y": 22.84381469207476,
+      "literal_bicubic_baseline_y": 22.102047803297946,
+      "checkpoint": "runs/set5_x4_m1_10/butterfly_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "f678854f4541cd3db94943e279ed6d313c69d0c863166906532da542acc0a99f",
+      "lr_sha256": "046fdb10a58620141b06f7cba9aca51f388da04982ff21e7d4617194fcfa3e96",
+      "hr_sha256": "73fc15bb15530725631966dd84d3c52cd64eb14fa56a60c0786a522f10504dbe",
+      "output_shapes": [
+        [
+          74,
+          74
+        ],
+        [
+          85,
+          85
+        ],
+        [
+          98,
+          98
+        ],
+        [
+          112,
+          112
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          148,
+          148
+        ],
+        [
+          169,
+          169
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "head",
+      "m": 2,
+      "cross_input_psnr_y": 30.958430186415598,
+      "original_bandlimited_psnr_y": 30.95196716603851,
+      "literal_extension_psnr_y": 20.545537197258824,
+      "literal_aa_psnr_y": 31.420812979515983,
+      "literal_bicubic_baseline_y": 31.620359875555494,
+      "checkpoint": "runs/set5_x4_m1_10/head_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "5d632f508047893eb639af205542a250ac36dc3697c398fc9bdf20f398def696",
+      "lr_sha256": "4c7e124eee5f753548da46ffd9e8160109f48cdd844588ade6741e1ef38189f3",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          140,
+          140
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "head",
+      "m": 5,
+      "cross_input_psnr_y": 30.277350781785092,
+      "original_bandlimited_psnr_y": 30.314960229654297,
+      "literal_extension_psnr_y": 28.333936351831483,
+      "literal_aa_psnr_y": 30.533638122841023,
+      "literal_bicubic_baseline_y": 31.620359875555494,
+      "checkpoint": "runs/set5_x4_m1_10/head_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "50c43d160df635b79a0d40723554168660b8cda1d6c2d9131b84332c1041ce98",
+      "lr_sha256": "4c7e124eee5f753548da46ffd9e8160109f48cdd844588ade6741e1ef38189f3",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          93,
+          93
+        ],
+        [
+          122,
+          122
+        ],
+        [
+          161,
+          161
+        ],
+        [
+          213,
+          213
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "head",
+      "m": 10,
+      "cross_input_psnr_y": 30.819181199166064,
+      "original_bandlimited_psnr_y": 30.822017860014,
+      "literal_extension_psnr_y": 26.049637789543386,
+      "literal_aa_psnr_y": 29.07323442480719,
+      "literal_bicubic_baseline_y": 31.620359875555494,
+      "checkpoint": "runs/set5_x4_m1_10/head_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "fc3a17e2b3d1d1119d0cb08a231b128f5f51c6c458e6d28f164643d72ab909d6",
+      "lr_sha256": "4c7e124eee5f753548da46ffd9e8160109f48cdd844588ade6741e1ef38189f3",
+      "hr_sha256": "3b1b4b94dc0e395fc94b4c6290dfd0592051ac67296bc7c5c0670c455ce9180c",
+      "output_shapes": [
+        [
+          81,
+          81
+        ],
+        [
+          93,
+          93
+        ],
+        [
+          107,
+          107
+        ],
+        [
+          122,
+          122
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          161,
+          161
+        ],
+        [
+          185,
+          185
+        ],
+        [
+          213,
+          213
+        ],
+        [
+          244,
+          244
+        ],
+        [
+          280,
+          280
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "woman",
+      "m": 2,
+      "cross_input_psnr_y": 27.66465629313485,
+      "original_bandlimited_psnr_y": 27.373743071988493,
+      "literal_extension_psnr_y": 24.315915068818118,
+      "literal_aa_psnr_y": 28.226456662526882,
+      "literal_bicubic_baseline_y": 26.474379538029513,
+      "checkpoint": "runs/set5_x4_m1_10/woman_seed0/m2_consistent.pt",
+      "checkpoint_sha256": "9226e8358fdbdca4a9d7df7bc9de2d288af76c6eccb96d715def463d8e738831",
+      "lr_sha256": "aa1f811375a70a5b142e354811949af88c96b74e3bebe85432302076e4732093",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          172,
+          114
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "woman",
+      "m": 5,
+      "cross_input_psnr_y": 26.47798045716069,
+      "original_bandlimited_psnr_y": 26.447175131400126,
+      "literal_extension_psnr_y": 20.725562219657604,
+      "literal_aa_psnr_y": 26.79491433254663,
+      "literal_bicubic_baseline_y": 26.474379538029513,
+      "checkpoint": "runs/set5_x4_m1_10/woman_seed0/m5_consistent.pt",
+      "checkpoint_sha256": "a8a4e51d30a17982477db93c19b402714ee4d546f82a03c9011e450c26b5878d",
+      "lr_sha256": "aa1f811375a70a5b142e354811949af88c96b74e3bebe85432302076e4732093",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          114,
+          76
+        ],
+        [
+          150,
+          100
+        ],
+        [
+          198,
+          131
+        ],
+        [
+          261,
+          173
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "image": "woman",
+      "m": 10,
+      "cross_input_psnr_y": 26.74996975869171,
+      "original_bandlimited_psnr_y": 26.732072266652672,
+      "literal_extension_psnr_y": 19.698389778232542,
+      "literal_aa_psnr_y": 24.374607679745548,
+      "literal_bicubic_baseline_y": 26.474379538029513,
+      "checkpoint": "runs/set5_x4_m1_10/woman_seed0/m10_consistent.pt",
+      "checkpoint_sha256": "1dd6d912e1899b55bb2fa426fb32562c80973661fef6684bc08781ffca1f933e",
+      "lr_sha256": "aa1f811375a70a5b142e354811949af88c96b74e3bebe85432302076e4732093",
+      "hr_sha256": "92b249e3981090cf4044ba66261cc132e523019532b0923928c521740c1fddac",
+      "output_shapes": [
+        [
+          99,
+          66
+        ],
+        [
+          114,
+          76
+        ],
+        [
+          131,
+          87
+        ],
+        [
+          150,
+          100
+        ],
+        [
+          172,
+          114
+        ],
+        [
+          198,
+          131
+        ],
+        [
+          227,
+          151
+        ],
+        [
+          261,
+          173
+        ],
+        [
+          300,
+          199
+        ],
+        [
+          344,
+          228
+        ]
+      ]
+    }
+  ],
+  "means": [
+    {
+      "scale": 2,
+      "m": 2,
+      "cross_input_psnr_y": 35.658971228660405,
+      "original_bandlimited_psnr_y": 35.73586652216141,
+      "literal_extension_psnr_y": 34.320641986062256,
+      "literal_aa_psnr_y": 36.25911275334764,
+      "literal_bicubic_baseline_y": 33.69180767284735
+    },
+    {
+      "scale": 2,
+      "m": 5,
+      "cross_input_psnr_y": 35.309112863848014,
+      "original_bandlimited_psnr_y": 35.299163002763954,
+      "literal_extension_psnr_y": 31.207059130076505,
+      "literal_aa_psnr_y": 33.80151449771633,
+      "literal_bicubic_baseline_y": 33.69180767284735
+    },
+    {
+      "scale": 2,
+      "m": 10,
+      "cross_input_psnr_y": 33.89015643287628,
+      "original_bandlimited_psnr_y": 33.81137119647603,
+      "literal_extension_psnr_y": 25.04287673571161,
+      "literal_aa_psnr_y": 29.962588436984202,
+      "literal_bicubic_baseline_y": 33.69180767284735
+    },
+    {
+      "scale": 3,
+      "m": 2,
+      "cross_input_psnr_y": 31.260180560379506,
+      "original_bandlimited_psnr_y": 31.22505111411646,
+      "literal_extension_psnr_y": 29.55302375060817,
+      "literal_aa_psnr_y": 32.15709042397749,
+      "literal_bicubic_baseline_y": 30.419787077130117
+    },
+    {
+      "scale": 3,
+      "m": 5,
+      "cross_input_psnr_y": 31.58378011023176,
+      "original_bandlimited_psnr_y": 31.60618200440635,
+      "literal_extension_psnr_y": 23.248089345113765,
+      "literal_aa_psnr_y": 30.67825187486644,
+      "literal_bicubic_baseline_y": 30.419787077130117
+    },
+    {
+      "scale": 3,
+      "m": 10,
+      "cross_input_psnr_y": 30.899253702955008,
+      "original_bandlimited_psnr_y": 30.933755491095905,
+      "literal_extension_psnr_y": 22.552594028359373,
+      "literal_aa_psnr_y": 27.2444597704025,
+      "literal_bicubic_baseline_y": 30.419787077130117
+    },
+    {
+      "scale": 4,
+      "m": 2,
+      "cross_input_psnr_y": 28.583145918079033,
+      "original_bandlimited_psnr_y": 28.46198714531958,
+      "literal_extension_psnr_y": 19.518778884933592,
+      "literal_aa_psnr_y": 29.3274066549862,
+      "literal_bicubic_baseline_y": 28.434946250238635
+    },
+    {
+      "scale": 4,
+      "m": 5,
+      "cross_input_psnr_y": 28.59333264615837,
+      "original_bandlimited_psnr_y": 28.640207276866022,
+      "literal_extension_psnr_y": 22.464478186464376,
+      "literal_aa_psnr_y": 28.69394713862419,
+      "literal_bicubic_baseline_y": 28.434946250238635
+    },
+    {
+      "scale": 4,
+      "m": 10,
+      "cross_input_psnr_y": 28.49511155596978,
+      "original_bandlimited_psnr_y": 28.50089928669563,
+      "literal_extension_psnr_y": 19.967683070727393,
+      "literal_aa_psnr_y": 26.37605515535604,
+      "literal_bicubic_baseline_y": 28.434946250238635
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "family": "Gaussian",
+    "scale": 2,
+    "image": "baby",
+    "independent_forward_error": 2.1094237467877974e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 2,
+    "image": "bird",
+    "independent_forward_error": 3.3861802251067274e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 2,
+    "image": "butterfly",
+    "independent_forward_error": 3.9968028886505635e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 2,
+    "image": "head",
+    "independent_forward_error": 4.107825191113079e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 2,
+    "image": "woman",
+    "independent_forward_error": 4.3298697960381105e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 3,
+    "image": "baby",
+    "independent_forward_error": 1.7763568394002505e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 7.993605777301127e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 3,
+    "image": "bird",
+    "independent_forward_error": 2.1094237467877974e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 7.993605777301127e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 3,
+    "image": "butterfly",
+    "independent_forward_error": 2.1649348980190553e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 7.993605777301127e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 3,
+    "image": "head",
+    "independent_forward_error": 1.9984014443252818e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 7.993605777301127e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 3,
+    "image": "woman",
+    "independent_forward_error": 2.7755575615628914e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 7.993605777301127e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 4,
+    "image": "baby",
+    "independent_forward_error": 1.7763568394002505e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 1.7763568394002505e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 4,
+    "image": "bird",
+    "independent_forward_error": 1.3877787807814457e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 1.7763568394002505e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 4,
+    "image": "butterfly",
+    "independent_forward_error": 1.7763568394002505e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 1.7763568394002505e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 4,
+    "image": "head",
+    "independent_forward_error": 1.3322676295501878e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 1.7763568394002505e-15
+  },
+  {
+    "family": "Gaussian",
+    "scale": 4,
+    "image": "woman",
+    "independent_forward_error": 2.1094237467877974e-15,
+    "telescope_error": 4.440892098500626e-16,
+    "adjoint_absolute_error": 1.7763568394002505e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 2,
+    "image": "baby",
+    "independent_forward_error": 2.1094237467877974e-15,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 2,
+    "image": "bird",
+    "independent_forward_error": 2.609024107869118e-15,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 2,
+    "image": "butterfly",
+    "independent_forward_error": 2.886579864025407e-15,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 2,
+    "image": "head",
+    "independent_forward_error": 3.4416913763379853e-15,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 2,
+    "image": "woman",
+    "independent_forward_error": 3.219646771412954e-15,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 3.1086244689504383e-15
+  },
+  {
+    "family": "Pupil",
+    "scale": 3,
+    "image": "baby",
+    "independent_forward_error": 6.061817714453355e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 1.2434497875801753e-14
+  },
+  {
+    "family": "Pupil",
+    "scale": 3,
+    "image": "bird",
+    "independent_forward_error": 6.361577931102147e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 1.2434497875801753e-14
+  },
+  {
+    "family": "Pupil",
+    "scale": 3,
+    "image": "butterfly",
+    "independent_forward_error": 5.800915303666443e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 1.2434497875801753e-14
+  },
+  {
+    "family": "Pupil",
+    "scale": 3,
+    "image": "head",
+    "independent_forward_error": 6.261657858885883e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 1.2434497875801753e-14
+  },
+  {
+    "family": "Pupil",
+    "scale": 3,
+    "image": "woman",
+    "independent_forward_error": 6.300515664747763e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 1.2434497875801753e-14
+  },
+  {
+    "family": "Pupil",
+    "scale": 4,
+    "image": "baby",
+    "independent_forward_error": 6.794564910705958e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 4.440892098500626e-16
+  },
+  {
+    "family": "Pupil",
+    "scale": 4,
+    "image": "bird",
+    "independent_forward_error": 7.682743330406083e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 4.440892098500626e-16
+  },
+  {
+    "family": "Pupil",
+    "scale": 4,
+    "image": "butterfly",
+    "independent_forward_error": 6.250555628639631e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 4.440892098500626e-16
+  },
+  {
+    "family": "Pupil",
+    "scale": 4,
+    "image": "head",
+    "independent_forward_error": 6.727951529228449e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 4.440892098500626e-16
+  },
+  {
+    "family": "Pupil",
+    "scale": 4,
+    "image": "woman",
+    "independent_forward_error": 7.382983113757291e-14,
+    "telescope_error": 1.3633538742396922e-13,
+    "adjoint_absolute_error": 4.440892098500626e-16
+  }
+]

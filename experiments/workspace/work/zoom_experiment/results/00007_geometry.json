@@ -1,0 +1,50 @@
+{
+  "source": "<capture-dataset>/00007/00001.JPG",
+  "target": "<capture-dataset>/00007/00002.JPG",
+  "source_shape": [
+    2832,
+    4240
+  ],
+  "target_shape": [
+    2832,
+    4240
+  ],
+  "homography_target_to_source": [
+    [
+      1.4931878679694484,
+      0.0018690852643263897,
+      -1043.4891741805764
+    ],
+    [
+      -0.0008635544983006495,
+      1.4940249155761018,
+      -701.7929852588252
+    ],
+    [
+      -3.5437838451454487e-07,
+      3.409880015643066e-07,
+      1.0
+    ]
+  ],
+  "similarity_target_to_source": [
+    [
+      1.494165799814373,
+      0.0005914012166627452,
+      -1043.4861232826377
+    ],
+    [
+      -0.0005914012166627452,
+      1.494165799814373,
+      -702.1372633094979
+    ]
+  ],
+  "ratio_test_matches": 2096,
+  "homography_inliers": 1935,
+  "homography_median_reprojection_px": 0.5398947596549988,
+  "similarity_inliers": 1877,
+  "similarity_median_reprojection_px": 0.5208199620246887,
+  "homography_origin_singular_values": [
+    1.4942611842789908,
+    1.4929528491471422
+  ]
+}

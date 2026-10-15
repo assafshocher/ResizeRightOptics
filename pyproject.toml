@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resize-right-optics"
+version = "0.1.0"
+description = "Camera-derived, scale-dependent resampling on the ResizeRight grid"
+authors = [{name = "Assaf Shocher"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+license = "MIT"
+
+[project.optional-dependencies]
+torch = ["torch>=2.2"]
+test = ["pytest>=8", "torch>=2.2"]
+
+[tool.setuptools.packages.find]
+include = ["resize_right_optics*"]
+
+[project.urls]
+"Homepage" = "https://assafshocher.github.io/image-scaling/"
+"Source" = "https://github.com/assafshocher/ResizeRightOptics"
+"Issues" = "https://github.com/assafshocher/ResizeRightOptics/issues"
+"Original ResizeRight" = "https://github.com/assafshocher/ResizeRight"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

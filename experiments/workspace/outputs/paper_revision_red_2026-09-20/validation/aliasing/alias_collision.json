@@ -1,0 +1,9 @@
+{
+  "cutoff_pi": 3.0,
+  "frequencies_pi": [
+    0.3,
+    1.7
+  ],
+  "source_max_difference": 6.661338147750939e-16,
+  "target_max_difference": 0.0025296805165337943
+}
