@@ -14,7 +14,9 @@ Point Spread Functions, Discrete Kernels, and Scale-Spaces**.
 Rather than stretching the same interpolation kernel at every scale, a camera's
 point spread function determines a family of continuous scaling kernels:
 
-$$\widehat K_s(\omega)=\widehat K_0(\omega/s)\,\widehat K_0(\omega)^\dagger.$$
+```math
+\widehat K_s(\omega)=\widehat K_0(\omega/s)\,\widehat K_0(\omega)^\dagger.
+```
 
 <img src="paper/figures/fig_surfaces.png" alt="Continuous scaling kernels across position and scale; the specified slice is marked in red." width="100%">
 

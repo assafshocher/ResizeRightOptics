@@ -42,7 +42,7 @@ preflight inputs.
 Wheel: `resize_right_optics-0.1.0-py3-none-any.whl`
 
 SHA-256:
-`66dce96fc42f3eda32981c92f68afc81668d4decc5199ff94569d770c37e2857`
+`447d32da67595253d762ab6f94816b22503938a764db5e8463bc371985f14b3e`
 
 The source manifest records provenance and mechanical path adaptations.
 Upstream TensorFlow ZSSR Python 2 files are archival references; the active
